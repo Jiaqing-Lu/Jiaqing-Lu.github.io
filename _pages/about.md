@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: `Jiaqing Lu`. Associate Professor, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University. 
+subtitle: <a href='#'>Jiaqing Lu</a>. Associate Professor, School of Information Science and Electronic Engineering, Shanghai Jiao Tong University. 
 
 
 profile:
