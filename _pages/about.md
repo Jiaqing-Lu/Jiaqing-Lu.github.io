@@ -26,9 +26,18 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I am a faculty member at Shanghai Jiao Tong University. My research interests include all aspects of `computational electromagnetics`, such as finite element methods, domain decomposition methods, high-performance numerical algorithms, and electromagnetic simulation for integrated electronic systems.
+My research focuses on `computational electromagnetics and scientific computing`. On algorithm side, my current research revole around finite element methods, domain decomposition methods, high-performance numerical solvers; On application, my interests are large scale computation and multiscale system modeling, such as antenna array, UAV, automobile, mobile devices, EMC & EMI, EM & multiphysics modeling of electronic systems (PCB & Package & IC).
 
-I received my bachelor degree and master degree from Shanghai Jiao Tong University (SJTU), and my Ph.D degree from The Ohio State University (OSU). During my Ph.D. study, I study at [ElectroScience Laboratory](https://electroscience.osu.edu/) (ESL) at OSU, and worked with Professor Jin-Fa Lee, one of the most influential authorities in computational electromagnetics and the key contributor to Ansys HFSS. After my graduation, I continued to work as a postdoc researcher at ESL. Then I went back to China, work as an algorithm engineer for software development at NineCube Electronics. Since 2026, I returned to SJTU and become a faculty member. 
+My research focuses on **computational electromagnetics and scientific computing**.
+
+My current research interests include:
+
+- **Computational algorithms:** finite element methods, domain decomposition methods, fast numerical solvers.
+- **Large-scale simulation:** antenna arrays, UAVs, automobiles, mobile devices.
+- **Multiscale modeling:** electromagnetic and coupled-physics simulation of integrated electronic systems (PCBs & packages & ICs), complex EMC/EMI problems.
+ 
+I received my B.S. and M.S. degrees from Shanghai Jiao Tong University (SJTU), and my Ph.D degree from The Ohio State University (OSU). During my Ph.D., I studied at [ElectroScience Laboratory](https://electroscience.osu.edu/) (ESL) at OSU, and worked with **Prof. Jin-Fa Lee**, one of the most influential authorities in computational electromagnetics and the key contributor to Ansys HFSS. After my graduation, I continued my research at ESL as a postdoctoral researcher. Then I went back to China, worked as an algorithm engineer for software development at [NineCube Electronics](https://www.ic9cube.com/). Since 2026, I returned to SJTU and become a faculty member. 
+
 
 #Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
