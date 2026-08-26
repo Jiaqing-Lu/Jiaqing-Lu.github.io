@@ -30,7 +30,7 @@ My research focuses on `Computational Electromagnetics and Scientific Computing`
 
 My current research interests include:
 
-- `Computational Methods`: finite element methods, domain decomposition methods, high-performance direct & iterative Algorithms.
+- `Computational Methods`: finite element methods, domain decomposition methods, high-performance direct & iterative algorithms.
 - `Large-Scale Simulation`: antenna arrays, UAVs, automobiles, mobile devices, complex EMC/EMI applications.
 - `Multiscale Modeling`: EM and coupled-physics modeling of integrated electronic systems (PCBs & packages & ICs), signal/power integrity problems.
  
