@@ -35,8 +35,8 @@ My current research interests include:
 - `Large-Scale Simulation`: antenna arrays, UAVs, automobiles, mobile devices, complex EMC/EMI applications.
 - `Multiscale & Multiphysics Modeling`: electromagnetic and coupled-physics modeling of integrated electronic systems (PCBs & packages & ICs), signal/power integrity problems.
 
-My Education:  
+
 I received my B.S. and M.S. degrees from **Shanghai Jiao Tong University (SJTU)**, and my Ph.D. degree from **The Ohio State University (OSU)**. During my Ph.D., I conducted my research at the [`ElectroScience Laboratory`](https://electroscience.osu.edu/) (ESL), OSU, and worked with `Prof. Jin-Fa Lee`, one of the most influential authorities in computational electromagnetics and the key contributor to Ansys HFSS. 
 
-My Working Experience:  
+
 After my graduation, I continued my research at ESL as a postdoctoral researcher. I later returned to China and worked as an algorithm engineer at [`NineCube Electronics`](https://www.ic9cube.com/), developing software for electronic design automation (EDA) simulation. Since 2026, I returned to SJTU and became a faculty member. 
