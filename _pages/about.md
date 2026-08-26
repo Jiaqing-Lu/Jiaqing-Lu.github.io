@@ -26,7 +26,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-My research focuses on `Computational Electromagnetics and Scientific Computing`.
+My research focuses on `**Computational Electromagnetics and Scientific Computing**`.
 
 My current research interests include:
 
