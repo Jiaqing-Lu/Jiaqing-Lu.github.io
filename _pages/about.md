@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 My research focuses on 
-<code style="font-size:1.1em; font-weight: 600;">Computational Electromagnetics and Scientific Computing</code>.
+<code style="font-weight: 600;">Computational Electromagnetics and Scientific Computing</code>.
 
 My current research interests include:
 
