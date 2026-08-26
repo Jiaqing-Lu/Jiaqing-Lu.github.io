@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
+title: Preconditioning Approaches
+description: how to improve convergence rate
 img: assets/img/3.jpg
 importance: 2
 category: work
