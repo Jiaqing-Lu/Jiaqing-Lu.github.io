@@ -206,8 +206,6 @@ collections:
     output: true
   projects:
     output: true
-  talks:
-    output: true
   teachings:
     output: true
 
