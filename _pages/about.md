@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Jiaqing Lu</a>, Associate Professor, Shanghai Jiao Tong University. 
+subtitle: <strong style="color:var(--global-theme-color);">Jiaqing Lu</strong>, Associate Professor, Shanghai Jiao Tong University. 
 
 
 profile:
@@ -10,8 +10,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>No.800 Dongchuan Road</p>
-    <p>Shanghai 200240, China</p>
+    <p>School of Information Science and Electronic Engineering</p>
+    <p>No.800 Dongchuan Road, Shanghai, China</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
