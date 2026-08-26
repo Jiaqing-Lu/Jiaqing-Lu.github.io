@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: Group Members
-description: members of the lab or group
+title: people
+description: research group members
 nav: true
 nav_order: 5
 
