@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <code style="font-size:1.15em; font-weight:600;">Jiaqing Lu</code>, Associate Professor, Shanghai Jiao Tong University. 
+subtitle: <code style="font-size:1.1em; font-weight:600;">Jiaqing Lu</code>, Associate Professor, Shanghai Jiao Tong University. 
 
 
 profile:
@@ -26,7 +26,8 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-My research focuses on <strong><code>Computational Electromagnetics and Scientific Computing</code></strong>.
+My research focuses on 
+<code style="font-size:1.1em; font-weight: 600;">Computational Electromagnetics and Scientific Computing</code>.
 
 My current research interests include:
 
