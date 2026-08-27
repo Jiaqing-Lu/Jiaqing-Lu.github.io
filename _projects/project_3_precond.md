@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Preconditioning Approaches
-description: how to improve convergence rate
+title: Iterative Solvers & Preconditioning
+description: scalable iterative methods for large-scale EM systems
 img: assets/img/3.jpg
 importance: 1
 category: algorithm

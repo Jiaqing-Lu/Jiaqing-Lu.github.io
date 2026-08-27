@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Discontinuous Galerkin
+title: Discontinuous Galerkin Methods
 description: space-time solution strategies
 img: assets/img/3.jpg
 importance: 2

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Coupled-Physics Algorithms
-description: nonlinear analysis
+description: coupled EM, circuit, and thermal computation
 img: assets/img/4.jpg
 importance: 2
 category: algorithm

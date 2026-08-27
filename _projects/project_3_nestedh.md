@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Direct Solver
-description: dense & sparse, compress & low-rank
+title: Fast Direct Solvers
+description: sparse factorization, skeletonization, and low-rank compression
 img: assets/img/7.jpg
 importance: 1
 category: algorithm

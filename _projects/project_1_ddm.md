@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Domain Decomposition Methods
-description: nonconformal and overlapping
+description: nonconformal, embedded, and overlapping formulations
 img: assets/img/12.jpg
 importance: 1
 category: algorithm

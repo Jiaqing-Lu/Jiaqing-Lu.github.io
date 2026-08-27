@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Machine Learning
+title: Scientific Machine Learning
 description: conventional CEM + AI, let's explore 🎉
 img: assets/img/6.jpg
 importance: 4
