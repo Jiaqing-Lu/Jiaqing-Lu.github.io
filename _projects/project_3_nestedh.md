@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fast Direct Solvers
+title: Robust Direct Solvers
 description: sparse factorization, skeletonization, and low-rank compression
 img: assets/img/7.jpg
 importance: 1

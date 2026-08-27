@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EMC & SI & PI
+title: EMC/EMI & Signal/Power Integrity
 description: high-speed electronics, em-circuit co-simulation
 img: assets/img/10.jpg
 importance: 2
