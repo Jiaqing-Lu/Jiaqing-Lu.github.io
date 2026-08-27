@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Direct Solver
+description: dense & sparse, compress & low-rank
+img: assets/img/7.jpg
+importance: 1
+category: algorithm
 ---
 
 Every project has a beautiful feature showcase page.

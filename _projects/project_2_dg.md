@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
+title: Discontinuous Galerkin
+description: space-time solution strategies
+img: assets/img/3.jpg
+importance: 2
+category: algorithm
+giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Preconditioning Approaches
-description: how to improve convergence rate
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: Machine Learning
+description: conventional CEM + AI, let's explore 🎉
+img: assets/img/6.jpg
+importance: 4
+category: algorithm
 ---
 
 Every project has a beautiful feature showcase page.

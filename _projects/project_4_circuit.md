@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Direct Solver
-description: dense & sparse, compress & low-rank
-img: assets/img/7.jpg
-redirect: https://www.wikipedia.org/
-importance: 3
-category: work
+title: EMC & SI & PI
+description: high-speed electronics, em-circuit co-simulation
+img:
+importance: 2
+category: application
 ---
 
 Every project has a beautiful feature showcase page.

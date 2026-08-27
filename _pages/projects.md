@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of completed/ongoing research projects.
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [algorithm, application]
 horizontal: false
 ---
 
