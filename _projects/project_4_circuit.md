@@ -2,7 +2,7 @@
 layout: page
 title: EMC & SI & PI
 description: high-speed electronics, em-circuit co-simulation
-img:
+img: assets/img/10.jpg
 importance: 2
 category: application
 ---
