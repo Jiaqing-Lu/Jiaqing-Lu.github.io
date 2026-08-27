@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Periodic Structures
-description: antenna arrays, frequency selective surfaces, etc.
+description: antenna arrays, frequency selective surfaces, metasurfaces.
 img: assets/img/9.jpg
 importance: 1
 category: application

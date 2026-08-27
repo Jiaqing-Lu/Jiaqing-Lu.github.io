@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /projects/
-description: A collection of completed/ongoing research projects.
+description: A collection of completed & ongoing research projects.
 nav: true
 nav_order: 1
 display_categories: [algorithm, application]

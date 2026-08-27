@@ -1,7 +1,7 @@
 ---
 layout: page
 title: EMC/EMI & Signal/Power Integrity
-description: high-speed electronics, em-circuit co-simulation
+description: high-speed electronics, electromagnetic-circuit co-simulation
 img: assets/img/10.jpg
 importance: 2
 category: application

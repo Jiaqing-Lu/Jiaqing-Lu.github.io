@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iterative Solvers & Preconditioning
-description: scalable iterative methods for large-scale EM systems
+description: scalable iterative methods for large-scale numerical systems
 img: assets/img/3.jpg
 importance: 1
 category: algorithm

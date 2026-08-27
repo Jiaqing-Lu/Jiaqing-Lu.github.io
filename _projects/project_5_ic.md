@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multiscale Electronics Modeling
-description: analysis of massive ICs and packages 
+description: modeling and analysis of real-life ICs & packages & PCBs 
 img: assets/img/1.jpg
 importance: 1
 category: application
