@@ -1,10 +1,11 @@
 ---
 layout: page
-title: EMC/EMI & Signal/Power Integrity
-description: high-speed electronics, electromagnetic-circuit co-simulation
-img: assets/img/10.jpg
-importance: 2
-category: application
+title: Scientific Machine Learning
+description: conventional CEM + AI, let's explore 🎉
+img: assets/img/6.jpg
+importance: 4
+category: algorithm
+research_id: learn-data
 ---
 
 Every project has a beautiful feature showcase page.

@@ -5,6 +5,7 @@ description: scalable iterative methods for large-scale numerical systems
 img: assets/img/3.jpg
 importance: 1
 category: algorithm
+research_id: precond
 ---
 
 Every project has a beautiful feature showcase page.

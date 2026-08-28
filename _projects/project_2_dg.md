@@ -5,6 +5,7 @@ description: space-time solution strategies
 img: assets/img/3.jpg
 importance: 2
 category: algorithm
+research_id: dg
 giscus_comments: true
 ---
 

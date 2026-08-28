@@ -5,6 +5,7 @@ description: coupled EM, circuit, and thermal computation
 img: assets/img/4.jpg
 importance: 2
 category: algorithm
+research_id: mphy-couple
 related_publications: true
 ---
 

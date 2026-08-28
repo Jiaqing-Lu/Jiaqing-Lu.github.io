@@ -5,6 +5,7 @@ description: modeling and analysis of real-life ICs & packages & PCBs
 img: assets/img/1.jpg
 importance: 1
 category: application
+research_id: ic-eda
 ---
 
 Every project has a beautiful feature showcase page.

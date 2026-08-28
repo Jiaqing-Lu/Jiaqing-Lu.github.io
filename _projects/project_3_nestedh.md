@@ -5,6 +5,7 @@ description: sparse factorization, skeletonization, and low-rank compression
 img: assets/img/7.jpg
 importance: 1
 category: algorithm
+research_id: nested-h
 ---
 
 Every project has a beautiful feature showcase page.
