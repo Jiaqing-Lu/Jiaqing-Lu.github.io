@@ -10,7 +10,7 @@ cv:
   address:
     street: 800 Dongchuan Road
     city: Shanghai
-    region: 
+    region: China
     postalCode: 200240
     countryCode: CN
 
@@ -19,7 +19,7 @@ cv:
       - institution: The Ohio State University
         location: Columbus, OH, USA
         area: Electrical and Electronics Engineering
-        studyType: Ph.D.
+        studyType: Doctor of Philosophy
         start_date: 2013
         end_date: 2018
         highlights:
@@ -29,7 +29,7 @@ cv:
       - institution: Shanghai Jiao Tong University
         location: Shanghai, China
         area: Electronics Science and Technology
-        studyType: M.S.
+        studyType: Master in Science
         start_date: 2010
         end_date: 2013
         highlights:
@@ -39,7 +39,7 @@ cv:
       - institution: Shanghai Jiao Tong University
         location: Shanghai, China
         area: Information Engineering
-        studyType: B.S.
+        studyType: Bachelor in Science
         start_date: 2006
         end_date: 2010
         highlights:
@@ -53,7 +53,7 @@ cv:
         start_date: 2026
         end_date: Present
         highlights:
-          - "School of Integrated Circuits | School of Information Science and Electronic Engineering"
+          - "School of Integrated Circuits / School of Information Science and Electronic Engineering)"
           - "State Key Laboratory of Radio-Frequency Heterogeneous Integration"
 
       - company: NineCube Microelectronics Co., Ltd.
@@ -101,7 +101,6 @@ cv:
         highlights:
           - Developed FDTD and waveform-relaxation methods for electromagnetic interference analysis of printed circuit boards
           - Developed electro-thermal analysis methods for on-chip interconnects
-          - Conducted through-silicon via modeling and analysis for electronic packaging
 
     Awards:
       - title: Overseas Excellent Young Scientists Fund Program of China
@@ -109,7 +108,6 @@ cv:
 
       - title: Shanghai Magnolia Talent Program
         date: 2025
-        awarder: Shanghai Municipality
 
       - title: Young Scientist Award
         date: 2025
@@ -139,7 +137,7 @@ cv:
 
       - name: Electromagnetic Engineering
         icon: fa-solid fa-tag
-        keywords: "Computational Electromagnetics, Electromagnetic Compatibility, Signal Integrity, High-Speed Microelectronics, Electromagnetic Emission and Vulnerability of Integrated Circuits"
+        keywords: "Computational Electromagnetics, Electromagnetic Compatibility, Signal Integrity, Electromagnetic Emission and Vulnerability of Integrated Circuits, Multiscale and Multiphysics Modeling of Electronics Systems"
 
 
     Projects:
@@ -178,16 +176,8 @@ cv:
         highlights:
           - "Funder: Ansys, Inc."
           - "Role: Primary contributor since 2016"
-          - Advanced direct solvers for FEM and DDM
-          - Higher-order absorbing boundary conditions
+          - Advanced direct solvers and preconditioners for FEM and DDM
           - Advanced computational electromagnetics algorithms for signal integrity analysis of ICs and packages
-
-      - name: Development of Numerical Methods for High-Q Cavity Problems
-        start_date: 2018
-        end_date: 2024
-        highlights:
-          - "Funder: Sandia National Laboratories"
-          - Algorithm development using finite element and domain decomposition methods
 
       - name: Design Code Development for Periodic/Aperiodic Electromagnetic Structures
         start_date: 2017
