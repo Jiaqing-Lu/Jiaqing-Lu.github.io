@@ -9,10 +9,15 @@ nav_order: 3
 
 <div class="publications">
 
-    {% assign sorted_talks = site.talks | sort: "date" | reverse %}
+    <!-- {% assign sorted_talks = site.talks | sort: "date" | reverse %} -->
+    {% assign visible_talks = site.talks | where_exp: "talk", "talk.hidden != true" %}
+    {% assign sorted_talks = visible_talks | sort: "date" | reverse %}
     {% assign current_year = "" %}
 
     {% for talk in sorted_talks %}
+
+    <!-- add hidden flag -->
+    {% unless talk.hidden %} 
 
     {% assign talk_year = talk.date | date: "%Y" %}
 
@@ -143,6 +148,8 @@ nav_order: 3
         {% if forloop.last %}
     </ol>
     {% endif %}
+
+    {% endunless %}
 
     {% endfor %}
 
