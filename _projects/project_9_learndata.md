@@ -5,7 +5,7 @@ description: conventional CEM + AI, let's explore 🎉
 img: assets/img/6.jpg
 importance: 4
 category: algorithm
-research_id: learn-data
+research_id: ai
 ---
 
 Every project has a beautiful feature showcase page.

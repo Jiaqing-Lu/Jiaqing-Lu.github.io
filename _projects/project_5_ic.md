@@ -5,7 +5,7 @@ description: IC, package, PCB, and system-level multiscale modeling
 img: assets/img/1.jpg
 importance: 1
 category: application
-research_id: ic-eda
+research_id: ic
 ---
 
 Every project has a beautiful feature showcase page.

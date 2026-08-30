@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Periodic Structures & Material Modeling
-description: antenna arrays, frequency selective surfaces, artificial materials.
+title: Special Structure & Material Modeling
+description: antenna arrays, frequency selective surfaces, artificial materials
 img: assets/img/9.jpg
 importance: 1
 category: application
-research_id: array
+research_id: material
 giscus_comments: true
 ---
 

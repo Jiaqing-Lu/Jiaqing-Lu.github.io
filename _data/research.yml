@@ -3,7 +3,7 @@ ddm:
   url: "/projects/project_1_ddm/"
 
 dg:
-  title: "Space-Time System"
+  title: "Space-Time Solver"
   url: "/projects/project_2_dg/"
 
 nestedh:
@@ -15,10 +15,10 @@ precond:
   url: "/projects/project_3_precond/"
 
 emc:
-  title: "EMC & SCA"
-  url: "/projects/project_4_emc_si/"
+  title: "EMC & Security"
+  url: "/projects/project_4_emc/"
 
-ic-eda:
+ic:
   title: "IC & EDA"
   url: "/projects/project_5_ic/"
 
@@ -30,11 +30,11 @@ mphy:
   title: "Multiphysics"
   url: "/projects/project_7_mphy/"
 
-array:
-  title: "Periodic Structures"
-  url: "/projects/project_8_array/"
+material:
+  title: "Material Modeling"
+  url: "/projects/project_8_material/"
 
-learn-data:
+ai:
   title: "Machine Learning"
   url: "/projects/project_9_learndata/"
 

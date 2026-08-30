@@ -5,7 +5,7 @@ description: electromagnetic compatibility, security, and signal/power integrity
 img: assets/img/10.jpg
 importance: 2
 category: application
-research_id: emc-si
+research_id: emc
 ---
 
 Every project has a beautiful feature showcase page.
