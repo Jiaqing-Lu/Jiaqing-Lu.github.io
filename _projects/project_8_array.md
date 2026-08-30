@@ -5,7 +5,7 @@ description: antenna arrays, frequency selective surfaces, metasurfaces.
 img: assets/img/9.jpg
 importance: 1
 category: application
-research_id: antenna
+research_id: array
 giscus_comments: true
 ---
 

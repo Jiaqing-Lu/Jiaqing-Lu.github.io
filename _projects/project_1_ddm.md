@@ -5,7 +5,7 @@ description: nonconformal, embedded, and overlapping formulations
 img: assets/img/12.jpg
 importance: 1
 category: algorithm
-research_id: ovlap-ddm
+research_id: ddm
 related_publications: true
 ---
 

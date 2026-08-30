@@ -5,7 +5,7 @@ description: electronics, high-power EMI
 img: assets/img/7.jpg
 importance: 3
 category: application
-research_id: mphy-app
+research_id: thermal
 ---
 
 Every project has a beautiful feature showcase page.

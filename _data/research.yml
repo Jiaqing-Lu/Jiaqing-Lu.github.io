@@ -1,0 +1,46 @@
+ddm:
+  title: "Domain Decomposition"
+  url: "/projects/project_1_ddm/"
+
+dg:
+  title: "Discontinuous Galerkin Methods"
+  url: "/projects/project_2_dg/"
+
+nested-h:
+  title: "Direct Solver"
+  url: "/projects/project_3_nestedh/"
+
+precond:
+  title: "Preconditioning"
+  url: "/projects/project_3_precond/"
+
+emc-si:
+  title: "EMC & SI"
+  url: "/projects/project_4_emc_si/"
+
+ic-eda:
+  title: "IC & EDA"
+  url: "/projects/project_5_ic/"
+
+thermal:
+  title: "Thermal Effects"
+  url: "/projects/project_6_thermal/"
+
+mphy:
+  title: "Multiphysics"
+  url: "/projects/project_7_mphy/"
+
+array:
+  title: "Periodic Structures"
+  url: "/projects/project_8_array/"
+
+learn-data:
+  title: "Machine Learning"
+  url: "/projects/project_9_learndata/"
+
+
+
+
+
+
+
