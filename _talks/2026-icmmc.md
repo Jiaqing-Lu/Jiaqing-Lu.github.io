@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "A Low-Rank Direct Solver for Sparse Matrices Associated with FEM and DDM Systems"
-date: 2026-08-22
+title: "Formulation and Performance Analysis of Embedded Domain Decomposition Method for Electromagnetic Simulations"
+date: 2026-08-13
 speaker: "Jiaqing Lu"
-event: "ACES-China 2026"
-location: "Qingdao, China"
-type: "Conference"
+event: "ICMMC 2026"
+location: "Beijing, China"
+type: "Invited"
 # slides: /assets/pdf/talks/aces2026-directsolver.pdf
 publication:
 website:
 research:
   - ddm
-  - direct-solvers
+  - precond
 ---
 
 
