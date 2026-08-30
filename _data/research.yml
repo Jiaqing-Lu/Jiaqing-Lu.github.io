@@ -6,7 +6,7 @@ dg:
   title: "Discontinuous Galerkin Methods"
   url: "/projects/project_2_dg/"
 
-nested-h:
+nestedh:
   title: "Direct Solver"
   url: "/projects/project_3_nestedh/"
 
