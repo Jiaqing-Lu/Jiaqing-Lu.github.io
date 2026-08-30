@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Multiscale Electronics Modeling
-description: modeling and analysis of real-life ICs & packages & PCBs 
+description: IC, package, PCB, and system-level multiscale modeling 
 img: assets/img/1.jpg
 importance: 1
 category: application

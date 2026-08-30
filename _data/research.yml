@@ -3,7 +3,7 @@ ddm:
   url: "/projects/project_1_ddm/"
 
 dg:
-  title: "Discontinuous Galerkin Methods"
+  title: "Space-Time System"
   url: "/projects/project_2_dg/"
 
 nestedh:
@@ -14,8 +14,8 @@ precond:
   title: "Preconditioning"
   url: "/projects/project_3_precond/"
 
-emc-si:
-  title: "EMC & SI"
+emc:
+  title: "EMC & SCA"
   url: "/projects/project_4_emc_si/"
 
 ic-eda:

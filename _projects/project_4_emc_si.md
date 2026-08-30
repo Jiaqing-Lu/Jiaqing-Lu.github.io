@@ -1,7 +1,7 @@
 ---
 layout: page
-title: EMC/EMI & Signal/Power Integrity
-description: high-speed electronics, electromagnetic-circuit co-simulation
+title: EMC/EMI & Side-Channel Analysis
+description: electromagnetic compatibility, security, and signal/power integrity
 img: assets/img/10.jpg
 importance: 2
 category: application
