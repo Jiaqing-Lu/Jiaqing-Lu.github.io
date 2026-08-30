@@ -2,6 +2,7 @@
 layout: page
 title: talks
 permalink: /talks/
+description: conference talks
 nav: true
 nav_order: 3
 ---
@@ -159,9 +160,3 @@ nav_order: 3
   {% endfor %}
 
 </div>
-
-<!-- {% for talk in site.talks reversed %}
-  <h3>{{ talk.title }}</h3>
-  <p>{{ talk.date | date: "%B %Y" }} · {{ talk.venue }}</p>
-  {{ talk.content }}
-{% endfor %} -->
