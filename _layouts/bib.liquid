@@ -278,25 +278,6 @@
 
     <!-- Research tags -->
     {% if entry.research %}
-      <div class="research-tags">
-        {% assign research_tags = entry.research | split: "," %}
-
-        {% for tag in research_tags %}
-          {% assign tag = tag | strip %}
-          {% assign research_item = site.data.research[tag] %}
-
-          {% if research_item %}
-            <a
-              class="research-tag"
-              href="{{ research_item.url | relative_url }}"
-            >
-              {{ research_item.title }}
-            </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}<!-- Research tags -->
-    {% if entry.research %}
     <div class="research-tags">
         {% assign research_tags = entry.research | split: "," %}
     
