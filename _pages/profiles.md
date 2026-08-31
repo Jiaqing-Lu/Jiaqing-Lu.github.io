@@ -1,57 +1,64 @@
 ---
 layout: page
 permalink: /people/
-title: people
-description: research group members
+title: #people
+description: #research group members
 nav: true
 nav_order: 5
 
 _styles: >
-  .people-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+    .recruitment-notice {
+        border-top: 1px solid var(--global-divider-color);
+        border-bottom: 1px solid var(--global-divider-color);
+        padding: 1.25rem 0 1rem;
+        margin: 1.5rem 0 1.5rem;
+    }
 
-  .person-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
+    .people-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
 
-  .person-photo {
-    width: 90px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 4px;
-    flex-shrink: 0;
-  }
+    .person-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 
-  .person-info {
-    flex: 1;
-  }
+    .person-photo {
+        width: 90px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-shrink: 0;
+    }
 
-  .person-name {
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 0.15rem;
-  }
+    .person-info {
+        flex: 1;
+    }
 
-  .person-role {
-    font-size: 0.9rem;
-    color: var(--global-theme-color);
-    margin-bottom: 0.3rem;
-  }
+    .person-name {
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-bottom: 0.15rem;
+    }
 
-  .person-desc {
-    font-size: 0.9rem;
-    line-height: 1.45;
-    color: var(--global-text-color-light);
-  }
+    .person-role {
+        font-size: 0.9rem;
+        color: var(--global-theme-color);
+        margin-bottom: 0.3rem;
+    }
+
+    .person-desc {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        color: var(--global-text-color-light);
+    }
 ---
-
+<div class="recruitment-notice">
 
 ## Join the Group
 
@@ -61,15 +68,16 @@ Prospective students with backgrounds in electrical engineering, applied mathema
 
 Current opportunities may include:
 
-- Ph.D. / direct-Ph.D. students
+- Ph.D. students
 - Master's students
 - Undergraduate research students
 
 If you are interested, please send a brief introduction, CV, transcript, and a short description of your research interests by email.
 
----
+</div>
 
-## Group Members
+
+## Research Group Members
 
 <div class="people-grid">
 
