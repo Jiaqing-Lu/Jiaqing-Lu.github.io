@@ -21,7 +21,7 @@ layout: default
   {% if page.related_publications and page.research_id %}
     <h2>Related Publications</h2>
     <div class="publications">
-        {% bibliography --query @*[research ^= {{ page.research_id }}] %}
+        {% bibliography --query @*[research ^= /(^|,\s*){{ page.research_id }}(\s*,|$)/] %}
     </div>
   {% endif %}
 
