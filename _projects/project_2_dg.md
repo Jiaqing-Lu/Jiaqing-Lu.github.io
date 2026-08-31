@@ -6,7 +6,9 @@ img: assets/img/3.jpg
 importance: 2
 category: algorithm
 research_id: dg
-giscus_comments: true
+permalink: /projects/dg/
+related_publications: true
+# giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

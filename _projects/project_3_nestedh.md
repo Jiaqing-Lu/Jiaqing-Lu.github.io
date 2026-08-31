@@ -6,6 +6,8 @@ img: assets/img/7.jpg
 importance: 1
 category: algorithm
 research_id: nestedh
+permalink: /projects/direct_solver/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

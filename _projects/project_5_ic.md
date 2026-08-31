@@ -6,6 +6,8 @@ img: assets/img/1.jpg
 importance: 1
 category: application
 research_id: ic
+permalink: /projects/ic/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

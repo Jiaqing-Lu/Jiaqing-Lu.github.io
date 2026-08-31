@@ -6,6 +6,8 @@ img: assets/img/10.jpg
 importance: 2
 category: application
 research_id: emc
+permalink: /projects/emc/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

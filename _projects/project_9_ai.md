@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Advanced Structure & Material Modeling
-description: antenna arrays, frequency selective surfaces, artificial materials
-img: assets/img/9.jpg
-importance: 1
-category: application
-research_id: material
-giscus_comments: true
+title: Scientific Machine Learning
+description: conventional CEM + AI, let's explore 🎉
+img: assets/img/6.jpg
+importance: 4
+category: algorithm
+research_id: ai
+permalink: /projects/ai/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

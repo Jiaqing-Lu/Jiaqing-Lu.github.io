@@ -1,11 +1,14 @@
 ---
 layout: page
-title: Scientific Machine Learning
-description: conventional CEM + AI, let's explore 🎉
-img: assets/img/6.jpg
-importance: 4
-category: algorithm
-research_id: ai
+title: Antenna & Material Modeling
+description: antenna arrays, frequency selective surfaces, artificial materials
+img: assets/img/9.jpg
+importance: 1
+category: application
+research_id: ap
+permalink: /projects/ap/
+related_publications: true
+# giscus_comments: true
 ---
 
 Every project has a beautiful feature showcase page.

@@ -6,6 +6,8 @@ img: assets/img/7.jpg
 importance: 3
 category: application
 research_id: thermal
+permalink: /projects/thermal/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

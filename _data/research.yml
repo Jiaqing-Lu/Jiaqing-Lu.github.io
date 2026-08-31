@@ -4,39 +4,39 @@ ddm:
 
 dg:
   title: "Space-Time Solver"
-  url: "/projects/project_2_dg/"
+  url: "/projects/dg/"
 
 nestedh:
   title: "Direct Solver"
-  url: "/projects/project_3_nestedh/"
+  url: "/projects/direct_solver/"
 
 precond:
   title: "Preconditioning"
-  url: "/projects/project_3_precond/"
+  url: "/projects/precond/"
 
 emc:
   title: "EMC & Security"
-  url: "/projects/project_4_emc/"
+  url: "/projects/emc/"
 
 ic:
   title: "IC & EDA"
-  url: "/projects/project_5_ic/"
+  url: "/projects/ic/"
 
 thermal:
   title: "Thermal Effects"
-  url: "/projects/project_6_thermal/"
+  url: "/projects/thermal/"
 
 mphy:
   title: "Multiphysics"
-  url: "/projects/project_7_mphy/"
+  url: "/projects/mphy/"
 
-material:
-  title: "Structure & Material Modeling"
-  url: "/projects/project_8_material/"
+ap:
+  title: "antenna & Material"
+  url: "/projects/ap/"
 
 ai:
   title: "Machine Learning"
-  url: "/projects/project_9_learndata/"
+  url: "/projects/ai/"
 
 
 

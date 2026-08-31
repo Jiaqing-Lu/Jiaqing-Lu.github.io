@@ -6,6 +6,8 @@ img: assets/img/3.jpg
 importance: 1
 category: algorithm
 research_id: precond
+permalink: /projects/precond/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.
