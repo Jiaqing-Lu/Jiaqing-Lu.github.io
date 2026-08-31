@@ -56,19 +56,20 @@ _styles: >
 
 ## Join the Group
 
-We are looking for motivated students interested in computational electromagnetics, scientific computing, and related areas.
+> We are looking for motivated students interested in computational electromagnetics, scientific computing, and related areas.
 
-Prospective students with backgrounds in electrical engineering, applied mathematics, computational science, or related fields are welcome to contact me.
+> Prospective students with backgrounds in electrical engineering, applied mathematics, computational science, or related fields are welcome to contact me.
 
-Current opportunities may include:
+> Current opportunities may include:
 
 - Ph.D. students
 - Master students
 - Undergraduate research students
 
-If you are interested, please send a brief introduction, CV, transcript, and a short description of your research interests by email.
+> If you are interested, please send a brief introduction, CV, transcript, and a short description of your research interests by email.
 
 ---
+<br><br>
 
 ## Research Group Members
 
@@ -88,7 +89,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-## Students
+<!-- ## Students -->
 
 <div class="people-grid">
 
@@ -110,7 +111,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-## Alumni
+<!-- ## Alumni -->
 
 <div class="people-grid">
 
