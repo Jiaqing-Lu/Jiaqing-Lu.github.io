@@ -88,6 +88,6 @@ Here's the code for the last row of images above:
 - *National Natural Science Foundation of China*  
   **Embedded Domain Decomposition Method for Multiscale Electromagnetic Systems**, 2027–2030, PI.
 
-- Advanced CEM Algorithms for Signal Integrity Analyses in ICs and Packages - collaborative research with *Ansys, Inc.* 
+- Advanced CEM Algorithms for Signal Integrity Analyses in ICs and Packages -- collaborative research with *Ansys, Inc.* 
 
 --

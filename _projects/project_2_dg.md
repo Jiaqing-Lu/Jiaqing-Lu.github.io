@@ -86,6 +86,6 @@ Here's the code for the last row of images above:
 --
 ### Selected Projects & Collaborations
 
-- **Brave Heart** project for electromagnetic-circuit co-simulation package for circuit board, with *DSO National Laboratories, Singapore*.
+- **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
 
 --

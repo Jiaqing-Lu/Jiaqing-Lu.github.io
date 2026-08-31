@@ -85,6 +85,6 @@ Here's the code for the last row of images above:
 --
 ### Selected Projects & Collaborations
 
-- CERN BCM Calypso — electromagnetic modeling and simulation with CYAN project, OSU
+- CERN BCM Calypso — electromagnetic modeling and simulation with [CYAN Research Program, OSU](https://cyan.engineering.osu.edu/)
 
 --

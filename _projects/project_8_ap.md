@@ -86,6 +86,6 @@ Here's the code for the last row of images above:
 --
 ### Selected Projects & Collaborations
 
-- Large-scale electromagnetic simulation for periodic electromagnetic structures - collaborative **Strange Beauty** project with *DSO National Laboratories, Singapore*
+- **Strange Beauty** project — Large-scale electromagnetic simulation for periodic electromagnetic structures — with *DSO National Laboratories, Singapore*
 
 --

@@ -88,6 +88,6 @@ Here's the code for the last row of images above:
 - *State Key Laboratory of Radio-Frequency Heterogeneous Integration*  
   **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2026–2028, PI.
 
-- Advanced Direct Solver for FEM and DDM - collaborative research with *Ansys, Inc.* 
+- Advanced Direct Solver for FEM and DDM — collaborative research with *Ansys, Inc.* 
 
 --
