@@ -7,13 +7,6 @@ nav: true
 nav_order: 5
 
 _styles: >
-    .recruitment-notice {
-        border-top: 1px solid var(--global-divider-color);
-        border-bottom: 1px solid var(--global-divider-color);
-        padding: 1.25rem 0 1rem;
-        margin: 1.5rem 0 1.5rem;
-    }
-
     .people-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -58,7 +51,8 @@ _styles: >
         color: var(--global-text-color-light);
     }
 ---
-<div class="recruitment-notice">
+
+---
 
 ## Join the Group
 
@@ -69,13 +63,12 @@ Prospective students with backgrounds in electrical engineering, applied mathema
 Current opportunities may include:
 
 - Ph.D. students
-- Master's students
+- Master students
 - Undergraduate research students
 
 If you are interested, please send a brief introduction, CV, transcript, and a short description of your research interests by email.
 
-</div>
-
+---
 
 ## Research Group Members
 
