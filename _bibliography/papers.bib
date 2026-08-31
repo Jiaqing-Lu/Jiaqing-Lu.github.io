@@ -1,5 +1,7 @@
 % You can add al-folio-specific fields such as selected={true}, pdf={...}, html={...}, bibtex_show={true} later.
 
+
+% --------------------- DDM ------------------------%
 @Article{embed_ddm_ap_jlu2019,
     Title           =       {An Embedded Domain Decomposition Method for Electromagnetic Modeling and Design},
     Author          =       {Jiaqing Lu and Yongpin Chen and Dongwei Li and Jin-Fa Lee},
@@ -50,7 +52,7 @@
     Pages           =       {187--192},
     Month           =       jul,
     Year            =       {2018},
-    award           =       {Best Symposium Paper Finalist, Best Student Paper Finalist},
+    award           =       {A finite element based embedded domain decomposition method (DDM) is introduced herein for electromagnetic compatibility (EMC) analysis. In the method, we decompose a computational domain into a background subdomain and several embedded subdomains. Information exchange between the subdomains are addressed in their shared regions, including four ingredients: field continuity, material difference, perfect electrical conductor (PEC), and port. The proposed method allows for completely nonconformal subdomains, thus offering great flexibility for the modeling and design in EMC and signal integrity applications.},
     award_name      =       {Best Symposium Paper Finalist},
     research        =       {ddm,emc},
 }
@@ -97,6 +99,7 @@
     Pages           =       {45--49},
     Month           =       aug,
     Year            =       {2020},
+    award           =       {The embedded domain decomposition method (DDM) is a powerful tool for analyzing complex electromagnetic applications. It can decompose a computational domain into nonconformal subdomains and provide great flexibility in modeling and optimizing add-on components. However, convergence issues are found for embedded DDM, particularly at low frequencies. To overcome the problem, we propose approximate direct inverse (ADI) based on the principle component analysis (PCA) of the system equations. The ADI is utilized as an effective preconditioner ensuring robust convergence of the embedded DDM system.},
     award_name      =       {Best EMC Symposium Paper Award -- Honorable Mention},
     research        =       {ddm,precond,emc},
 }
@@ -122,8 +125,61 @@
 }
 
 
+% --------------------- Nested-H Solver ------------------------%
 
+@Article{nestedh_jcp_jlu2024,
+    Title           =       {A compression scheme for domain decomposition method in solving electromagnetic problems},
+    Author          =       {Jiaqing Lu and Jin-Fa Lee},
+    Journal         =       {Journal of Computational Physics},
+    Volume          =       {503},
+    Pages           =       {1--24, Art. no. 112824},
+    Month           =       apr,
+    Year            =       {2024},
+    abbr            =       {JCP},
+    research        =       {nestedh,ap},
+    selected        =       {true}
+}
 
+@Article{nestedh_ddm_ap_jlu2024,
+    Title           =       {A Low-Rank Direct Solver for Nonconformal Domain Decomposition Methods},
+    Author          =       {Jiaqing Lu},
+    Journal         =       {IEEE Transactions on Antennas and Propagation},
+    Volume          =       {72},
+    Number          =       {8},
+    Pages           =       {6663--6677},
+    Month           =       aug,
+    Year            =       {2024},
+    abbr            =       {IEEE TAP},
+    research        =       {nestedh,ddm,ap,ic},
+    selected        =       {true}
+}
+
+@Article{fem_ddm_corner_jlu2023,
+    Title           =       {Convergence Improvement for Domain Decomposition Method Through Corner Treatment},
+    Author          =       {Jiaqing Lu and Jin-Fa Lee},
+    Journal         =       {IEEE Antennas and Wireless Propagation Letters},
+    Pages           =       {2965--2969},
+    Volume          =       {22},
+    Number          =       {12},
+    Month           =       dec,
+    Year            =       {2023},
+    abbr            =       {IEEE AWPL},
+    research        =       {ddm,precond,ap}
+}
+
+@Article{fem_ddm_appinv_jlu2023,
+    Title           =       {A Preconditioning Approach for the Domain Decomposition Simulation of High-Speed Circuits},
+    Author          =       {Jiaqing Lu},
+    Journal         =       {IEEE Transactions on Microwave Theory and Techniques},
+    Volume          =       {72},
+    Number          =       {6},
+    Pages           =       {3345--3360},
+    Month           =       jun,
+    Year            =       {2024},
+    html            =       {https://doi.org/10.1109/TMTT.2023.3332204},
+    abbr            =       {IEEE TMTT},
+    research        =       {ddm,precond,ic}
+}
 
 @article{jlu2024_abc,
     author  = {Jiaqing Lu},
@@ -152,45 +208,8 @@
     selected = {true}
 }
 
-@article{lu2024lowrankddm,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu},
-  title   = {A Low-Rank Direct Solver for Nonconformal Domain Decomposition Methods},
-  journal = {IEEE Transactions on Antennas and Propagation},
-  abbr    = {IEEE TAP},
-  volume  = {72},
-  number  = {8},
-  pages   = {6663--6677},
-  month   = aug,
-  year    = {2024}
-}
 
-@article{lu2024preconditioning,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu},
-  title   = {A Preconditioning Approach for the Domain Decomposition Simulation of High-Speed Circuits},
-  journal = {IEEE Transactions on Microwave Theory and Techniques},
-  abbr    = {IEEE TMTT},
-  volume  = {72},
-  number  = {6},
-  pages   = {3345--3360},
-  month   = jun,
-  year    = {2024},
-  doi     = {10.1109/TMTT.2023.3332204},
-  html    = {https://doi.org/10.1109/TMTT.2023.3332204}
-}
 
-@article{lu2024compression,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Jin-Fa Lee},
-  title   = {A Compression Scheme for Domain Decomposition Method in Solving Electromagnetic Problems},
-  journal = {Journal of Computational Physics},
-  abbr    = {JCP},
-  volume  = {503},
-  pages   = {112824},
-  month   = apr,
-  year    = {2024}
-}
 
 @article{lu2024emissions,
   bibtex_show = {true},
@@ -205,17 +224,6 @@
   year    = {2024}
 }
 
-@article{lu2023corner,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Jin-Fa Lee},
-  title   = {Convergence Improvement for Domain Decomposition Method Through Corner Treatment},
-  journal = {IEEE Antennas and Wireless Propagation Letters},
-  volume  = {22},
-  number  = {12},
-  pages   = {2965--2969},
-  month   = dec,
-  year    = {2023}
-}
 
 
 
