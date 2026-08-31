@@ -205,10 +205,15 @@
 
     <!-- Links/Buttons -->
     <div class="links">
-      {% if entry.award %}
-        <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
-        </a>
+      <!-- {% if entry.award %} -->
+        <!-- <a class="award btn btn-sm z-depth-0" role="button"> -->
+          <!-- {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%} -->
+        <!-- </a> -->
+      <!-- {% endif %} -->
+      {% if entry.award_name %}
+        <span class="award-name btn btn-sm z-depth-0">
+          {{ entry.award_name }}
+        </span>
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
@@ -397,12 +402,12 @@
       {% endif %}
     {% endif %}
 
-    {% if entry.award %}
+    <!-- {% if entry.award %} -->
       <!-- Hidden Award block -->
-      <div class="award hidden d-print-inline">
-        <p>{{ entry.award | markdownify }}</p>
-      </div>
-    {% endif %}
+      <!-- <div class="award hidden d-print-inline"> -->
+        <!-- <p>{{ entry.award | markdownify }}</p> -->
+      <!-- </div> -->
+    <!-- {% endif %} -->
 
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
