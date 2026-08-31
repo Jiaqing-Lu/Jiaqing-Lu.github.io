@@ -286,7 +286,7 @@
         {% assign research_item = site.data.research[tag] %}
     
         {% if research_item %}
-        <a class="research-tag" href="{{ research_item.url | relative_url }}">
+        <a class="research-tag btn btn-sm z-depth-0" href="{{ research_item.url | relative_url }}" role="button">
             {{ research_item.title }}
         </a>
         {% endif %}

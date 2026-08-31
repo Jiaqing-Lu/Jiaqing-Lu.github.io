@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Special Structure & Material Modeling
+title: Advanced Structure & Material Modeling
 description: antenna arrays, frequency selective surfaces, artificial materials
 img: assets/img/9.jpg
 importance: 1

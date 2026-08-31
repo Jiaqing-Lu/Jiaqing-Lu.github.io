@@ -197,31 +197,20 @@
 
 
 .research-tags {
-    margin-top: 0.4rem;
-    margin-bottom: 0.15rem;
+    margin-top: 0.45rem;
 }
 
 .research-tag {
-    display: inline-block;
-
     margin-right: 0.35rem;
     margin-bottom: 0.25rem;
 
-    padding: 0.12rem 0.45rem;
+    font-weight: 600;
 
-    font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 1.4;
-
-    color: var(--global-theme-color);
-    background-color: var(--global-code-bg-color);
-
-    border-radius: 0.25rem;
-
-    text-decoration: none;
+    color: var(--global-text-color);
+    border-color: var(--global-text-color);
 }
 
 .research-tag:hover {
-    color: var(--global-hover-color);
-    text-decoration: none;
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
 }

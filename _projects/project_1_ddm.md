@@ -6,6 +6,7 @@ img: assets/img/12.jpg
 importance: 1
 category: algorithm
 research_id: ddm
+permalink: /projects/ddm/
 related_publications: true
 ---
 
