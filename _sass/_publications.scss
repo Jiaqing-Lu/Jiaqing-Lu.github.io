@@ -213,9 +213,12 @@
 
 .talk-title-link {
     color: var(--global-text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 
     &:hover {
         color: var(--global-theme-color);
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
