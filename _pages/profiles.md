@@ -89,7 +89,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-## Students
+<!-- ## Students -->
 
 <div class="people-grid">
 
@@ -111,7 +111,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-## Alumni
+<!-- ## Alumni -->
 
 <div class="people-grid">
 
