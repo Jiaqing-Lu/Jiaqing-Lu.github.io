@@ -197,20 +197,14 @@
 
 
 .research-tags {
-    margin-top: 0.45rem;
+    margin-top: 0.4rem;
 }
 
 .research-tag {
-    margin-right: 0.35rem;
-    margin-bottom: 0.25rem;
-
     font-weight: 600;
-
-    color: var(--global-text-color);
-    border-color: var(--global-text-color);
 }
 
 .research-tag:hover {
-    color: var(--global-theme-color);
-    border-color: var(--global-theme-color);
+    color: var(--global-theme-color) !important;
+    border-color: var(--global-theme-color) !important;
 }
