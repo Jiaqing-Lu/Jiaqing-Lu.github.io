@@ -82,13 +82,12 @@ Here's the code for the last row of images above:
 
 {% endraw %}
 
----
-### Related Projects & Funding
+--
+### Selected Projects & Collaborations
 
 - *State Key Laboratory of Radio-Frequency Heterogeneous Integration*  
-  **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2027–2030, PI.
+  **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2026–2028, PI.
 
-- *Ansys, Inc.*  
-  **Advanced Computational HF Techniques**, 2016–2023, Primary contributor.
-  
----
+- Advanced Direct Solver for FEM and DDM - collaborative research with *Ansys, Inc.* 
+
+--

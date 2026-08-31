@@ -82,10 +82,9 @@ Here's the code for the last row of images above:
 
 {% endraw %}
 
----
-### Related Projects & Funding
+--
+### Selected Projects & Collaborations
 
-- *Air Force Research Laboratory*  
-  **CYAN: Enabling Cyber Defense in Analog and Mixed Signal Domains**, 2019–2024, Primary contributor.
+- CERN BCM Calypso — electromagnetic modeling and simulation with CYAN project, OSU
 
----
+--
