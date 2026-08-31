@@ -82,3 +82,11 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+---
+### Related Projects & Funding
+
+- *DSO National Laboratories, Singapore*  
+  **Design Code Development for Periodic/Aperiodic Electromagnetic Structures**, 2017–2020, Primary contributor.
+
+---

@@ -82,10 +82,13 @@ Here's the code for the last row of images above:
 
 {% endraw %}
 
---
+---
 ### Related Projects & Funding
 
 - *National Natural Science Foundation of China*  
   **Embedded Domain Decomposition Method for Multiscale Electromagnetic Systems**, 2027–2030, PI.
 
---
+- *Ansys, Inc.*  
+  **Advanced Computational HF Techniques**, 2016–2023, Primary contributor.
+
+---

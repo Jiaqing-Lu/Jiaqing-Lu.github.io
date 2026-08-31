@@ -176,8 +176,8 @@ cv:
         highlights:
           - "Funder: Ansys, Inc."
           - "Role: Primary contributor since 2016"
-          - Advanced direct solvers and preconditioners for FEM and DDM
-          - Advanced computational electromagnetics algorithms for signal integrity analysis of ICs and packages
+          - Advanced direct solvers and preconditioners for computational electromagnetics
+          - Advanced domain decomposition algorithms for signal integrity analysis of ICs and packages
 
       - name: Design Code Development for Periodic/Aperiodic Electromagnetic Structures
         start_date: 2017

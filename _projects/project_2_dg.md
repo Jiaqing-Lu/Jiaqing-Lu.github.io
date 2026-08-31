@@ -82,3 +82,11 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+---
+### Related Projects & Funding
+
+- *DSO National Laboratories, Singapore*  
+  **Electromagnetic Wave Couplings**, 2013–2015, Primary contributor.
+
+---
