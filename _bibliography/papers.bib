@@ -11,6 +11,8 @@
     Pages           =       {309--323},
     Month           =       jan,
     Year            =       {2019},
+    abstract        =       {An embedded domain decomposition method (DDM) is presented herein for solving electromagnetic problems with complex geometries. In the method, the original computational domain is decomposed into a background subdomain and multiple embedded subdomains. The subdomain problems are easier to solve than the original problem. Furthermore, the shape of the subdomains can be geometrically non-conformal, and the discretizations in the subdomains are allowed to be completely independent. Information exchange between the background and embedded subdomains are addressed in their shared regions, including four ingredients: field continuity, material difference, perfect electrical conductor (PEC), and port. Field continuity on the boundaries of the embedded subdomains is weakly enforced by employing Robin transmission condition. Modified volume sources are introduced to account for material difference between the subdomains. For PEC and port, surface currents on them in embedded subdomains are impressed into the background subdomain in a proper way. The accuracy and flexibility of the proposed method are demonstrated through several numerical examples.},
+    html            =       {https://doi.org/10.1109/TAP.2018.2874751},
     abbr            =       {IEEE TAP},
     research        =       {ddm},
     selected        =       {true}
@@ -25,6 +27,8 @@
     Pages           =       {5369--5382},
     Month           =       dec,
     Year            =       {2018},
+    abstract        =       {In integrated circuit designs, adjustments and replacements of components are frequently required for analyzing or improving signal integrity. However, the modifications of geometry will cause remeshings and resimulations in the full-wave analysis. Consequently, the design efficiency can be impaired due to repeated discretizations. In this paper, we introduce an embedded domain decomposition approach to address such repetitive simulations. A problem is first decomposed into a simpler background subdomain and multiple embedded subdomains. The geometrical details of interest can be placed into the embedded subdomains while the background subdomain covers the rest. Afterward, the communications between the subdomains are built by imposing coupling sources that represent field continuities, material polarizations, and surface currents on perfect electric conductor and port. The meshes between the subdomains are completely nonconformal, and the modification of an embedded subdomain will not affect the geometries and discretizations in the other subdomains. Such flexibility can be exploited in simulating complicated 3-D printed circuit board structures or investigating different components in an electronic system, as illustrated in the numerical examples.},
+    html            =       {https://doi.org/10.1109/TMTT.2018.2874639},
     abbr            =       {IEEE TMTT},
     research        =       {ddm,ic}
 }
@@ -38,10 +42,11 @@
     Pages           =       {5745--5758},
     Month           =       oct,
     Year            =       {2024},
+    abstract        =       {The embedded domain decomposition method (DDM) has emerged as an innovative DDM variant for electromagnetic simulations, offering enhanced flexibility in geometrical modeling and mesh generation. While previous studies have shown rapid convergence for this method, our recent applications have uncovered certain convergence challenges. Targeting these convergence issues, this work introduces a preconditioner by constructing an approximate inverse to the system matrix of embedded DDM. The preconditioner is built upon two major ingredients: randomized sampling and spectral radius reduction. Through randomized sampling of system equations, we efficiently extract essential information from the DDM matrix without the need for explicit entry evaluations. These samples are then progressively compressed in an adaptive manner combined with spectral radius estimations. Numerical experiments demonstrate the impact of spectral radius on system convergence and the effectiveness of numerical compression in optimizing system eigenspectrum. Subsequent validation through numerical examples showcases the preconditioner's capability in ensuring robust convergence and improving stability of embedded DDM.},
+    html            =       {https://doi.org/10.1109/TMTT.2024.3386104},
     abbr            =       {IEEE TMTT},
     research        =       {ddm,precond,ic,ap},
     selected        =       {true},
-    html            =       {https://doi.org/10.1109/TMTT.2024.3386104}
 }
 
 @inproceedings{embed_ddm_emc2018,
@@ -135,6 +140,8 @@
     Pages           =       {1--24, Art. no. 112824},
     Month           =       apr,
     Year            =       {2024},
+    abstract        =       {A compression framework is presented for improving the domain decomposition method (DDM) in solving Maxwell's equations. Because the DDM heavily relies on the numerical computation at the subdomain interfaces, the proposed approach focuses on effectively generating the boundary and port solutions of the subdomains. In each subdomain, the original building block is decomposed into a number of subblocks by the nested dissection method. The boundary matrices of the subblocks are compressed as hierarchical matrices and merged into larger ones with respect to the partition tree. Combining with the finite element tearing and interconnecting technique, the original DDM system can be transformed into an interface relation enabling fast matrix operations. Moreover, the memory consumption of DDM is also reduced as only the interface unknowns are kept in the solution process. The accuracy and efficiency of the proposed method are studied and compared with direct DDM method through several numerical examples.},
+    html            =       {https://doi.org/10.1016/j.jcp.2024.112824},
     abbr            =       {JCP},
     research        =       {nestedh,ap},
     selected        =       {true}
@@ -149,6 +156,8 @@
     Pages           =       {6663--6677},
     Month           =       aug,
     Year            =       {2024},
+    abstract        =       {Nonoverlapping and nonconformal domain decomposition methods (DDMs) have established an effective discretization framework for complex electromagnetic applications, where global iterative solvers are commonly employed to tackle DDM equations. However, DDMs are not free from convergence issues, and excessive iteration numbers can significantly prolong the duration of simulations involving multiple right-hand sides. This study explores the possibility in developing a low-rank direct solver for nonconformal DDMs, with the goal of offering a stable and reliable alternative to DDM iterative approaches. Our direct solver consists of two major components: a subdomain solver and a DDM solver. The subdomain solver is developed by extracting an interface skeleton from subdomains, achieved through recursive partitioning and merging of mesh elements. The DDM solver builds upon the skeletonization, and is constructed through recursive reorderings of interface matrices with the integration of hierarchical matrix techniques and randomized matrix compressions. Both solvers have drawn inspirations from existing mathematical studies but also possess distinct features due to unique matrix structures in DDMs. We validate and demonstrate the effectiveness of our solver through several numerical examples, showcasing its capability to stably handle DDM systems and its efficiency in scenarios involving multiple right-hand sides.},
+    html            =       {https://doi.org/10.1109/TAP.2024.3427003},
     abbr            =       {IEEE TAP},
     research        =       {nestedh,ddm,ap,ic},
     selected        =       {true}
@@ -163,6 +172,8 @@
     Pages           =       {2965--2969},
     Month           =       dec,
     Year            =       {2023},
+    abstract        =       {In complex electromagnetic simulations, domain decomposition method (DDM) has been shown to be an effective approach for discretization. However, convergence difficulty exists due to the redundant cement variables defined on the corner edges of the subdomains. In this work, we propose a solution to this issue by employing the method of Lagrange multiplier. By incorporating constraints for the corner fields and expanding the system matrix, the condition number of the DDM matrix is reduced significantly. As a result, the convergence rate of the DDM iterations is remarkably improved.},
+    html            =       {https://doi.org/10.1109/LAWP.2023.3306616},
     abbr            =       {IEEE AWPL},
     research        =       {ddm,precond,ap}
 }
@@ -176,6 +187,7 @@
     Pages           =       {3345--3360},
     Month           =       jun,
     Year            =       {2024},
+    abstract        =       {Domain decomposition methods (DDMs) provide a powerful discretization framework for analyzing the electromagnetic (EM) phenomena in complex high-speed circuits. However, even with recent advancements in DDMs, achieving iterative convergence remains challenging for sophisticated structures. To facilitate the convergence of DDMs, we develop a preconditioner in this work, which is constructed by forming the approximate inverse of the DDM system matrix. The subdomains are recursively grouped into a multilevel tree, and randomized matrix compressions are adapted to handle their couplings. The approximate inverse preconditioner is then constituted by the inverses of the subdomain matrices with low-rank updates that account for their couplings. Through simulations of practical circuit examples, the strengths of the preconditioner are demonstrated by comparing it to a standard DDM solver. Importantly, a weakly convergent scenario is identified for DDMs when circuit signals propagate parallel to the subdomain interfaces. This situation, which significantly hinders computational efficiency and causes stability issues, can be effectively addressed through the proposed preconditioning approach. Finally, a novel integration is introduced to combine our method with a recently developed subdomain compression scheme.},
     html            =       {https://doi.org/10.1109/TMTT.2023.3332204},
     abbr            =       {IEEE TMTT},
     research        =       {ddm,precond,ic}
@@ -205,6 +217,8 @@
     Pages           =       {8109--8114},
     Month           =       oct,
     Year            =       {2024},
+    abstract        =       {In finite element simulations, absorbing boundary conditions (ABCs) are recognized as simple but useful techniques for domain truncations. However, the widely employed first-order ABC often encounters accuracy challenges, and existing second-order ABCs are also limited in their handling of domain corners. This study proposes a novel ABC formulation, distinguished by its improved accuracy and versatility. It is developed by projecting field normal components onto auxiliary variables and implemented without the necessity of a smooth domain boundary. Numerical examples showcase the accuracy enhancement achieved with the proposed ABC over traditional ABCs and the applicability of the new ABC implementation for finite element domains with nonsmooth boundaries.},
+    html            =       {https://doi.org/10.1109/TAP.2024.3445121},
     abbr            =       {IEEE TAP},
     research        =       {ap}
 }
@@ -220,7 +234,9 @@
     Pages           =       {2427--2441},
     Month           =       apr,
     Year            =       {2024},
-    abbr            =       {IEEE TAP},
+    abstract        =       {The phenomenon of electromagnetic (EM) emission from printed circuit boards (PCBs) is demonstrated through numerical simulations as well as laboratory-scale measurements. On the simulation side, a systematic workflow is presented for translating conventional circuit designs into numerical models, where the analysis is carried out by employing the nonconformal domain decomposition method (DDM). To improve the efficiency of numerical computation, an interface skeleton is developed by compressing the subdomain information to the touching interfaces and discarding the noncritical field variables recursively. The experimental characterization of EM field emissions in this work employs a vector network analyzer (VNA), a magnetic field probe, and computer-controlled positioners. Through simulation and measurement, several experiments have been conducted to validate the proposed approach to model stray radiation from circuit boards in the form of near-field radiation patterns. Furthermore, the impact of the probe geometry on capturing the emitted fields and the hot spots in electronic radiation are presented.},
+    html            =       {https://doi.org/10.1109/TMTT.2023.3325090},
+    abbr            =       {IEEE TMTT},
     research        =       {emc,ic,nestedh,ddm},
     selected        =       {false}
 }
@@ -234,6 +250,8 @@
     Pages           =       {1525--1541},
     Month           =       oct,
     Year            =       {2024},
+    abstract        =       {An electromagnetic (EM)-circuit cosimulation approach is presented for evaluating the vulnerability of integrated circuits (ICs) when exposed to external EM waves. The approach comprises frequency-domain simulations of an EM subsystem, time-domain simulations of a circuit subsystem, and an interface scheme that integrates the two subsystems. To address the multiscale geometric complexities in intricate circuit designs, a nonconformal domain decomposition method is employed for efficient mesh generation and numerical computations. For capturing the EM subsystem's behavior over a wide-frequency band, an adaptive interpolation scheme, built upon Loewner matrix technique, is developed for fast frequency sweep. The simulated and interpolated behavior of the EM subsystem is integrated with IC models and subsequently processed with time-domain analyzes. To demonstrate the effectiveness of the method and assess the EM vulnerability of a practical IC design, numerical simulations and laboratory experiments are conducted utilizing near-field antenna and far-field wave sources.},
+    html            =       {https://doi.org/10.1109/TEMC.2024.3411054},
     abbr            =       {IEEE TEMC},
     research        =       {emc,ic,ddm,mphy},
     selected        =       {true}
@@ -279,6 +297,8 @@
     Number          =       {6},
     Month           =       jun,
     Year            =       {2025},
+    abstract        =       {The increasing integration complexity and operating frequency of modern circuit designs necessitate comprehensive electromagnetic (EM) simulations for accurate performance assessment. Addressing this need, this letter presents a direct domain decomposition solver for radio frequency (RF) circuits. It incorporates nonconformal discretizations to manage multiscale geometries alongside a systematic integration of higher order absorbing boundary condition (ABC), multilevel skeletonization, and hierarchical matrix factorization. Diverse numerical techniques are developed to ensure truncation accuracy, solution stability, and computation efficiency. The proposed simulation techniques are applied for analyzing EM emissions of real-life circuits, with results validated through measurements.},
+    html            =       {https://doi.org/10.1109/LMWT.2025.3564918},
     abbr            =       {IEEE MWTL},
     research        =       {ic,emc,nestedh,ddm}
 }
@@ -299,66 +319,70 @@
 % --------------------- before OSU ------------------------%
 
 @article{fdtd_wr_mtt_2013,
-  title   = {A Systematic Electromagnetic-Circuit Method for {EMI} Analysis of Coupled Interconnects on Dispersive Dielectrics},
-  author  = {Min Tang and Jiaqing Lu and Junfa Mao and Lijun Jiang},
-  journal = {IEEE Transactions on Microwave Theory and Techniques},
-  volume  = {61},
-  number  = {1},
-  pages   = {1--13},
-  month   = jan,
-  year    = {2013},
+    title           =       {A Systematic Electromagnetic-Circuit Method for {EMI} Analysis of Coupled Interconnects on Dispersive Dielectrics},
+    author          =       {Min Tang and Jiaqing Lu and Junfa Mao and Lijun Jiang},
+    journal         =       {IEEE Transactions on Microwave Theory and Techniques},
+    volume          =       {61},
+    number          =       {1},
+    pages           =       {1--13},
+    month           =       jan,
+    year            =       {2013},
+    abstract        =       {This paper presents a systematic electromagnetic-circuit method for efficient simulation of coupled interconnects on dispersive dielectrics in the presence of electromagnetic interference. The dispersive substrate of coupled interconnects is characterized by the multiterm Debye or Lorentz formula. According to the differential equations derived from the equivalent circuit modeling of dispersive media, the full-wave finite-difference time-domain algorithm is utilized to capture accurate field in a dispersive substrate. The effects of incident field, under the quasi-TEM assumption, are then represented by the distributed sources along transmission lines. An efficient algorithm based on the waveform relaxation with transverse partitioning (WR-TP) is employed for fast simulation of coupled transmission lines. A simple and clear derivation of the relaxation sources in WR-TP is described and the compact results are given. The impact of dispersive dielectrics on the incident field, and thus to the transient response of interconnects, is investigated by comparison with conventional techniques. Several numerical examples are given to illustrate the accuracy and efficiency of the proposed method.},
+    html            =       {https://doi.org/10.1109/TMTT.2012.2220562},
     abbr            =       {IEEE TMTT},
     research        =       {emc,ic,ap},
 }
 
 @article{interconnects_thermal_2014,
-  title   = {Thermal Sensitivity Analysis of On-Chip Interconnects},
-  author  = {Guangcao Fu and Min Tang and Jiaqing Lu and Junfa Mao},
-  journal = {Electronics Letters},
-  volume  = {50},
-  number  = {11},
-  pages   = {797--799},
-  month   = may,
-  year    = {2014},
+    title           =       {Thermal Sensitivity Analysis of On-Chip Interconnects},
+    author          =       {Guangcao Fu and Min Tang and Jiaqing Lu and Junfa Mao},
+    journal         =       {Electronics Letters},
+    volume          =       {50},
+    number          =       {11},
+    pages           =       {797--799},
+    month           =       may,
+    year            =       {2014},
+    abstract        =       {A new method for time-domain sensitivity analysis of on-chip coupled interconnects with non-uniform substrate temperature profiles is presented. The parametric macromodelling is performed via multivariate rational approximation using magnitude vector fitting algorithms. The waveform relaxation algorithm with transverse partitioning is employed for efficient sensitivity analysis of coupled interconnects. With these techniques, the thermal sensitivity of on-chip global interconnects arising from typical substrate thermal profiles are investigated.},
+    html            =       {https://doi.org/10.1049/el.2014.0517},
 }
 
 @inproceedings{wr_speedup_2013,
-  title     = {A Joint-Diagonalization Technique for Fast Simulation of Massive Strongly Coupled Cables},
-  author  = {Guangcao Fu and Jiaqing Lu and Min Tang and Junfa Mao},
-  booktitle = {Electrical Design of Advanced Packaging and Systems Symposium},
-  month     = dec,
-  year      = {2013},
+    title           =       {A Joint-Diagonalization Technique for Fast Simulation of Massive Strongly Coupled Cables},
+    author          =       {Guangcao Fu and Jiaqing Lu and Min Tang and Junfa Mao},
+    booktitle       =       {Electrical Design of Advanced Packaging and Systems Symposium},
+    month           =       dec,
+    year            =       {2013},
 }
 
 @inproceedings{cnt_interconnect_2012,
-  title     = {Fast Crosstalk Analysis of Multi-Walled Carbon Nanotube Interconnects},
-  author  = {Jiaqing Lu and Min Tang and Junfa Mao},
-  booktitle = {Electrical Design of Advanced Packaging and Systems Symposium},
-  month     = dec,
-  year      = {2012}
+    title           =       {Fast Crosstalk Analysis of Multi-Walled Carbon Nanotube Interconnects},
+    author          =       {Jiaqing Lu and Min Tang and Junfa Mao},
+    booktitle       =       {Electrical Design of Advanced Packaging and Systems Symposium},
+    month           =       dec,
+    year            =       {2012}
 }
 
 @inproceedings{cnt_single_model_2012,
-  title     = {Study on Equivalent Single Conductor Model of Multi-Walled Carbon Nanotube Interconnects},
-  author  = {Min Tang and Jiaqing Lu and Junfa Mao},
-  booktitle = {Asia-Pacific Microwave Conference},
-  month     = dec,
-  year      = {2012}
+    title           =       {Study on Equivalent Single Conductor Model of Multi-Walled Carbon Nanotube Interconnects},
+    author          =       {Min Tang and Jiaqing Lu and Junfa Mao},
+    booktitle       =       {Asia-Pacific Microwave Conference},
+    month           =       dec,
+    year            =       {2012}
 }
 
 @inproceedings{interconnect_thermal_2012,
-  title     = {Fast Simulation of Nonuniform Substrate Temperature Effects on Global {GSI} Interconnects},
-  author  = {Jiaqing Lu and Min Tang and Junfa Mao},
-  booktitle = {Asia-Pacific Microwave Conference},
-  month     = dec,
-  year      = {2012}
+    title           =       {Fast Simulation of Nonuniform Substrate Temperature Effects on Global {GSI} Interconnects},
+    author          =       {Jiaqing Lu and Min Tang and Junfa Mao},
+    booktitle       =       {Asia-Pacific Microwave Conference},
+    month           =       dec,
+    year            =       {2012}
 }
 
 @inproceedings{wr_ims2011,
-  title     = {{EMI} Analysis of Coupled Interconnects on Dispersive Dielectrics},
-  author  = {Min Tang and Jiaqing Lu and Junfa Mao},
-  booktitle = {IEEE MTT-S International Microwave Symposium Digest},
-  month     = jun,
-  year      = {2011},
+    title           =       {{EMI} Analysis of Coupled Interconnects on Dispersive Dielectrics},
+    author          =       {Min Tang and Jiaqing Lu and Junfa Mao},
+    booktitle       =       {IEEE MTT-S International Microwave Symposium Digest},
+    month           =       jun,
+    year            =       {2011},
     abbr            =       {IEEE IMS},
 }
