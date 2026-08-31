@@ -51,9 +51,9 @@ nav_order: 3
                     <!-- Title -->
                     <div class="title">
                         {% assign talk_content = talk.content | strip %}
-
+                    
                         {% if talk_content != "" %}
-                        <a href="{{ talk.url | relative_url }}">
+                        <a class="talk-title-link" href="{{ talk.url | relative_url }}">
                             {{ talk.title }}
                         </a>
                         {% else %}
