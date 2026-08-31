@@ -85,7 +85,7 @@ Here's the code for the last row of images above:
 --
 ### Related Projects & Funding
 
-- *National Natural Science Foundation of China (NSFC)*  
+- *National Natural Science Foundation of China*  
   **Embedded Domain Decomposition Method for Multiscale Electromagnetic Systems**, 2027–2030, PI.
 
 --
