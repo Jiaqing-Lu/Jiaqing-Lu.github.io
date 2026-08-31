@@ -124,19 +124,19 @@ nav_order: 3
 
                     <!-- Research tags -->
                     {% if talk.research %}
-                    <div class="research-tags">
-
+                    <div class="research-tags links">
+                    
                         {% for tag in talk.research %}
                         {% assign research_item = site.data.research[tag] %}
-
+                    
                         {% if research_item %}
-                        <a class="research-tag" href="{{ research_item.url | relative_url }}">
+                        <a class="research-tag btn btn-sm z-depth-0" href="{{ research_item.url | relative_url }}" role="button">
                             {{ research_item.title }}
                         </a>
                         {% endif %}
-
+                    
                         {% endfor %}
-
+                    
                     </div>
                     {% endif %}
 
