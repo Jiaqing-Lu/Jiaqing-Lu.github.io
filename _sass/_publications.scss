@@ -220,5 +220,6 @@
     &:hover {
         color: var(--global-theme-color);
         text-decoration: underline;
+        text-decoration-thickness: 1px;
     }
 }
