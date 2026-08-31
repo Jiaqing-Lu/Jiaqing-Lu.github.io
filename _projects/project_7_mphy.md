@@ -7,6 +7,8 @@ importance: 2
 category: algorithm
 research_id: mphy
 related_publications: true
+permalink: /projects/mphy/
+related_publications: true
 ---
 
 Every project has a beautiful feature showcase page.

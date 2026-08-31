@@ -181,51 +181,96 @@
     research        =       {ddm,precond,ic}
 }
 
-@article{jlu2024_abc,
-    author  = {Jiaqing Lu},
-    title   = {An Improved Absorbing Boundary Condition for Finite Element Analysis},
-    journal = {IEEE Transactions on Antennas and Propagation},
-    abbr    = {IEEE TAP},
-    volume  = {72},
-    number  = {10},
-    pages   = {8109--8114},
-    month   = oct,
-    year    = {2024},
-    html    = {https://doi.org/10.1109/TAP.2024.3445121},
-    research ={material,ddm}
+@inproceedings{nestedh_ddm_abc_piers2025,
+    Title           =       {A Direct Domain Decomposition Solver with Multilevel Skeletonization and Higher-Order Absorbing Boundary Condition},
+    Author          =       {Jiaqing Lu and Jin-Fa Lee},
+    booktitle       =       {2025 Progress in Electromagnetics Research Symposium (PIERS)},
+    address         =       {Abu Dhabi, UAE},
+    Month           =       may,
+    Year            =       {2025},
+    award           =       {Nonoverlapping and nonconformal domain decomposition methods (DDMs) have established an effective discretization framework for complex electromagnetic applications, where global iterative solvers are commonly employed to tackle DDM equations. However, DDMs are not free from convergence issues, and excessive iteration numbers can significantly prolong the duration of simulations involving multiple right-hand sides. This study explores the possibility in developing a low-rank direct solver for nonconformal DDMs, with the goal of offering a stable and reliable alternative to DDM iterative approaches. Our direct solver consists of two major components: a subdomain solver and a DDM solver. The subdomain solver is developed by extracting an interface skeleton from subdomains, achieved through recursive partitioning and merging of mesh elements. The DDM solver builds upon the skeletonization, and is constructed through recursive reorderings of interface matrices with the integration of hierarchical matrix techniques and randomized matrix compressions.},
+    award_name      =       {Young Scientist Award},
+    research        =       {ddm,nestedh,ap,emc,ic},
 }
 
-@article{jlu2024_emckt,
-    author  = {Jiaqing Lu and Yagmur Ozturk and Wentao Bao and Jingyue Zhang and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
-    title   = {Vulnerability Assessment of Integrated Circuits Through Electromagnetic-Circuit Cosimulation},
-    journal = {IEEE Transactions on Electromagnetic Compatibility},
-    volume  = {66},
-    number  = {5},
-    pages   = {1525--1541},
-    month   = oct,
-    year    = {2024},
-    research = {emc,ic,ddm,mphy},
-    selected = {true}
+% --------------------- Antenna & Material Modeling ------------------------%
+
+@Article{abc_ap_jlu2024,
+    Title           =       {An Improved Absorbing Boundary Condition for Finite Element Analysis},
+    Author          =       {Jiaqing Lu},
+    Journal         =       {IEEE Transactions on Antennas and Propagation},
+    Volume          =       {72},
+    Number          =       {10},
+    Pages           =       {8109--8114},
+    Month           =       oct,
+    Year            =       {2024},
+    abbr            =       {IEEE TAP},
+    research        =       {ap}
+}
+
+% --------------------- IC & EMC ------------------------%
+
+@Article{nestedh_pcbrad_jlu2023,
+    Title           =       {Full-Wave Modeling and Experimental Characterization of Electromagnetic Emissions From Printed Circuit Boards},
+    Author          =       {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
+    Journal         =       {IEEE Transactions on Microwave Theory and Techniques},
+    Volume          =       {72},
+    Number          =       {4},
+    Pages           =       {2427--2441},
+    Month           =       apr,
+    Year            =       {2024},
+    abbr            =       {IEEE TAP},
+    research        =       {emc,ic,nestedh,ddm},
+    selected        =       {false}
+}
+
+@Article{ddm_ckt_icvul_jlu2024,
+    Title           =       {Vulnerability Assessment of Integrated Circuits Through Electromagnetic-Circuit Cosimulation},
+    Author          =       {Jiaqing Lu and Yagmur Ozturk and Wentao Bao and Jingyue Zhang and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
+    Journal         =       {IEEE Transactions on Electromagnetic Compatibility},
+    Volume          =       {66},
+    Number          =       {5},
+    Pages           =       {1525--1541},
+    Month           =       oct,
+    Year            =       {2024},
+    abbr            =       {IEEE TEMC},
+    research        =       {emc,ic,ddm,mphy},
+    selected        =       {true}
+}
+
+@inproceedings{fem_ddm_trustic_aps2021,
+    Title           =       {Counterfeit Chip Detection via Electromagnetic Emissions from Host Circuit Boards},
+    Author          =       {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
+    booktitle       =       {IEEE Antennas and Propagation Society International Symposium (APSURSI)},
+    address         =       {Singapore},
+    Month           =       dec,
+    Year            =       {2021},
+    research        =       {emc,ic,mphy},
+}
+
+@inproceedings{ic_emission_cyan2022,
+    Title           =       {Electromagnetic Signature Simulations for {AMS} Electronics},
+    Author          =       {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Kubilay Sertel and Shane Smith and Jin-Fa Lee},
+    booktitle       =       {2022 Trusted and Assured Microelectronics (TAME) Forum},
+    address         =       {Columbus, OH, USA},
+    Month           =       sep,
+    Year            =       {2022},
+    research        =       {emc,ic,mphy},
+}
+
+@inproceedings{ic_vul_cyan2022,
+    Title           =       {Electromagnetic Vulnerability Analysis of {AMS} Electronics},
+    Author          =       {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Jingyue Zhang and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
+    booktitle       =       {2022 Trusted and Assured Microelectronics (TAME) Forum},
+    address         =       {Columbus, OH, USA},
+    Month           =       sep,
+    Year            =       {2022},
+    abbr            =       {IEEE AP-S},
+    research        =       {emc,ic,mphy},
 }
 
 
-
-
-@article{lu2024emissions,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
-  title   = {Full-Wave Modeling and Experimental Characterization of Electromagnetic Emissions From Printed Circuit Boards},
-  journal = {IEEE Transactions on Microwave Theory and Techniques},
-  abbr    = {IEEE TMTT},
-  volume  = {72},
-  number  = {4},
-  pages   = {2427--2441},
-  month   = apr,
-  year    = {2024}
-}
-
-
-
+% --------------------- before OSU ------------------------%
 
 @article{interconnects_thermal_2014,
   title   = {Thermal Sensitivity Analysis of On-Chip Interconnects},
@@ -251,45 +296,6 @@
     research = {emc,ic,ap}
 }
 
-@inproceedings{lu2025directddm,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Jin-Fa Lee},
-  title     = {A Direct Domain Decomposition Solver with Multilevel Skeletonization and Higher-Order Absorbing Boundary Condition},
-  booktitle = {2025 Progress in Electromagnetics Research Symposium (PIERS)},
-  address   = {Abu Dhabi, UAE},
-  month     = may,
-  year      = {2025}
-}
-
-@inproceedings{lu2022signature,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Kubilay Sertel and Shane Smith and Jin-Fa Lee},
-  title     = {Electromagnetic Signature Simulations for {AMS} Electronics},
-  booktitle = {2022 Trusted and Assured Microelectronics (TAME) Forum},
-  address   = {Columbus, OH, USA},
-  month     = sep,
-  year      = {2022}
-}
-
-@inproceedings{lu2022vulnerability,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Jingyue Zhang and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
-  title     = {Electromagnetic Vulnerability Analysis of {AMS} Electronics},
-  booktitle = {2022 Trusted and Assured Microelectronics (TAME) Forum},
-  address   = {Columbus, OH, USA},
-  month     = sep,
-  year      = {2022}
-}
-
-@inproceedings{lu2021counterfeit,
-  bibtex_show = {true},
-  author  = {Jiaqing Lu and Yagmur Ozturk and Cem Kesici and Shane Smith and Kubilay Sertel and Jin-Fa Lee},
-  title     = {Counterfeit Chip Detection via Electromagnetic Emissions from Host Circuit Boards},
-  booktitle = {IEEE Antennas and Propagation Society International Symposium (APSURSI)},
-  address   = {Singapore},
-  month     = dec,
-  year      = {2021}
-}
 
 @inproceedings{fu2013joint,
   title     = {A Joint-Diagonalization Technique for Fast Simulation of Massive Strongly Coupled Cables},
