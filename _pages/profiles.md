@@ -2,7 +2,7 @@
 layout: page
 permalink: /people/
 title: people
-description: #research group members
+description: research group members
 nav: true
 nav_order: 5
 
@@ -54,7 +54,7 @@ _styles: >
 
 ---
 
-## Join the Group
+> ## Join the Group
 
 We are looking for motivated students interested in computational electromagnetics, scientific computing, and related areas.
 
@@ -71,7 +71,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 ---
 <br>
 
-## Research Group Members
+<!-- ## Research Group Members -->
 
 <div class="people-grid">
 
@@ -89,7 +89,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-<!-- ## Students -->
+## Students
 
 <div class="people-grid">
 
@@ -111,7 +111,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 
 </div>
 
-<!-- ## Alumni -->
+## Alumni
 
 <div class="people-grid">
 
