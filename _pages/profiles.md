@@ -23,7 +23,7 @@ _styles: >
 
     .person-photo {
         width: 90px;
-        height: 150px;
+        height: 120px;
         object-fit: cover;
         border-radius: 4px;
         flex-shrink: 0;
