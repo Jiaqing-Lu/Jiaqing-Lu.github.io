@@ -12,7 +12,7 @@ related_publications: true
 
 **Domain decomposition methods (DDMs)** partition a large problem into smaller subdomains that can be modeled and solved individually and coupled through transmission conditions. They provide a natural framework for large-scale numerical simulations, parallel computing, heterogeneous discretizations, and modular numerical modeling. 
 
-As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The question is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
+As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
 Our research focuses on **nonconformal and embedded domain decomposition formulations**. In addition to reducing computational complexity, we aim to improve the flexibility of the entire simulation workflow by allowing different parts of a system to be modeled, meshed, modified, and reused effectively.
 
 
