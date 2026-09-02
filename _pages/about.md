@@ -7,7 +7,7 @@ subtitle: <code style="font-size:1.1em; font-weight:600;">Jiaqing Lu</code>, Ass
 
 profile:
   align: right
-  image: profile/jiaqing_lu_office.jpg
+  image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>School of Information Science and Electronic Engineering</p>
