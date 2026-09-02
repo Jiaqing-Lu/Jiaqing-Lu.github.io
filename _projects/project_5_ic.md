@@ -2,7 +2,7 @@
 layout: page
 title: Multiscale Electronics Modeling
 description: IC, package, PCB, and system-level multiscale modeling 
-img: assets/img/1.jpg
+img: assets/img/projects/ddm/embed_ddm_cellphone.png
 importance: 1
 category: application
 research_id: ic

@@ -2,7 +2,7 @@
 layout: page
 title: Domain Decomposition Methods
 description: nonconformal, embedded, and overlapping formulations
-img: assets/img/12.jpg
+img: assets/img/projects/ddm/ddm_overview.png
 importance: 1
 category: algorithm
 research_id: ddm
@@ -46,9 +46,15 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
 
 ## Embedded/Overlapping DDM
 
-Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomains still form a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap geometrically. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
+Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain boundaries remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
 
-A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling more flexible domain constructions. Coupling operators are introduced to recover the electromagnetic interactions between the overlapping domains.
+A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a more flexible system-level modeling framework:
+
+- **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to be used for different parts of a multiscale system.
+
+- **Physics-Based Coupling**: the independently discretized domains are coupled through equivalent surface and volume sources that enforce field continuity, material changes, and embedded boundary conditions such as PEC, impedance boundaries, and ports.
+
+- **Reusable Numerical Models**: when an embedded component is moved, modified, or replaced, the mesh and matrix of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -62,13 +68,10 @@ A complex system is represented by multiple component subdomains. Each component
     You can also have artistically styled 2/3 + 1/3 images, like these.
 </div>
 
-- Independent Modeling and Meshing: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to be used for different parts of a multiscale system.
 
-- Physics-Based Coupling: the independently discretized domains are coupled through equivalent surface and volume sources that enforce field continuity, material changes, and embedded boundary conditions such as PEC, impedance boundaries, and ports.
-
-- Reusable Numerical Models: when an embedded component is moved, modified, or replaced, the mesh and matrix of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
 
 ## Representative Applications
+Embedded DDM has been applied to antenna structures, electronic packaging and interconnects, and multiscale electromagnetic systems where flexible component modeling and repeated design explorations are important.
 
 {% raw %}
 
@@ -84,8 +87,6 @@ A complex system is represented by multiple component subdomains. Each component
 ```
 
 {% endraw %}
-
-Embedded DDM has been applied to antenna structures, electronic packaging and interconnects, and multiscale electromagnetic systems where flexible component modeling and repeated design explorations are important.
 
 
 ## Selected Projects & Collaborations

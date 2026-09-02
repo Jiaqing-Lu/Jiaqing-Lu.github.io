@@ -2,7 +2,7 @@
 layout: page
 title: Iterative Solvers & Preconditioning
 description: scalable iterative methods for large-scale numerical systems
-img: assets/img/3.jpg
+img: assets/img/projects/ddm/embed_ddm.png
 importance: 1
 category: algorithm
 research_id: precond
