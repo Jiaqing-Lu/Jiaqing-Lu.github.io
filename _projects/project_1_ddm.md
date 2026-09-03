@@ -57,7 +57,7 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
 
 Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **Each region can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
 
-<div class="row align-items-center">
+<div class="row g-0 align-items-center">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_1.png"
@@ -84,7 +84,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     Illustration of nonconformal DDMs, where nonmatching grids can coexist at neighboring subdomains.
 </div>
 
-<div class="row">
+<div class="row" g-1>
   <div class="col-sm-4 mt-3 mt-md-0">
     <img
       src="{{ '/assets/img/projects/ddm/ddm_nonconformal_1.png' | relative_url }}"
