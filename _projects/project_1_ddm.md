@@ -45,18 +45,21 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_1.png"
             class="img-fluid rounded z-depth-0" 
+            height="250px"
         %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
             class="img-fluid rounded z-depth-0" 
+            height="250px"
         %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_3.png"
             class="img-fluid rounded z-depth-0" 
+            height="250px"
         %}
     </div>
 </div>
