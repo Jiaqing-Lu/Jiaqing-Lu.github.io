@@ -48,7 +48,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             max-height="250px"
         %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
             class="img-fluid rounded z-depth-0" 
@@ -77,7 +77,6 @@ Nonconformal DDM allows neighboring regions to use independent meshes, but the s
         {% include figure.liquid 
             path="assets/img/projects/ddm/embed_ddm_overview.png"
             class="img-fluid rounded z-depth-0" 
-            max-height="250px"
         %}
     </div>
 </div>
@@ -103,7 +102,6 @@ Embedded DDM has been applied to antenna structures, electronic packaging and in
         {% include figure.liquid 
             path="assets/img/projects/ddm/embed_ddm_headcellphone.png"
             class="img-fluid rounded z-depth-0" 
-            max-height="250px"
         %}
     </div>
 </div>
