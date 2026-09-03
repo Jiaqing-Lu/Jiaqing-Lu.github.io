@@ -38,7 +38,7 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
 
 ## Nonoverlapping and Nonconformal DDMs
 
-Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **Each region can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
+Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **each region can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
 
 <div class="row g1 align-items-center">
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -64,13 +64,13 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     </div>
 </div>
 <div class="caption">
-    Illustration of nonconformal DDMs, where nonmatching grids can coexist at neighboring subdomains.
+    Illustration of nonconformal DDMs with independently generated, nonmatching meshes across neighboring subdomains.
 </div>
 
 
 ## Embedded/Overlapping DDM
 
-Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain boundaries remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
+Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain interfaces remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -84,15 +84,13 @@ Nonconformal DDM allows neighboring regions to use independent meshes, but the s
     Demonstration of embedded DDM, where subdomains are geometrically nonconformal and computationally independent.
 </div>
 
-A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a more flexible system-level modeling framework:
+A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a flexible framework for modular and multiscale electromagnetic modeling:
 
-- **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to be used for different parts of a multiscale system.
+- **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to coexist for different parts of a multiscale system.
 
 - **Physics-Based Coupling**: the independently discretized domains are coupled through equivalent surface and volume sources that enforce field continuity, material changes, and embedded boundary conditions such as PEC, impedance boundaries, and ports.
 
 - **Reusable Numerical Models**: when an embedded component is moved, modified, or replaced, the mesh and matrix of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
-
-
 
 ## Representative Applications
 Embedded DDM has been applied to antenna structures, electronic packaging and interconnects, and multiscale electromagnetic systems where flexible component modeling and repeated design explorations are important.
