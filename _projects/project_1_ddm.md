@@ -2,7 +2,7 @@
 layout: page
 title: Domain Decomposition Methods
 description: nonconformal, embedded, and overlapping formulations
-img: assets/img/projects/ddm/ddm_overview.png
+img: assets/img/projects/project_embed_ddm.png
 importance: 1
 category: algorithm
 research_id: ddm
@@ -14,27 +14,6 @@ related_publications: true
 
 As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
 Our research focuses on **nonconformal and embedded domain decomposition formulations**. In addition to reducing computational complexity, we aim to improve the flexibility of the entire simulation workflow by allowing different parts of a system to be modeled, meshed, modified, and reused effectively.
-
-<div class="row">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    <img
-      src="{{ '/assets/img/projects/ddm/ddm_conformal_1.png' | relative_url }}"
-      class="img-fluid rounded z-depth-0"
-      style="width: 100%; height: 250px; object-fit: contain;"
-    >
-  </div>
-
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img
-      src="{{ '/assets/img/projects/ddm/ddm_conformal_2.png' | relative_url }}"
-      class="img-fluid rounded z-depth-0"
-      style="width: 100%; height: 250px; object-fit: contain;"
-    >
-  </div>
-</div>
-<div class="caption">
-  Illustration of DDM and conformal mesh partitioning.
-</div>
 
 <div class="row align-items-center">
     <div class="col-sm-8 mt-3 mt-md-0"> 
@@ -52,6 +31,10 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
         %}
     </div>
 </div>
+<div class="caption">
+  Illustration of DDM and conformal mesh partitioning.
+</div>
+
 
 ## Nonoverlapping and Nonconformal DDMs
 
@@ -84,32 +67,6 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     Illustration of nonconformal DDMs, where nonmatching grids can coexist at neighboring subdomains.
 </div>
 
-<div class="row">
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img
-      src="{{ '/assets/img/projects/ddm/ddm_nonconformal_1.png' | relative_url }}"
-      class="img-fluid rounded z-depth-0"
-      style="width: 100%; height: 250px; object-fit: contain;"
-    >
-  </div>
-
-  <div class="col-sm-4 mt-3 mt-md-0">
-    <img
-      src="{{ '/assets/img/projects/ddm/ddm_nonconformal_2.png' | relative_url }}"
-      class="img-fluid rounded z-depth-0"
-      style="width: 100%; height: 250px; object-fit: contain;"
-    >
-  </div>
-
-  <div class="col-sm-3 mt-3 mt-md-0">
-    <img
-      src="{{ '/assets/img/projects/ddm/ddm_nonconformal_3.png' | relative_url }}"
-      class="img-fluid rounded z-depth-0"
-      style="width: 100%; height: 250px; object-fit: contain;"
-    >
-  </div>
-</div>
-
 
 ## Embedded/Overlapping DDM
 
@@ -117,11 +74,15 @@ Nonconformal DDM allows neighboring regions to use independent meshes, but the s
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/embed_ddm_overview.png"
+            class="img-fluid rounded z-depth-0" 
+            max-height="250px"
+        %}
     </div>
 </div>
 <div class="caption">
-    Illustration of nonconformal DDMs, where nonmatching grids can coexist at neighboring subdomains.
+    Demonstration of embedded DDM, where subdomains are geometrically nonconformal and computationally independent.
 </div>
 
 A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a more flexible system-level modeling framework:
@@ -134,25 +95,21 @@ A complex system is represented by multiple component subdomains. Each component
 
 
 
-
-
 ## Representative Applications
 Embedded DDM has been applied to antenna structures, electronic packaging and interconnects, and multiscale electromagnetic systems where flexible component modeling and repeated design explorations are important.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/embed_ddm_headcellphone.png"
+            class="img-fluid rounded z-depth-0" 
+            max-height="250px"
+        %}
+    </div>
 </div>
-```
-
-{% endraw %}
+<div class="caption">
+    Application example of embedded DDM: predict the cellphone performance in different hand gestures and positions with one set of meshes.
+</div>
 
 
 ## Selected Projects & Collaborations
