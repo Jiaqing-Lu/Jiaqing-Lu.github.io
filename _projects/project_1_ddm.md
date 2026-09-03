@@ -36,6 +36,23 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
   Illustration of DDM and conformal mesh partitioning.
 </div>
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_conformal_1.png"
+            class="img-fluid rounded z-depth-0" 
+            height="250px"
+        %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_conformal_2.png"
+            class="img-fluid rounded z-depth-0" 
+            height="250px"
+        %}
+    </div>
+</div>
+
 ## Nonoverlapping and Nonconformal DDMs
 
 Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **Each region can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
