@@ -12,7 +12,7 @@ related_publications: true
 
 **Domain decomposition methods (DDMs)** partition a large problem into smaller subdomains that can be modeled and solved individually and coupled through transmission conditions. They provide a natural framework for large-scale numerical simulations, parallel computing, heterogeneous discretizations, and modular numerical modeling. 
 
-As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
+As EM systems become increasingly complex, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
 Our research focuses on **nonconformal and embedded domain decomposition formulations**. In addition to reducing computational complexity, we aim to improve the flexibility of the entire simulation workflow by allowing different parts of a system to be modeled, meshed, modified, and reused effectively.
 
 <div class="row align-items-center">
@@ -38,9 +38,9 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
 
 ## Nonoverlapping and Nonconformal DDMs
 
-Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **each region can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
+Nonconformal DDMs remove the requirement that neighboring subdomains share matching interface meshes. Compared to conformal DDMs, **each subdomain can be meshed independently**, allowing different mesh densities and local discretization strategies to be used without constructing a globally conformal mesh.
 
-<div class="row g1 align-items-center">
+<div class="row align-items-center">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_1.png"
@@ -48,7 +48,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             max-height="250px"
         %}
     </div>
-    <div class="col-sm-5 mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
             class="img-fluid rounded z-depth-0" 
@@ -86,11 +86,12 @@ Nonconformal DDM allows neighboring regions to use independent meshes, but the s
 
 A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a flexible framework for modular and multiscale electromagnetic modeling:
 
-- **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to coexist for different parts of a multiscale system.
+- **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to coexist across different parts of a multiscale system.
 
-- **Physics-Based Coupling**: the independently discretized domains are coupled through equivalent surface and volume sources that enforce field continuity, material changes, and embedded boundary conditions such as PEC, impedance boundaries, and ports.
+- **Physics-Based Coupling**: the independently discretized domains are coupled through equivalent surface and volume sources that enforce field continuity, material difference, and embedded boundary conditions such as PEC, impedance boundaries, and ports.
 
-- **Reusable Numerical Models**: when an embedded component is moved, modified, or replaced, the mesh and matrix of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
+- **Reusable Numerical Models**: when an embedded component is moved, modified, or replaced, the meshes and matrices of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
+
 
 ## Representative Applications
 Embedded DDM has been applied to antenna structures, electronic packaging and interconnects, and multiscale electromagnetic systems where flexible component modeling and repeated design explorations are important.
@@ -104,7 +105,7 @@ Embedded DDM has been applied to antenna structures, electronic packaging and in
     </div>
 </div>
 <div class="caption">
-    Application example of embedded DDM: predict the cellphone performance in different hand gestures and positions with one set of meshes.
+    Application example of embedded DDM: predicting cellphone performance for different hand gestures and positions with one set of meshes.
 </div>
 
 
