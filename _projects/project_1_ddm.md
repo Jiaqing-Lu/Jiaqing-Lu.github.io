@@ -15,6 +15,24 @@ related_publications: true
 As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
 Our research focuses on **nonconformal and embedded domain decomposition formulations**. In addition to reducing computational complexity, we aim to improve the flexibility of the entire simulation workflow by allowing different parts of a system to be modeled, meshed, modified, and reused effectively.
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_conformal_1.png"
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_conformal_2.png"
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
+</div>
+<div class="caption">
+    Illustration of DDM and conformal mesh partitioning.
+</div>
+
 
 ## Nonoverlapping and Nonconformal DDMs
 
@@ -22,21 +40,22 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_nonconformal_1.png"
+            class="img-fluid rounded z-depth-1" 
+        %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_nonconformal_2.png"
+            class="img-fluid rounded z-depth-1" 
+        %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Illustration of conformal DDMs.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ddm/ddm_nonconformal_3.png"
+            class="img-fluid rounded z-depth-1" 
+        %}
     </div>
 </div>
 <div class="caption">
@@ -48,6 +67,15 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
 
 Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain boundaries remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Illustration of nonconformal DDMs, where nonmatching grids can coexist at neighboring subdomains.
+</div>
+
 A complex system is represented by multiple component subdomains. Each component can be modeled and meshed independently, enabling a more flexible system-level modeling framework:
 
 - **Independent Modeling and Meshing**: background and embedded components are constructed independently, allowing different mesh densities, mesh types, and discretization settings to be used for different parts of a multiscale system.
@@ -56,17 +84,7 @@ A complex system is represented by multiple component subdomains. Each component
 
 - **Reusable Numerical Models**: when an embedded component is moved, modified, or replaced, the mesh and matrix of existing subdomains remain unchanged. Constructed subdomain meshes and matrices can therefore be reused across design iterations and system configurations.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+
 
 
 
