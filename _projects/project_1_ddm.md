@@ -37,7 +37,7 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
 </div>
 
 <div class="row align-items-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0"> 
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_conformal_1.png"
             class="img-fluid rounded z-depth-0" 
@@ -65,14 +65,14 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             max-height="250px"
         %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-5 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
             class="img-fluid rounded z-depth-0" 
             max-height="250px"
         %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_3.png"
             class="img-fluid rounded z-depth-0" 
@@ -93,7 +93,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     >
   </div>
 
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-sm-5 mt-3 mt-md-0">
     <img
       src="{{ '/assets/img/projects/ddm/ddm_nonconformal_2.png' | relative_url }}"
       class="img-fluid rounded z-depth-0"
@@ -101,7 +101,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     >
   </div>
 
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-sm-3 mt-3 mt-md-0">
     <img
       src="{{ '/assets/img/projects/ddm/ddm_nonconformal_3.png' | relative_url }}"
       class="img-fluid rounded z-depth-0"
