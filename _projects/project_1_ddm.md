@@ -15,24 +15,26 @@ related_publications: true
 As EM systems become increasingly complicated, modeling and meshing are taking an increasingly large portion of the overall simulation effort. **The challenge is not only how to solve a large problem efficiently, but also how to model it efficiently, and how to reuse what has already been computed**.
 Our research focuses on **nonconformal and embedded domain decomposition formulations**. In addition to reducing computational complexity, we aim to improve the flexibility of the entire simulation workflow by allowing different parts of a system to be modeled, meshed, modified, and reused effectively.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid 
-            path="assets/img/projects/ddm/ddm_conformal_1.png"
-            class="img-fluid rounded z-depth-1" 
-        %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid 
-            path="assets/img/projects/ddm/ddm_conformal_2.png"
-            class="img-fluid rounded z-depth-1" 
-        %}
-    </div>
+<div class="row">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    <img
+      src="{{ '/assets/img/projects/ddm/ddm_conformal_1.png' | relative_url }}"
+      class="img-fluid rounded z-depth-0"
+      style="width: 100%; height: 250px; object-fit: contain;"
+    >
+  </div>
+
+  <div class="col-sm-4 mt-3 mt-md-0">
+    <img
+      src="{{ '/assets/img/projects/ddm/ddm_conformal_2.png' | relative_url }}"
+      class="img-fluid rounded z-depth-0"
+      style="width: 100%; height: 250px; object-fit: contain;"
+    >
+  </div>
 </div>
 <div class="caption">
-    Illustration of DDM and conformal mesh partitioning.
+  Illustration of DDM and conformal mesh partitioning.
 </div>
-
 
 ## Nonoverlapping and Nonconformal DDMs
 
@@ -42,19 +44,19 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_1.png"
-            class="img-fluid rounded z-depth-1" 
+            class="img-fluid rounded z-depth-0" 
         %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
-            class="img-fluid rounded z-depth-1" 
+            class="img-fluid rounded z-depth-0" 
         %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ddm/ddm_nonconformal_3.png"
-            class="img-fluid rounded z-depth-1" 
+            class="img-fluid rounded z-depth-0" 
         %}
     </div>
 </div>
