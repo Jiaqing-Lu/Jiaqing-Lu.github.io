@@ -29,6 +29,7 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
             class="img-fluid rounded z-depth-0" 
             height="250px"
             avoid_scaling=true
+            zoomable=true  
         %}
     </div>
 </div>
@@ -55,8 +56,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             class="img-fluid rounded z-depth-0" 
             max-height="250px"
             avoid_scaling=true
-            zoomable=true
-            
+            zoomable=true  
         %}
     </div>
     <div class="col-sm-3 mt-3 mt-md-0">
@@ -74,7 +74,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
 </div>
 
 
-## Embedded/Overlapping DDM
+## Overlapping and Embedded DDMs
 
 Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain interfaces remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
 
