@@ -118,6 +118,7 @@ Embedded DDM has been applied to antenna structures, electronic packaging and in
     Application example of embedded DDM: predicting cellphone performance for different hand gestures and positions with one set of meshes.
 </div>
 
+<br>
 
 ## Selected Projects & Collaborations
 
