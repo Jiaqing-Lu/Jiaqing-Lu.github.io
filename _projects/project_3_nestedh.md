@@ -14,7 +14,7 @@ Direct solvers provide **robust and reusable factorizations of large numerical s
 
 Our research develops **structure-aware direct solvers for finite-element and domain-decomposition systems**. By combining nested dissection, skeletonization, hierarchical matrices, and randomized low-rank compression, we reduce large volume systems into multilevel surface representations and perform numerical factorization directly on these compressed structures.
 
-## FEM Direct Solver: From Volume to Skeletons
+## FEM Direct Solver -- From Volume to Skeletons
 
 Conventional sparse direct solvers factorize the complete finite-element system, even when only a small portion of the solution—such as fields on boundaries or ports—is ultimately required. Our approach instead constructs a direct solver specifically around these physically important regions.
 
