@@ -18,12 +18,12 @@ Our research develops **structure-aware direct solvers for finite-element and do
 
 Conventional sparse direct solvers factorize the complete finite-element system, even when only a small portion of the solution—such as fields on boundaries or ports—is ultimately required. Our approach instead constructs a direct solver specifically around these physically important regions.
 
-The finite-element mesh is first recursively partitioned using **nested dissection**. Starting from the smallest subblocks, interior degrees of freedom are eliminated and neighboring subblocks are progressively merged. This bottom-up process generates a hierarchy of lower-dimensional **skeletons**, eventually condensing the original three-dimensional volume problem onto its boundary.
+The finite-element mesh is first recursively partitioned using **nested dissection**, making multilevel subblocks. Starting from each local subblock, interior degrees of freedom are eliminated and neighboring subblocks are progressively merged bottom-up. This process generates a hierarchy of lower-dimensional **skeletons**, eventually condensing the original three-dimensional volume problem onto its boundary.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/img/projects/nestedh/nestedh_nestdissection.png"
+            path="assets/img/projects/nestedh/nestedh_femsolver.png"
             class="img-fluid rounded z-depth-0" 
             avoid_scaling=true
             zoomable=true
@@ -40,30 +40,13 @@ Eliminating interior unknowns produces dense interactions among the remaining sk
 
 Skeleton matrices are organized according to the geometric partition tree and represented using hierarchical matrix formats such as HODLR. Their off-diagonal interactions are compressed through randomized low-rank approximations, avoiding the explicit construction of many dense matrix blocks. Matrix elimination, merging, inversion, and recompression are subsequently performed directly on these compressed representations.
 
-The resulting solver retains detailed volume information only when it is needed, while frequently accessed boundary and port operators remain compact and efficient. This is particularly useful for repeated solves, multiport analysis, and subdomain reuse in domain decomposition.
-
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
-            path="assets/img/projects/nestedh/nestedh_femsolver.png"
-            class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
-            zoomable=true
-        %}
-    </div>
-</div>
-<div class="caption">
-    Hierarchical FEM skeletonization: a volume mesh is recursively partitioned and condensed into multilevel surface skeletons and a compressed boundary operator.
-</div>
-
 For three-dimensional problems of moderate electrical size, the numerical experiments show approximately
+- **Memory:** O(*N*log*N*)
+- **Factorization:** O(*N*^{4/3}log*N*)
+- **Solution:** O(*N*log*N*)
+The reduced memory cost and fast solution stage make the approach particularly attractive when the same factorization is reused for many excitations.
 
-- **Memory:** \(O(N\log N)\)
-- **Factorization:** \(O(N^{4/3}\log N)\)
-- **Solution:** \(O(N\log N)\)
-
-where \(N\) is the number of volume unknowns. The reduced memory footprint and fast solution stage make the approach particularly attractive when the same factorization is reused for many excitations.
-
+The resulting solver retains detailed volume information only when it is needed, while frequently accessed boundary and port operators remain compact and efficient. This is particularly useful for repeated solves, multiport analysis, and subdomain reuse in domain decomposition.
 
 ## Direct Factorization of Domain Decomposition Systems
 
