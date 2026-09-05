@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Scientific Data Learning
-description: date-driven approaches and algorithms
+description: data-driven methods for scientific computing
 img: assets/img/6.jpg
 importance: 9
 category: algorithm

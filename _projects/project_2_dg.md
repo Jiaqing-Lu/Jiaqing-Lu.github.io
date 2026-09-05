@@ -11,81 +11,119 @@ related_publications: true
 # giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Discontinuous Galerkin (DG) methods** combine element-local discretizations with interface-based numerical coupling, providing a flexible framework between conventional finite/boundary element and domain decomposition methods. By allowing the approximation spaces to remain discontinuous across element boundaries, DG methods support local discretizations, nonconformal meshes, explicit time marching, and highly parallel computation.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Our research explores DG methods as a framework for local and multiscale numerical modeling, multiphysics coupling, and space-time computation.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Interior-Penalty DG for Electromagnetics
 
-<div class="row">
+Our DG research builds upon the **interior-penalty discontinuous Galerkin time-domain (IP-DGTD)** method developed in Prof. Jin-Fa Lee's group at The Ohio State University. In this formulation, electromagnetic fields are represented independently within individual elements, while tangential field continuity is weakly enforced through interface conditions across elements.
+
+This element-local structure provides considerable flexibility for electromagnetic computation. Different regions can employ independent discretizations, while local time stepping can alleviate the restrictive global time-step requirement introduced by small or highly refined elements.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/dg/dg_ipdg.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Element-local discretization and interface coupling in discontinuous Galerkin methods.
 </div>
-<div class="row">
+
+### Foundational Work
+
+- S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, IEEE TAP, 2010.
+- S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, JCP, 2013.
+
+
+## DG-circuit coupling
+
+The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with other physical or circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM–circuit coupling. simulation program with integrated circuit emphasis (SPICE) and input/output buffer information specification (IBIS) models are investigated for circuit simulation. 
+The electromagnetic and circuit subsystems are coupled through circuit ports based on
+the concept of impedance surface, while a self-consistent interface procedure enforces compatibility between the two systems.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/dg/dg_emckt.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Illustration of the DG-circuit coupling mechanism.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Representative Applications
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/dg/dg_pcb.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+</div>
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/dg/dg_pcb_results.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    A representative PCB example for DGTD simualtion.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/dg/dg_pcb_mpi.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
+    </div>
 </div>
-```
+<div class="caption">
+    Domain and mesh partitions for parallel simulation. The layers are meshed nonconformally. In each layer, the meshes are further partitioned into smaller subdomains. Each subdomain is mapped to a MPI process.
+</div>
 
-{% endraw %}
 
---
+## Ongoing Research
+
+Our current research explores new DG formulations and solution strategies for large-scale transient electromagnetic problems. We are particularly interested in reducing the computational and communication costs associated with conventional element-level DG methods while preserving their locality, flexibility, and compatibility with heterogeneous discretizations.
+
+Related directions include the integration of our research on domain decomposition, iterative/direct solvers, and hierarchical low-rank approximation techniques into the IP-DG framework.
+
+
+
+
+<br>
+
 ### Selected Projects & Collaborations
 
 - **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
+
+- Past Collaborator: Jue Wang -- phd thesis ...
+
+--
+
+## Related Research
+
+- [Coupled-Physics Algorithms](/projects/mphy/)
+- [Multiscale Electronics Modeling](/projects/ic/)
 
 --
