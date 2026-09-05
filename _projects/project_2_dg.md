@@ -40,10 +40,11 @@ This element-local structure provides considerable flexibility for electromagnet
 - S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, *IEEE Transactions on Antennas and Propagation*, Dec 2010.
 - S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, *Journal of Computational Physics*, Dec 2012.
 
+<br>
 
 ## DG-Based EM–Circuit Coupling
 
-The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with external circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM–circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
+The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with external circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM-circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
 
 The electromagnetic and circuit subsystems are coupled through circuit ports based on the concept of impedance surface. A self-consistent interface procedure exchanges field information between the two systems and enforces their compatibility during time-domain simulation.
 
