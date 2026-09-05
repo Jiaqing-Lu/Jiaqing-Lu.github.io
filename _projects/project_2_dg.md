@@ -37,8 +37,8 @@ This element-local structure provides considerable flexibility for electromagnet
 
 ### Foundational Work
 
-- S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, *IEEE Transactions on Antennas and Propagation*, 2010.
-- S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, *Journal of Computational Physics*, 2013.
+- S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, *IEEE Transactions on Antennas and Propagation*, Dec 2010.
+- S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, *Journal of Computational Physics*, Dec 2012.
 
 
 ## DG-Based EM–Circuit Coupling
@@ -48,7 +48,7 @@ The interface-based structure of DG also provides a natural mechanism for coupli
 The electromagnetic and circuit subsystems are coupled through circuit ports based on the concept of impedance surface. A self-consistent interface procedure exchanges field information between the two systems and enforces their compatibility during time-domain simulation.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-9 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_emckt.png"
             class="img-fluid rounded z-depth-0" 
@@ -84,7 +84,7 @@ The DGTD framework has been applied to large-scale electronic systems involving 
     </div>
 </div>
 <div class="caption">
-    Large-scale multilayer PCB modeled using the DGTD framework, including high-speed interconnects, packaged devices, and circuit components.
+    Large-scale multilayer PCB modeled using the DGTD, including high-speed interconnects, packaged devices, and circuit components.
 </div>
 
 <div class="row align-items-center">
@@ -116,6 +116,7 @@ Related directions include connections with our research on domain decomposition
 - **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
 
 - Earlier DG research was conducted in collaboration with Dr. Jue Wang and Prof. Jin-Fa Lee at The Ohio State University.
+
 --
 
 ## Related Research
