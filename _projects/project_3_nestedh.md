@@ -10,7 +10,7 @@ permalink: /projects/direct_solver/
 related_publications: true
 ---
 
-Direct solvers provide **factorizations of large numerical systems**, making them particularly attractive for ill-conditioned problems and simulations involving many right-hand sides. Their major limitation, however, lies in the tremendous computational and memory cost of matrix factorization. For sparse systems, these issues become even more serious by fill-ins during factorization.
+Direct solvers provide **factorizations of large numerical systems**, making them particularly attractive for ill-conditioned problems and simulations involving many right-hand sides. Their major limitation, however, lies in the tremendous computational and memory cost of matrix factorization. For sparse systems, these issues become more challenging with fill-ins during elimination.
 
 Our research develops **structure-aware direct solvers for finite-element and domain-decomposition systems**. By combining nested dissection, skeletonization, hierarchical matrices, and randomized low-rank compression, we reduce large volume systems into multilevel surface representations and perform numerical factorization directly on these compressed structures.
 

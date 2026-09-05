@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Scientific Machine Learning
-description: conventional CEM + AI, let's explore 🎉
+title: Scientific Data Learning
+description: date-driven approaches and algorithms
 img: assets/img/6.jpg
 importance: 9
 category: algorithm
