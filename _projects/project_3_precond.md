@@ -54,7 +54,7 @@ The coupling operators are probed using random vectors, and **randomized samplin
 
 ## Preconditioning for Nonoverlapping, Embedded and Hybrid DDM Systems
 
-The preconditioning approach is applyed to conventional nonoverlapping DDM as well as embedded DDM. Its effectiveness can be understood through the eigenspectrum of the iterative system. As the rank of randomized approximation increases, the system's eigenvalues become progressively clustered. We therefore start the preconditioner with a small rank and increase the rank adaptively, meanwhile estimate the spectral radius of system. In thi way, a stronger preconditioner is constructed only when it is actually needed.
+The preconditioning approach is applyed to conventional nonoverlapping DDM as well as embedded DDM. Its effectiveness can be understood through the eigenspectrum of the iterative system. As the rank of randomized approximation increases, the system's eigenvalues become progressively clustered. We therefore start the preconditioner with a small rank and increase the rank adaptively, meanwhile estimate the spectral radius of system. In this way, a stronger preconditioner is constructed only when it is actually needed.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
