@@ -17,7 +17,7 @@ Our research explores DG methods as a framework for local and multiscale numeric
 
 ## Interior-Penalty DG for Electromagnetics
 
-Our DG research builds upon the **interior-penalty discontinuous Galerkin time-domain (IP-DGTD)** method developed in Prof. Jin-Fa Lee's group at The Ohio State University. In this formulation, electromagnetic fields are represented independently within individual elements, while tangential field continuity is weakly enforced through interface conditions across elements.
+Our DG research builds upon the **interior-penalty discontinuous Galerkin time-domain (IP-DGTD)** method developed in Prof. Jin-Fa Lee's group at The Ohio State University. In this formulation, electromagnetic fields are represented independently within individual elements, while physical continuity conditions are weakly enforced at element interfaces through interior-penalty formulation.
 
 This element-local structure provides considerable flexibility for electromagnetic computation. Different regions can employ independent discretizations, while local time stepping can alleviate the restrictive global time-step requirement introduced by small or highly refined elements.
 
@@ -37,18 +37,18 @@ This element-local structure provides considerable flexibility for electromagnet
 
 ### Foundational Work
 
-- S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, IEEE TAP, 2010.
-- S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, JCP, 2013.
+- S. Dosopoulos and J.-F. Lee, Interior Penalty Discontinuous Galerkin Finite Element Method for the Time-Dependent First Order Maxwell's Equations, *IEEE Transactions on Antennas and Propagation*, 2010.
+- S. Dosopoulos and J.-F. Lee, Non-conformal and Parallel Discontinuous Galerkin Time Domain Method for Maxwell's Equations: EM Analysis of IC Packages, *Journal of Computational Physics*, 2013.
 
 
-## DG-circuit coupling
+## DG-Based EM–Circuit Coupling
 
-The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with other physical or circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM–circuit coupling. simulation program with integrated circuit emphasis (SPICE) and input/output buffer information specification (IBIS) models are investigated for circuit simulation. 
-The electromagnetic and circuit subsystems are coupled through circuit ports based on
-the concept of impedance surface, while a self-consistent interface procedure enforces compatibility between the two systems.
+The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with external circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM–circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+The electromagnetic and circuit subsystems are coupled through circuit ports based on the concept of impedance surface. A self-consistent interface procedure exchanges field information between the two systems and enforces their compatibility during time-domain simulation.
+
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_emckt.png"
             class="img-fluid rounded z-depth-0" 
@@ -63,8 +63,10 @@ the concept of impedance surface, while a self-consistent interface procedure en
 
 ## Representative Applications
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+The DGTD framework has been applied to large-scale electronic systems involving **multilayer PCBs, high-speed interconnects, nonlinear circuit components, and digital I/O models**. These examples demonstrate the combination of nonconformal discretization, parallel domain partitioning, local time stepping, and EM–circuit co-simulation within a unified time-domain framework.
+
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_pcb.png"
             class="img-fluid rounded z-depth-0" 
@@ -72,9 +74,7 @@ the concept of impedance surface, while a self-consistent interface procedure en
             zoomable=true
         %}
     </div>
-</div>
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_pcb_results.png"
             class="img-fluid rounded z-depth-0" 
@@ -84,7 +84,7 @@ the concept of impedance surface, while a self-consistent interface procedure en
     </div>
 </div>
 <div class="caption">
-    A representative PCB example for DGTD simualtion.
+    Large-scale multilayer PCB modeled using the DGTD framework, including high-speed interconnects, packaged devices, and circuit components.
 </div>
 
 <div class="row align-items-center">
@@ -98,7 +98,7 @@ the concept of impedance surface, while a self-consistent interface procedure en
     </div>
 </div>
 <div class="caption">
-    Domain and mesh partitions for parallel simulation. The layers are meshed nonconformally. In each layer, the meshes are further partitioned into smaller subdomains. Each subdomain is mapped to a MPI process.
+    Domain and mesh partitions for parallel simulation. Individual PCB layers are meshed nonconformally and further partitioned into subdomains distributed across MPI processes.
 </div>
 
 
@@ -106,9 +106,7 @@ the concept of impedance surface, while a self-consistent interface procedure en
 
 Our current research explores new DG formulations and solution strategies for large-scale transient electromagnetic problems. We are particularly interested in reducing the computational and communication costs associated with conventional element-level DG methods while preserving their locality, flexibility, and compatibility with heterogeneous discretizations.
 
-Related directions include the integration of our research on domain decomposition, iterative/direct solvers, and hierarchical low-rank approximation techniques into the IP-DG framework.
-
-
+Related directions include connections with our research on domain decomposition, fast numerical solvers, and multilevel computational methods for large-scale electromagnetic simulation.
 
 
 <br>
@@ -117,8 +115,7 @@ Related directions include the integration of our research on domain decompositi
 
 - **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
 
-- Past Collaborator: Jue Wang -- phd thesis ...
-
+- Earlier DG research was conducted in collaboration with Dr. Jue Wang and Prof. Jin-Fa Lee at The Ohio State University.
 --
 
 ## Related Research
