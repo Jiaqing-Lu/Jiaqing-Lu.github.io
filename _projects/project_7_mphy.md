@@ -8,77 +8,117 @@ category: algorithm
 research_id: mphy
 related_publications: true
 permalink: /projects/mphy/
-related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Modern electromagnetic (EM) systems increasingly involve interactions among **EM fields, circuits, semiconductor devices, and thermal processes**. These components are often governed by different physical models, numerical discretizations, spatial and temporal scales, and simulation environments. 
+Rather than force different physical subsystems into a single monolithic formulation, our research explores **nonconformal coupled-physics frameworks**, as a conceptual extension of nonconformal domain decomposition, where individual subsystems should use numerical models and solution strategies appropriate to their own characteristics.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Our current research focuses on **EM–circuit coupling** and its extension toward **EM–thermal computation**. Particular attention is given to numerical interfaces between independently developed solvers, efficient information exchange across physical domains, and the integration of full-wave EM simulation with established engineering models and software.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/mphy/mphy_emckt.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Overview of EM-circuit coupling mechnism in time domain and frequency domain.
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+## Time-Domain EM–Circuit Coupling
+
+Our first approach performs EM and circuit computations **jointly in the time domain**, allowing nonlinear circuit behavior to interact directly with
+transient full-wave EM fields.
+Surface ports provide the interfaces between the EM and circuit subsystems. At each coupling step, EM field quantities are converted into port voltages and currents, while the circuit responses are returned to the EM solver through surface currents. **Effectively, the circuits are incorporated into transient full-wave simulation as nonlinear impedance surfaces**. 
+
+The time-domain co-simulation is particularly suitable when the complexity and nonlinearity of circuit models can be efficiently addressed at each time step, allowing the circuit and EM computations to proceed in parallel.
+However, frequent information exchange between independently implemented solvers can introduce additional computational and communication costs.
+
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/mphy/mphy_emckt_td.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Representative applications of transient EM-circuit co-simulation.
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Mixed-Domain EM–Circuit Coupling
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+For complex electronic systems, we further developed a **mixed-domain co-simulation framework** that combines frequency-domain EM analysis with time-domain circuit simulation.
+
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/mphy/mphy_emckt_fd.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Mixed domain EM-circuit co-simulation with domain decomposition, adaptive rational interpolation, and moder order reduction.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The electromagnetic subsystem is treated as a linear multi-port system and analyzed using FEM and nonconformal domain decomposition. Its broadband response is constructed through an **adaptive frequency sweep**, where a Loewner-matrix-based rational approximation guides the selection of additional full-wave frequency samples until desired accuracy is reached. The resulting frequency-dependent scattering matrix provides a reduced-order EM representation and can be directly integrated into established circuit simulation environments for nonlinear and mixed-signal analysis. This enables established circuit solvers, semiconductor libraries, and commercial device models to be used without reproducing their functionality within the EM program. After circuit simulation, the port responses can be mapped back to the full-wave EM model to reconstruct the corresponding electromagnetic fields and currents.
 
-{% raw %}
+For large electronic systems, we further employ **hierarchical Schur-complement compression** to reduce the spatial EM system while retaining detailed field information in critical regions. Combined with adaptive frequency sweeping, these techniques provide a frequency–spatial model-order-reduction framework for coupled EM–circuit simulation.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/mphy/mphy_emckt_bcm.png"
+            class="img-fluid rounded z-depth-0" 
+            avoid_scaling=true
+            zoomable=true
+        %}
+    </div>
 </div>
-```
+<div class="caption">
+    Representative application of mixed-domain EM-circuit co-simulation.
+</div>
 
-{% endraw %}
+[See EMC page for simulation results and experimental validation.](/projects/emc/)
+
+
+## Ongoing Research
+
+Our current research extends the coupled-physics framework toward **electromagnetic–thermal analysis** of large-scale electronic systems.
+Electromagnetic power losses provide heat sources for thermal computation, while temperature-dependent material and device properties can in turn
+modify electromagnetic behavior. 
+
+Current work focuses on numerical coupling between independently discretized electromagnetic and thermal models, together with scalable direct/iterative solution
+strategies for large coupled systems. These developments aim toward a unified computational framework for electromagnetic, circuit, and thermal analysis.
+
+
+
+<br>
+
+## Selected Projects & Collaborations
+
+- *State Key Laboratory of Radio-Frequency Heterogeneous Integration*  
+  **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2026–2028, PI.
+
+- **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
+
+--
+
+## Related Research
+
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Iterative Solvers & Preconditioning](/projects/precond/)
+- [Robust Direct Solvers](/projects/direct_solver/)
+- [Discontinuous Galerkin Methods](/projects/dg/)
+- [Multiscale Electronics Modeling](/projects/ic/)
+
+--

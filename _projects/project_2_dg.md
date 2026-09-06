@@ -42,9 +42,9 @@ This element-local structure provides considerable flexibility for electromagnet
 
 <br>
 
-## DG-Based EM–Circuit Coupling
+## DG-Based electromagnetic–Circuit Coupling
 
-The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with external circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM-circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
+The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with other physical or circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM-circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
 
 The electromagnetic and circuit subsystems are coupled through circuit ports based on the concept of impedance surface. A self-consistent interface procedure exchanges field information between the two systems and enforces their compatibility during time-domain simulation.
 
@@ -64,7 +64,7 @@ The electromagnetic and circuit subsystems are coupled through circuit ports bas
 
 ## Representative Applications
 
-The DGTD framework has been applied to large-scale electronic systems involving **multilayer PCBs, high-speed interconnects, nonlinear circuit components, and digital I/O models**. These examples demonstrate the combination of nonconformal discretization, parallel domain partitioning, local time stepping, and EM–circuit co-simulation within a unified time-domain framework.
+The DGTD framework has been applied to large-scale electronic systems involving **multilayer PCBs, high-speed interconnects, nonlinear circuit components, and digital I/O models**. These examples demonstrate the combination of nonconformal discretization, parallel domain partitioning, local time stepping, and electromagnetic–circuit co-simulation within a unified time-domain framework.
 
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
