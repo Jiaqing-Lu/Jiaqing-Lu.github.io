@@ -451,7 +451,7 @@ imagemagick:
     - 960
     - 1600
     - 2400
-    - 3600
+    - 3200
   input_directories:
     - assets/img/
   input_formats:
@@ -461,7 +461,7 @@ imagemagick:
     - ".tiff"
     - ".gif"
   output_formats:
-    webp: "-auto-orient -quality 92"
+    webp: "-auto-orient -quality 85"
 
 # imagemagick:
 #   enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)

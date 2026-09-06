@@ -21,6 +21,7 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
             path="assets/img/projects/ddm/ddm_conformal_1.png"
             class="img-fluid rounded z-depth-0" 
             height="250px"
+            zoomable=true  
         %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
@@ -48,6 +49,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             path="assets/img/projects/ddm/ddm_nonconformal_1.png"
             class="img-fluid rounded z-depth-0" 
             max-height="250px"
+            zoomable=true  
         %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
