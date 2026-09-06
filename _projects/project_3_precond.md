@@ -23,7 +23,6 @@ For example, highly heterogeneous and multiscale discretizations may lead to ill
         {% include figure.liquid 
             path="assets/img/projects/nestedh/precond_pcb.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -43,7 +42,6 @@ The coupling operators are probed using random vectors, and **randomized samplin
         {% include figure.liquid 
             path="assets/img/projects/nestedh/precond_randomized_sampling.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -61,7 +59,6 @@ The preconditioning approach is applyed to conventional nonoverlapping DDM as we
         {% include figure.liquid 
             path="assets/img/projects/nestedh/precond_embed_ddm.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -77,7 +74,6 @@ More complex systems can contain **both embedded and nonoverlapping subdomain co
         {% include figure.liquid 
             path="assets/img/projects/nestedh/precond_hybrid_ddm.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>

@@ -57,7 +57,6 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             path="assets/img/projects/ddm/ddm_nonconformal_2.png"
             class="img-fluid rounded z-depth-0" 
             max-height="250px"
-            avoid_scaling=true
             zoomable=true  
         %}
     </div>
@@ -66,7 +65,6 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
             path="assets/img/projects/ddm/ddm_nonconformal_3.png"
             class="img-fluid rounded z-depth-0" 
             max-height="250px"
-            avoid_scaling=true
             zoomable=true
         %}
     </div>

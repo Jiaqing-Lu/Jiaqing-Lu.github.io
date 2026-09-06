@@ -25,7 +25,6 @@ A finite-element mesh is first recursively partitioned using **nested dissection
         {% include figure.liquid 
             path="assets/img/projects/nestedh/nestedh_femsolver.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -45,7 +44,6 @@ Skeleton matrices are organized according to the geometric partition tree and re
         {% include figure.liquid 
             path="assets/img/projects/nestedh/nestedh_compression.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -72,7 +70,6 @@ The FEM skeleton solver naturally provides a compressed boundary operator for ea
         {% include figure.liquid 
             path="assets/img/projects/nestedh/nestedh_ddmsolver.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -94,7 +91,6 @@ The direct-solver framework has been applied to multiscale and multiport electro
         {% include figure.liquid 
             path="assets/img/projects/nestedh/nestedh_antenna.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -104,7 +100,6 @@ The direct-solver framework has been applied to multiscale and multiport electro
         {% include figure.liquid 
             path="assets/img/projects/nestedh/nestedh_pcb.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
