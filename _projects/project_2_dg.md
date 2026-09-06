@@ -42,7 +42,7 @@ This element-local structure provides considerable flexibility for electromagnet
 
 <br>
 
-## DG-Based electromagnetic–Circuit Coupling
+## DG-Based Electromagnetic–Circuit Coupling
 
 The interface-based structure of DG also provides a natural mechanism for coupling electromagnetic fields with other physical or circuit models. Our research extends IP-DGTD from conventional electromagnetic interfaces to EM-circuit coupling, incorporating both SPICE and IBIS models for circuit/device representation. 
 
