@@ -2,7 +2,7 @@
 layout: page
 title: Robust Direct Solvers
 description: sparse factorization, skeletonization, and low-rank compression
-img: assets/img/7.jpg
+img: assets/img/projects/project_nestedh.png
 importance: 3
 category: algorithm
 research_id: nestedh

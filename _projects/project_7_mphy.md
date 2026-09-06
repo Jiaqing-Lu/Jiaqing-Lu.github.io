@@ -2,7 +2,7 @@
 layout: page
 title: Coupled-Physics Algorithms
 description: coupled electromagnetic, circuit, and thermal computation
-img: assets/img/4.jpg
+img: assets/img/projects/project_mphy.png
 importance: 5
 category: algorithm
 research_id: mphy

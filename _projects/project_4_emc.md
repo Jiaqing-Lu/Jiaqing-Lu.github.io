@@ -2,7 +2,7 @@
 layout: page
 title: EMC/EMI & Side-Channel Analysis
 description: electromagnetic reliability, security, and signal/power integrity
-img: assets/img/10.jpg
+img: assets/img/projects/project_emc.png
 importance: 2
 category: application
 research_id: emc

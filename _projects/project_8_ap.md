@@ -2,7 +2,7 @@
 layout: page
 title: Antenna & Material Modeling
 description: antenna arrays, frequency selective surfaces, artificial materials
-img: assets/img/9.jpg
+img: assets/img/projects/project_ap.png
 importance: 1
 category: application
 research_id: ap

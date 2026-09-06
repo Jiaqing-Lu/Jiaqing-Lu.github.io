@@ -34,7 +34,7 @@ By selecting representative TE and TM plane-wave conditions, the coefficients of
     </div>
 </div>
 <div class="caption">
-    The formulation and application of data-driven ABC.
+    Construction and representative applications of the data-driven higher-order ABC.
 </div>
 
 This perspective provides a route toward constructing **problem-adapted boundary operators from sampled EM responses**, rather than restricting their forms entirely through analytical derivation.
@@ -42,9 +42,9 @@ This perspective provides a route toward constructing **problem-adapted boundary
 
 ## Higher-Order Impedance & Transition Conditions
 
-The same idea can be extended from ABC to **higher-order impedance boundary conditions (IBCs) or more general transition conditions (GTCs)**. In the ABC formulation, the boundary operator is determined from prescribed reflection behavior of incident waves. For a penetrable or metasurface-type structure, this idea is naturally generalized by considering both reflection and transmission responses.
+The same idea can be extended from ABC to **higher-order impedance boundary conditions (IBCs) or more general transition conditions (GTCs)**. In the ABC formulation, the boundary operator is determined from prescribed reflection behavior of incident waves. For penetrable surfaces or metasurface-type structures, this concept is naturally generalized by considering both reflection and transmission responses.
 
-For geometrically complex structures such as frequency-selective surfaces or metamaterial layers, representative TE and TM scattering data are first obtained over different incidence conditions. Effective IBCs or GTCs can then be constructed to replace the original fine-scale structures in CEM simulations, substantially reducing geometrical and computational complexity.
+For geometrically complex structures such as frequency-selective surfaces or metamaterial layers, representative TE and TM scattering responses are sampled over different incidence conditions. Effective IBCs or GTCs can then replace the original fine-scale structures in CEM simulations, substantially reducing geometrical and computational complexity.
 
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -56,7 +56,7 @@ For geometrically complex structures such as frequency-selective surfaces or met
     </div>
 </div>
 <div class="caption">
-    The formulation and application of data-driven IBC/GTC.
+    Construction and representative applications of data-driven IBC/GTC models.
 </div>
 
 This work forms part of our broader interest in learning compact physical operators from electromagnetic response data.
@@ -64,9 +64,9 @@ This work forms part of our broader interest in learning compact physical operat
 
 ## Randomized PCA & Matrix Learning
 
-Large electromagnetic systems frequently contain **hidden low-dimensional structures** even when their original matrix representations are extremely large. We employ randomized sampling and principal component analysis (PCA) to identify these structures without explicitly constructing or decomposing the complete dense operators.
+Large electromagnetic systems frequently contain **hidden low-dimensional structures**, even when their original matrix representations are extremely large. We employ randomized sampling and principal component analysis (PCA) to identify these structures without explicitly constructing or decomposing the complete operators.
 
-For domain decomposition systems, randomized excitations are applied to sample the system response, while an adaptive PCA procedure extracts a reduced basis for constructing efficient preconditioners. Related randomized low-rank techniques are also incorporated into hierarchical direct solvers, where sampled matrix interactions are compressed during recursive skeletonization and factorization.
+For domain decomposition systems, randomized probing vectors are used to sample system responses, while an adaptive PCA procedure extracts dominant low-dimensional subspaces for constructing efficient preconditioners. Related randomized low-rank techniques are also incorporated into hierarchical direct solvers, where matrix interactions are sampled and compressed during recursive skeletonization and factorization.
 
 These approaches combine **randomized numerical linear algebra with the physical and geometrical structures of CEM systems**, providing reduced representations directly within conventional electromagnetic solvers.
 
@@ -80,14 +80,13 @@ These approaches combine **randomized numerical linear algebra with the physical
     </div>
 </div>
 <div class="caption">
-    Representative application of randomized matrix techniques.
+    Randomized sampling and low-dimensional approximation of large electromagnetic systems.
 </div>
 
 ## Ongoing Research
 
-Our ongoing research explores the integration of **machine learning with physics-based CEM algorithms**, with the objective of assisting rather than replacing established numerical solvers, such as combining learned models with FEM, domain decomposition, and reduced-order computation.
-Another direction investigates **data learning for IC and PCB analysis**, where large collections of geometrical, material, circuit, and electromagnetic data
-can be used to identify correlations between physical design parameters and system-level electromagnetic behavior.
+Our ongoing research explores the integration of **machine learning with physics-based CEM algorithms**, with the objective of assisting rather than replacing established numerical solvers. Current directions include combining learned models with FEM, domain decomposition, and reduced-order computation.
+Another direction investigates **data learning for IC and PCB analysis**, where large collections of geometrical, material, circuit, and electromagnetic data can be used to identify correlations between physical design parameters and system-level electromagnetic behavior.
 
 
 <br>
@@ -96,7 +95,7 @@ can be used to identify correlations between physical design parameters and syst
 
 -  Higher-Order Absorbing Boundary Conditions & Incorporate Generalized Impedance Boundary Condition into FEM formulation -- collaborative research with *Ansys, Inc.* 
 
-- Earlier ABC & IBC research was conducted in collaboration with Dr. Jingyue Zhang and Prof. Jin-Fa Lee at The Ohio State University.
+- Earlier research on ABCs and GTCs was conducted in collaboration with Dr. Jingyue Zhang and Prof. Jin-Fa Lee at The Ohio State University.
 
 --
 

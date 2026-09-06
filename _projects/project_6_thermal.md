@@ -2,7 +2,7 @@
 layout: page
 title: Thermal & Multiphysics
 description: electronics heating, high-power EMI
-img: assets/img/7.jpg
+img: assets/img/projects/project_thermal.png
 importance: 3
 category: application
 research_id: thermal
