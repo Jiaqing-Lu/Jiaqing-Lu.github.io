@@ -47,7 +47,7 @@ The same idea can be extended from ABC to **higher-order impedance boundary cond
 For geometrically complex structures such as frequency-selective surfaces or metamaterial layers, representative TE and TM scattering data are first obtained over different incidence conditions. Effective IBCs or GTCs can then be constructed to replace the original fine-scale structures in CEM simulations, substantially reducing geometrical and computational complexity.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/learndata/learndata_gtc.png"
             class="img-fluid rounded z-depth-0" 
