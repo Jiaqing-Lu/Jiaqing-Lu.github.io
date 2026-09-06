@@ -34,8 +34,7 @@ Our first approach performs EM and circuit computations **jointly in the time do
 transient full-wave EM fields.
 Surface ports provide the interfaces between the EM and circuit subsystems. At each coupling step, EM field quantities are converted into port voltages and currents, while the circuit responses are returned to the EM solver through surface currents. **Effectively, the circuits are incorporated into transient full-wave simulation as nonlinear impedance surfaces**. 
 
-The time-domain co-simulation is suitable when the complexity and nonlinearity of circuit models can be efficiently addressed at each time step, allowing the circuit and EM computations to proceed in parallel.
-However, frequent information exchange between independently implemented solvers can introduce additional computational and communication costs.
+The time-domain co-simulation is suitable for directly capturing the concurrent transient behavior of EM and circuit systems, while allowing the two subsystems to retain their respective numerical formulations and be solved in parallel.
 
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -49,6 +48,8 @@ However, frequent information exchange between independently implemented solvers
 <div class="caption">
     Representative applications of transient EM-circuit co-simulation.
 </div>
+
+For very large and highly nonlinear circuit systems, however, repeatedly solving the circuit equations at every time step may introduce additional convergence and computational challenges, and can make efficient load balancing between the EM and circuit solvers more difficult.
 
 ## Mixed-Domain EM–Circuit Coupling
 
