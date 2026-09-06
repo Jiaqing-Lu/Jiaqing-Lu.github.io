@@ -5,8 +5,8 @@ description: data-driven methods for scientific computing
 img: assets/img/6.jpg
 importance: 9
 category: algorithm
-research_id: learndata
-permalink: /projects/learndata/
+research_id: datai
+permalink: /projects/datai/
 related_publications: true
 ---
 
@@ -27,7 +27,7 @@ By selecting representative TE and TM plane-wave conditions, the coefficients of
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/img/projects/learndata/learndata_abc.png"
+            path="assets/img/projects/datai/datai_abc.png"
             class="img-fluid rounded z-depth-0" 
             zoomable=true
         %}
@@ -47,9 +47,9 @@ The same idea can be extended from ABC to **higher-order impedance boundary cond
 For geometrically complex structures such as frequency-selective surfaces or metamaterial layers, representative TE and TM scattering data are first obtained over different incidence conditions. Effective IBCs or GTCs can then be constructed to replace the original fine-scale structures in CEM simulations, substantially reducing geometrical and computational complexity.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/img/projects/learndata/learndata_gtc.png"
+            path="assets/img/projects/datai/datai_gtc.png"
             class="img-fluid rounded z-depth-0" 
             zoomable=true
         %}
@@ -73,7 +73,7 @@ These approaches combine **randomized numerical linear algebra with the physical
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
-            path="assets/img/projects/learndata/learndata_pca.png"
+            path="assets/img/projects/datai/datai_pca.png"
             class="img-fluid rounded z-depth-0" 
             zoomable=true
         %}
