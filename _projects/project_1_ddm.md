@@ -113,8 +113,6 @@ Embedded DDM has been applied to antenna structures, electronic packaging and in
         {% include figure.liquid 
             path="assets/img/projects/ddm/embed_ddm_headcellphone.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
-            zoomable=true
         %}
     </div>
 </div>
