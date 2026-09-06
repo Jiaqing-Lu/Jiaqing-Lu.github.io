@@ -26,7 +26,7 @@ Our current research focuses on **EM–circuit coupling** and its extension towa
     </div>
 </div>
 <div class="caption">
-    Overview of EM-circuit coupling mechnism in time domain and frequency domain.
+    Coupled EM–circuit simulation frameworks in the time and frequency domains.
 </div>
 
 ## Time-Domain EM–Circuit Coupling
@@ -35,7 +35,7 @@ Our first approach performs EM and circuit computations **jointly in the time do
 transient full-wave EM fields.
 Surface ports provide the interfaces between the EM and circuit subsystems. At each coupling step, EM field quantities are converted into port voltages and currents, while the circuit responses are returned to the EM solver through surface currents. **Effectively, the circuits are incorporated into transient full-wave simulation as nonlinear impedance surfaces**. 
 
-The time-domain co-simulation is particularly suitable when the complexity and nonlinearity of circuit models can be efficiently addressed at each time step, allowing the circuit and EM computations to proceed in parallel.
+The time-domain co-simulation is suitable when the complexity and nonlinearity of circuit models can be efficiently addressed at each time step, allowing the circuit and EM computations to proceed in parallel.
 However, frequent information exchange between independently implemented solvers can introduce additional computational and communication costs.
 
 <div class="row align-items-center justify-content-sm-center">
@@ -67,12 +67,12 @@ For complex electronic systems, we further developed a **mixed-domain co-simulat
     </div>
 </div>
 <div class="caption">
-    Mixed domain EM-circuit co-simulation with domain decomposition, adaptive rational interpolation, and moder order reduction.
+    Mixed domain EM-circuit co-simulation with domain decomposition, adaptive rational interpolation, and model-order reduction.
 </div>
 
-The electromagnetic subsystem is treated as a linear multi-port system and analyzed using FEM and nonconformal domain decomposition. Its broadband response is constructed through an **adaptive frequency sweep**, where a Loewner-matrix-based rational approximation guides the selection of additional full-wave frequency samples until desired accuracy is reached. The resulting frequency-dependent scattering matrix provides a reduced-order EM representation and can be directly integrated into established circuit simulation environments for nonlinear and mixed-signal analysis. This enables established circuit solvers, semiconductor libraries, and commercial device models to be used without reproducing their functionality within the EM program. After circuit simulation, the port responses can be mapped back to the full-wave EM model to reconstruct the corresponding electromagnetic fields and currents.
+The electromagnetic subsystem is treated as a linear multiport system and analyzed using FEM and nonconformal domain decomposition. Its broadband response is constructed through an **adaptive frequency sweep**, where a Loewner-matrix-based rational approximation guides the selection of additional full-wave frequency samples until desired accuracy is reached. The resulting frequency-dependent scattering matrix provides a reduced-order EM representation and can be directly integrated into established circuit simulation environments for nonlinear and mixed-signal analysis. This enables established circuit solvers, semiconductor libraries, and commercial device models to be used without reproducing their functionality within the EM program. After circuit simulation, the port responses can be mapped back to the full-wave EM model to reconstruct the corresponding electromagnetic fields and currents.
 
-For large electronic systems, we further employ **hierarchical Schur-complement compression** to reduce the spatial EM system while retaining detailed field information in critical regions. Combined with adaptive frequency sweeping, these techniques provide a **frequency–spatial model-order-reduction framework for coupled EM–circuit simulation**.
+For large electronic systems, we further employ **hierarchical Schur-complement compression** to reduce the spatial EM system while retaining detailed field information in critical regions. Combined with adaptive frequency sweeping, these techniques provide a **frequency–spatial model-order-reduction framework for coupled EM–circuit simulations**.
 
 <div class="row align-items-center justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -88,7 +88,7 @@ For large electronic systems, we further employ **hierarchical Schur-complement 
     Representative application of mixed-domain EM-circuit co-simulation.
 </div>
 
-[See EMC page for simulation results and experimental validation.](/projects/emc/)
+See [EMC/EMI & Side-Channel Analysis](/projects/emc/) for detailed applications and experimental validation.
 
 
 ## Ongoing Research
