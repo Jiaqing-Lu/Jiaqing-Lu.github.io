@@ -16,7 +16,7 @@ Rather than force different physical subsystems into a single monolithic formula
 Our current research focuses on **EM–circuit coupling** and its extension toward **EM–thermal computation**. Particular attention is given to numerical interfaces between independently developed solvers, efficient information exchange across physical domains, and the integration of full-wave EM simulation with established engineering models and software.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt.png"
             class="img-fluid rounded z-depth-0" 
@@ -39,7 +39,7 @@ The time-domain co-simulation is particularly suitable when the complexity and n
 However, frequent information exchange between independently implemented solvers can introduce additional computational and communication costs.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_td.png"
             class="img-fluid rounded z-depth-0" 
@@ -57,7 +57,7 @@ However, frequent information exchange between independently implemented solvers
 For complex electronic systems, we further developed a **mixed-domain co-simulation framework** that combines frequency-domain EM analysis with time-domain circuit simulation.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_fd.png"
             class="img-fluid rounded z-depth-0" 
@@ -72,10 +72,10 @@ For complex electronic systems, we further developed a **mixed-domain co-simulat
 
 The electromagnetic subsystem is treated as a linear multi-port system and analyzed using FEM and nonconformal domain decomposition. Its broadband response is constructed through an **adaptive frequency sweep**, where a Loewner-matrix-based rational approximation guides the selection of additional full-wave frequency samples until desired accuracy is reached. The resulting frequency-dependent scattering matrix provides a reduced-order EM representation and can be directly integrated into established circuit simulation environments for nonlinear and mixed-signal analysis. This enables established circuit solvers, semiconductor libraries, and commercial device models to be used without reproducing their functionality within the EM program. After circuit simulation, the port responses can be mapped back to the full-wave EM model to reconstruct the corresponding electromagnetic fields and currents.
 
-For large electronic systems, we further employ **hierarchical Schur-complement compression** to reduce the spatial EM system while retaining detailed field information in critical regions. Combined with adaptive frequency sweeping, these techniques provide a frequency–spatial model-order-reduction framework for coupled EM–circuit simulation.
+For large electronic systems, we further employ **hierarchical Schur-complement compression** to reduce the spatial EM system while retaining detailed field information in critical regions. Combined with adaptive frequency sweeping, these techniques provide a **frequency–spatial model-order-reduction framework for coupled EM–circuit simulation**.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_bcm.png"
             class="img-fluid rounded z-depth-0" 
