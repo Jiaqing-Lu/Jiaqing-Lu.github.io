@@ -2,7 +2,7 @@
 layout: page
 title: Scientific Data Learning
 description: data-driven methods for scientific computing
-img: assets/img/6.jpg
+img: assets/img/projects/project_datai.png
 importance: 9
 category: algorithm
 research_id: datai
