@@ -451,7 +451,7 @@ imagemagick:
     - 960
     - 1600
     - 2400
-    - 3200
+    - 3600
   input_directories:
     - assets/img/
   input_formats:

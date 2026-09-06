@@ -26,7 +26,6 @@ This element-local structure provides considerable flexibility for electromagnet
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_ipdg.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -53,7 +52,6 @@ The electromagnetic and circuit subsystems are coupled through circuit ports bas
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_emckt.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -71,7 +69,6 @@ The DGTD framework has been applied to large-scale electronic systems involving 
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_pcb.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -79,7 +76,6 @@ The DGTD framework has been applied to large-scale electronic systems involving 
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_pcb_results.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -93,7 +89,6 @@ The DGTD framework has been applied to large-scale electronic systems involving 
         {% include figure.liquid 
             path="assets/img/projects/dg/dg_pcb_mpi.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>

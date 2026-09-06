@@ -21,7 +21,6 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
             path="assets/img/projects/ddm/ddm_conformal_1.png"
             class="img-fluid rounded z-depth-0" 
             height="250px"
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -30,7 +29,6 @@ Our research focuses on **nonconformal and embedded domain decomposition formula
             path="assets/img/projects/ddm/ddm_conformal_2.png"
             class="img-fluid rounded z-depth-0" 
             height="250px"
-            avoid_scaling=true
             zoomable=true  
         %}
     </div>
@@ -87,7 +85,6 @@ Nonconformal DDM allows neighboring regions to use independent meshes, but the s
         {% include figure.liquid 
             path="assets/img/projects/ddm/embed_ddm_overview.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
             zoomable=true
         %}
     </div>
@@ -113,6 +110,7 @@ Embedded DDM has been applied to antenna structures, electronic packaging and in
         {% include figure.liquid 
             path="assets/img/projects/ddm/embed_ddm_headcellphone.png"
             class="img-fluid rounded z-depth-0" 
+            zoomable=true
         %}
     </div>
 </div>
