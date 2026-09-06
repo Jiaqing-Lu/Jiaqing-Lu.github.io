@@ -10,87 +10,111 @@ permalink: /projects/ic/
 related_publications: true
 ---
 
-Electronic systems provide an important example of strongly coupled
-multiphysics computation. Full-wave electromagnetic models are needed to
-capture wave propagation, radiation, coupling, and crosstalk, while
-integrated circuits may contain nonlinear and mixed-signal components that
-are more naturally treated by dedicated circuit simulators.1
+Modern electronic systems integrate ICs, packages, interconnects, multilayer PCBs, and mounted components across widely different geometrical scales. Their electromagnetic simulation is challenging not only because of the resulting problem size, but also because **different parts of the system have very different geometrical features, discretization requirements, and levels of modeling details**.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Our research addresses these challenges through a combination of **nonconformal and embedded domain decomposition, hierarchical direct and iterative solvers, and reduced-order techniques**. The emphasis is on developing flexible and scalable computational frameworks for realistic electronic systems, from detailed component modeling to system-level electromagnetic analysis.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Complex Multilayered Structures
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Electronic systems naturally contain multiple conducting and dielectric layers, traces, vias, packages, ports, and mounted components. Constructing and maintaining a single globally conformal discretization becomes increasingly difficult as the geometrical complexity grows.
 
-<div class="row">
+We employ [nonconformal domain decomposition method](/projects/ddm/) to separate complex electronic structures into independently constructed computational regions. For multilayer circuits, individual layers can be generated directly from their design data and further partitioned into smaller building blocks. Each subdomain can then be meshed independently, while electromagnetic interactions between neighboring regions are enforced through nonconformal interfaces.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ic/ic_pcb_model.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    From layered PCB design data to independently constructed subdomains for nonconformal electromagnetic simulation.
 </div>
-<div class="row">
+
+Such a decomposition scheme provides considerable efficiency for practical PCB modeling. Different layers and local regions can employ mesh resolutions appropriate to their geometrical features.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+            path="assets/img/projects/ic/ic_pcb_eg.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Nonconformal decomposition of a multilayer PCB into independently meshed layers and subdomains for large-scale multiport simulation.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Multiscale Modeling & Design Iterations
+
+The modeling difficulty becomes greater when electronic systems contain strongly multiscale components. Fine IC/package features may coexist with much larger substrates, interconnects, and surrounding structures, while repeated design modifications may affect only a small portion of the complete model.
+
+Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle such problems. Selected components can be modeled with independent geometries and meshes and subsequently embedded into larger computational domains. Components can consequently be refined, replaced, or modified without rebuilding the complete surrounding discretization.
+
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ic/ic_embed_ddm.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Multiscale electronic modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This modular treatment is particularly useful for **design iterations**, where local components may undergo repeated changes while most of the surrounding computational models and matrices remain unchanged. It also provides a natural framework for combining different levels of geometrical detail within a system-level simulation.
 
-{% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+## Scalable Solution of Large Electronic Systems
+
+Flexible multiscale modeling does not by itself remove the computational difficulty of the resulting numerical systems. Practical electronic models may contain millions of unknowns, many ports and excitations, repeated analyses, and domain-decomposition systems whose iterative convergence can become slow or unreliable.
+
+Our [iterative solvers and preconditioning](/projects/precond/) and [hierarchical direct solvers](/projects/direct_solver/) provide robust solution strategies for these large systems. In particular, hierarchical skeletonization and low-rank compression reduce the computational and memory requirements of direct factorization, while reusable subdomain factorizations are well suited to repeated and multiport simulations.
+
+At the system boundary, accurate truncation is also important for radiation and EMC analysis. Our [higher-order absorbing boundary and generalized transition conditions](/projects/datai/) provide compact representations of exterior radiation and complex material/interface responses, allowing them to be incorporated into the same direct DDM solver framework.
+
+
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid 
+            path="assets/img/projects/ic/ic_cellphone.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
+    </div>
 </div>
-```
 
-{% endraw %}
+<div class="caption">
+    System-level electromagnetic simulation of a mobile device integrating multiscale domain decomposition, hierarchical direct solution, and improved electromagnetic truncation.
+<
+</div>
+
+Together, these techniques connect **flexible geometry construction, multiscale decomposition, and scalable numerical solution** within a unified framework for electromagnetic modeling of complex electronic systems.
+
+
+<br>
+
+## Selected Projects & Collaborations
+
+- **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
+
+- Advanced direct solvers and domain decomposition methods for large-scale electromagnetic simulation — collaborative research with *Ansys, Inc.*.
 
 --
-### Selected Projects & Collaborations
 
-- CERN BCM Calypso — electromagnetic modeling and simulation with [CYAN Research Program, OSU](https://cyan.engineering.osu.edu/)
+## Related Research
+
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Robust Direct Solvers](/projects/direct_solver/)
+- [Iterative Solvers & Preconditioning](/projects/precond/)
+- [Coupled-Physics Algorithms](/projects/mphy/)
+- [Scientific Data Learning](/projects/datai/)
 
 --
