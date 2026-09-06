@@ -21,7 +21,7 @@ related_publications: true
 
 -  Higher-Order Absorbing Boundary Conditions & Incorporate Generalized Impedance Boundary Condition into FEM formulation -- collaborative research with *Ansys, Inc.* 
 
-- Earlier DG research was conducted in collaboration with Dr. Jingyue Zhang and Prof. Jin-Fa Lee at The Ohio State University.
+- Earlier ABC & IBC research was conducted in collaboration with Dr. Jingyue Zhang and Prof. Jin-Fa Lee at The Ohio State University.
 
 --
 
