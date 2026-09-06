@@ -2,7 +2,7 @@
 layout: page
 title: Discontinuous Galerkin Methods
 description: space-time solution strategies
-img: assets/img/3.jpg
+img: assets/img/projects/project_dg.png
 importance: 4
 category: algorithm
 research_id: dg

@@ -45,7 +45,7 @@
     abstract        =       {The embedded domain decomposition method (DDM) has emerged as an innovative DDM variant for electromagnetic simulations, offering enhanced flexibility in geometrical modeling and mesh generation. While previous studies have shown rapid convergence for this method, our recent applications have uncovered certain convergence challenges. Targeting these convergence issues, this work introduces a preconditioner by constructing an approximate inverse to the system matrix of embedded DDM. The preconditioner is built upon two major ingredients: randomized sampling and spectral radius reduction. Through randomized sampling of system equations, we efficiently extract essential information from the DDM matrix without the need for explicit entry evaluations. These samples are then progressively compressed in an adaptive manner combined with spectral radius estimations. Numerical experiments demonstrate the impact of spectral radius on system convergence and the effectiveness of numerical compression in optimizing system eigenspectrum. Subsequent validation through numerical examples showcases the preconditioner's capability in ensuring robust convergence and improving stability of embedded DDM.},
     html            =       {https://doi.org/10.1109/TMTT.2024.3386104},
     abbr            =       {IEEE TMTT},
-    research        =       {ddm,precond,ic,ap},
+    research        =       {ddm,precond,ic,ap,datai},
     selected        =       {true},
 }
 
@@ -108,7 +108,7 @@
     award           =       {The embedded domain decomposition method (DDM) is a powerful tool for analyzing complex electromagnetic applications. It can decompose a computational domain into nonconformal subdomains and provide great flexibility in modeling and optimizing add-on components. However, convergence issues are found for embedded DDM, particularly at low frequencies. To overcome the problem, we propose approximate direct inverse (ADI) based on the principle component analysis (PCA) of the system equations. The ADI is utilized as an effective preconditioner ensuring robust convergence of the embedded DDM system.},
     award_name      =       {Best EMC Symposium Paper Award -- Honorable Mention},
     abbr            =       {IEEE EMC+SIPI},
-    research        =       {ddm,precond,emc},
+    research        =       {ddm,precond,emc,datai},
 }
 
 @inproceedings{ddm_appinv_aps2020,
@@ -119,7 +119,7 @@
     month           =       jul,
     year            =       {2020},
     abbr            =       {IEEE AP-S},
-    research        =       {ddm,precond,ap},
+    research        =       {ddm,precond,ap,datai},
 }
 
 @phdthesis{dissertation_jlu2018,
@@ -178,7 +178,7 @@
     abstract        =       {In complex electromagnetic simulations, domain decomposition method (DDM) has been shown to be an effective approach for discretization. However, convergence difficulty exists due to the redundant cement variables defined on the corner edges of the subdomains. In this work, we propose a solution to this issue by employing the method of Lagrange multiplier. By incorporating constraints for the corner fields and expanding the system matrix, the condition number of the DDM matrix is reduced significantly. As a result, the convergence rate of the DDM iterations is remarkably improved.},
     html            =       {https://doi.org/10.1109/LAWP.2023.3306616},
     abbr            =       {IEEE AWPL},
-    research        =       {ddm,precond,ap,datai}
+    research        =       {ddm,precond,ap}
 }
 
 @Article{fem_ddm_appinv_jlu2023,
