@@ -20,7 +20,7 @@ Our current research focuses on **EM–circuit coupling** and its extension towa
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
+            <!-- avoid_scaling=true -->
             zoomable=true
         %}
     </div>
@@ -43,7 +43,7 @@ However, frequent information exchange between independently implemented solvers
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_td.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
+            <!-- avoid_scaling=true -->
             zoomable=true
         %}
     </div>
@@ -61,7 +61,7 @@ For complex electronic systems, we further developed a **mixed-domain co-simulat
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_fd.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
+            <!-- avoid_scaling=true -->
             zoomable=true
         %}
     </div>
@@ -79,7 +79,7 @@ For large electronic systems, we further employ **hierarchical Schur-complement 
         {% include figure.liquid 
             path="assets/img/projects/mphy/mphy_emckt_bcm.png"
             class="img-fluid rounded z-depth-0" 
-            avoid_scaling=true
+            <!-- avoid_scaling=true -->
             zoomable=true
         %}
     </div>
