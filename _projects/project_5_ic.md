@@ -66,7 +66,7 @@ Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle
 </div>
 
 <div class="caption">
-    Multiscale electronic modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
+    PCB + Packaging + Interconnects modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
 </div>
 
 This modular treatment is particularly useful for **design iterations**, where local components may undergo repeated changes while most of the surrounding computational models and matrices remain unchanged. It also provides a natural framework for combining different levels of geometrical detail within a system-level simulation.
@@ -78,7 +78,7 @@ Flexible multiscale modeling does not by itself remove the computational difficu
 
 Our [iterative solvers and preconditioning](/projects/precond/) and [hierarchical direct solvers](/projects/direct_solver/) provide robust solution strategies for these large systems. In particular, hierarchical skeletonization and low-rank compression reduce the computational and memory requirements of direct factorization, while reusable subdomain factorizations are well suited to repeated and multiport simulations.
 
-At the system boundary, accurate truncation is also important for radiation and EMC analysis. Our [higher-order absorbing boundary and generalized transition conditions](/projects/datai/) provide compact representations of exterior radiation and complex material/interface responses, allowing them to be incorporated into the same direct DDM solver framework.
+At the system boundary, effective truncation is also important for radiation and EMC analysis. Our [higher-order absorbing boundary and generalized transition conditions](/projects/datai/) provide efficient representations of exterior radiation and complex material/interface responses, allowing them to be incorporated into the same direct DDM solver framework.
 
 
 <div class="row align-items-center">
@@ -112,8 +112,8 @@ Together, these techniques connect **flexible geometry construction, multiscale 
 ## Related Research
 
 - [Domain Decomposition Methods](/projects/ddm/)
-- [Robust Direct Solvers](/projects/direct_solver/)
 - [Iterative Solvers & Preconditioning](/projects/precond/)
+- [Robust Direct Solvers](/projects/direct_solver/)
 - [Coupled-Physics Algorithms](/projects/mphy/)
 - [Scientific Data Learning](/projects/datai/)
 
