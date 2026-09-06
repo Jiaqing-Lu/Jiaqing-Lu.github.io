@@ -178,7 +178,7 @@
     abstract        =       {In complex electromagnetic simulations, domain decomposition method (DDM) has been shown to be an effective approach for discretization. However, convergence difficulty exists due to the redundant cement variables defined on the corner edges of the subdomains. In this work, we propose a solution to this issue by employing the method of Lagrange multiplier. By incorporating constraints for the corner fields and expanding the system matrix, the condition number of the DDM matrix is reduced significantly. As a result, the convergence rate of the DDM iterations is remarkably improved.},
     html            =       {https://doi.org/10.1109/LAWP.2023.3306616},
     abbr            =       {IEEE AWPL},
-    research        =       {ddm,precond,ap}
+    research        =       {ddm,precond,ap,datai}
 }
 
 @Article{fem_ddm_appinv_jlu2023,
@@ -193,7 +193,7 @@
     abstract        =       {Domain decomposition methods (DDMs) provide a powerful discretization framework for analyzing the electromagnetic (EM) phenomena in complex high-speed circuits. However, even with recent advancements in DDMs, achieving iterative convergence remains challenging for sophisticated structures. To facilitate the convergence of DDMs, we develop a preconditioner in this work, which is constructed by forming the approximate inverse of the DDM system matrix. The subdomains are recursively grouped into a multilevel tree, and randomized matrix compressions are adapted to handle their couplings. The approximate inverse preconditioner is then constituted by the inverses of the subdomain matrices with low-rank updates that account for their couplings. Through simulations of practical circuit examples, the strengths of the preconditioner are demonstrated by comparing it to a standard DDM solver. Importantly, a weakly convergent scenario is identified for DDMs when circuit signals propagate parallel to the subdomain interfaces. This situation, which significantly hinders computational efficiency and causes stability issues, can be effectively addressed through the proposed preconditioning approach. Finally, a novel integration is introduced to combine our method with a recently developed subdomain compression scheme.},
     html            =       {https://doi.org/10.1109/TMTT.2023.3332204},
     abbr            =       {IEEE TMTT},
-    research        =       {ddm,precond,ic}
+    research        =       {ddm,precond,ic,datai}
 }
 
 @inproceedings{nestedh_ddm_abc_piers2025,
@@ -206,7 +206,7 @@
     award           =       {Nonoverlapping and nonconformal domain decomposition methods (DDMs) have established an effective discretization framework for complex electromagnetic applications, where global iterative solvers are commonly employed to tackle DDM equations. However, DDMs are not free from convergence issues, and excessive iteration numbers can significantly prolong the duration of simulations involving multiple right-hand sides. This study explores the possibility in developing a low-rank direct solver for nonconformal DDMs, with the goal of offering a stable and reliable alternative to DDM iterative approaches. Our direct solver consists of two major components: a subdomain solver and a DDM solver. The subdomain solver is developed by extracting an interface skeleton from subdomains, achieved through recursive partitioning and merging of mesh elements. The DDM solver builds upon the skeletonization, and is constructed through recursive reorderings of interface matrices with the integration of hierarchical matrix techniques and randomized matrix compressions.},
     award_name      =       {Young Scientist Award},
     abbr            =       {PIERS},
-    research        =       {ddm,nestedh,ai,ap,emc,ic},
+    research        =       {ddm,nestedh,datai,ap,emc,ic},
 }
 
 % --------------------- Antenna & Material Modeling ------------------------%
@@ -223,7 +223,7 @@
     abstract        =       {In finite element simulations, absorbing boundary conditions (ABCs) are recognized as simple but useful techniques for domain truncations. However, the widely employed first-order ABC often encounters accuracy challenges, and existing second-order ABCs are also limited in their handling of domain corners. This study proposes a novel ABC formulation, distinguished by its improved accuracy and versatility. It is developed by projecting field normal components onto auxiliary variables and implemented without the necessity of a smooth domain boundary. Numerical examples showcase the accuracy enhancement achieved with the proposed ABC over traditional ABCs and the applicability of the new ABC implementation for finite element domains with nonsmooth boundaries.},
     html            =       {https://doi.org/10.1109/TAP.2024.3445121},
     abbr            =       {IEEE TAP},
-    research        =       {ai,ap}
+    research        =       {datai,ap}
 }
 
 @Article{gtc_ap_jyzhang2024,
@@ -231,7 +231,7 @@
     Author          =       {Jingyue Zhang and Jiaqing Lu and Jin-Fa Lee},
     Journal         =       {submitted to IEEE Transactions on Antennas and Propagation},
     Year            =       {2024},
-    research        =       {ai,ap}
+    research        =       {datai,ap}
 }
 
 % --------------------- IC & EMC ------------------------%

@@ -5,8 +5,8 @@ description: data-driven methods for scientific computing
 img: assets/img/6.jpg
 importance: 9
 category: algorithm
-research_id: ai
-permalink: /projects/ai/
+research_id: learndata
+permalink: /projects/learndata/
 related_publications: true
 ---
 
@@ -71,7 +71,7 @@ For domain decomposition systems, randomized excitations are applied to sample t
 These approaches combine **randomized numerical linear algebra with the physical and geometrical structures of CEM systems**, providing reduced representations directly within conventional electromagnetic solvers.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/learndata/learndata_pca.png"
             class="img-fluid rounded z-depth-0" 
