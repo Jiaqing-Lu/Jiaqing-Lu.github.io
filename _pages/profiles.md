@@ -78,7 +78,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
   <div class="person-card">
     <img src="{{ '/assets/img/profile/jiaqing_lu_office.jpg' | relative_url }}" class="person-photo">
     <div class="person-info">
-      <div class="person-name">Jiaqing Lu</div>
+      <div class="person-name">Jiaqing Lu (卢佳青)</div>
       <div class="person-role">Principal Investigator</div>
       <div class="person-desc">
         Computational electromagnetics, domain decomposition methods,
