@@ -24,9 +24,9 @@ The objective is to retain the flexibility of full-wave finite-element modeling 
 
 Antenna design frequently involves localized structures whose geometrical scales and design parameters differ substantially from those of the surrounding array or platform. Requiring all components to share a single conforming discretization can make geometry construction and repeated design modification unnecessarily restrictive.
 
-Our [embedded domain decomposition method](/projects/ddm/) allows antenna elements, feeding structures, and other local components to be modeled and meshed independently from their surrounding domains. Local structures can therefore be modified, replaced, or refined without reconstructing the complete computational model.
+Our [nonconformal and embedded domain decomposition methods](/projects/ddm/) allow antenna elements, feeding structures, and other local components to be modeled and meshed independently from their surrounding domains. Local structures can therefore be modified, replaced, or refined without reconstructing the complete computational model.
 
-This capability is particularly useful for antenna-array design, where a relatively small number of functional or tuning regions may be embedded within a much larger repetitive structure. Independent subdomain models can also incorporate circuit ports and other local representations while retaining full-wave coupling with the surrounding array.
+This capability is particularly useful for antenna-array design, where a relatively small number of functional or tuning blocks may be embedded within a much larger repetitive structure. Independent subdomain models can also incorporate circuit ports and other local representations while retaining full-wave coupling with the surrounding array.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -38,14 +38,14 @@ This capability is particularly useful for antenna-array design, where a relativ
     </div>
 </div>
 <div class="caption">
-    Embedded domain decomposition for flexible modeling, tuning, and experimental validation of large antenna arrays.
+    Domain decomposition for flexible modeling, tuning, and experimental validation of large antenna arrays.
 </div>
 
 Related developments in [iterative solvers and preconditioning](/projects/precond/) exploit similar subdomain and interface structures to improve convergence for large antenna systems. 
 
 ## Exploiting Repetitive Structures
 
-(Semi-)Periodic electromagnetic structures contain substantial geometrical repetition, providing opportunities for computational reuse beyond conventional parallel domain decomposition. Instead of independently factorizing every repeated antenna subdomain, we construct reusable finite-element boundary representations through a **FETI-like compression procedure**.
+(Semi-)Periodic electromagnetic structures contain substantial geometrical repetition, providing opportunities for computational reuse beyond conventional parallel domain decomposition. Instead of independently factorizing every repeated subdomain, we construct reusable finite-element boundary representations through a **FETI-like compression procedure**.
 
 Our [hierarchical FEM direct solver](/projects/direct_solver/) eliminates interior degrees of freedom and retains the electromagnetic response on subdomain boundaries. For identical or repeated array elements, the resulting local factorizations and boundary operators can be reused across multiple subdomains and excitations, substantially reducing the cost of large multi-element simulations.
 
@@ -85,10 +85,7 @@ conventional ABCs, allowing the truncation boundary to be placed much closer to 
     Higher-order absorbing boundary treatment for tightly bounded simulation of a large antenna array, with radiation characteristics approaching integral-equation truncation at substantially reduced computational cost.
 </div>
 
-Beyond exterior truncation, the same concept extends naturally to **higher-order impedance and generalized transition conditions (IBCs/GTCs)** for representing material interfaces, frequency-selective surfaces, metasurfaces, and other
-electromagnetically complex structures. We are integrating these compact surface representations with [domain decomposition methods](/projects/ddm/), including embedded subdomain modeling, so that detailed material structures can be replaced or incorporated locally without reconstructing the surrounding computational model.
-
-Their integration with [hierarchical direct solvers](/projects/direct_solver/) further provides opportunities to exploit the low-rank structure of DDM interface operators, combining compact material representations with compressed subdomain factorization for large-scale electromagnetic simulation.
+Beyond exterior truncation, the same concept extends naturally to **higher-order impedance and generalized transition conditions (IBCs/GTCs)** for representing electromagnetically complex structures. We are integrating these compact surface representations with [domain decomposition methods](/projects/ddm/) and [hierarchical direct solvers](/projects/direct_solver/), connecting effective material modeling with flexible subdomain construction, low-rank compression, and scalable full-wave simulation.
 
 Together, these techniques provide a flexible and scalable framework for full-wave modeling of large antenna systems, periodic structures, and engineered electromagnetic materials, connecting independent geometry construction, repetitive subdomain reuse, and efficient open-region treatment within finite-element and domain-decomposition simulations.
 
