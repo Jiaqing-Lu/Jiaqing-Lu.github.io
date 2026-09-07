@@ -17,10 +17,9 @@ Our research explores **thermal and multiphysics applications of the computation
 ## Steady-State Electrothermal Analysis
 
 Electronic systems naturally involve thermal structures spanning very different scales, from ICs and packages to PCBs, thermal interface materials, heat spreaders, and heat sinks. Their electrical and thermal behaviors are also mutually dependent: electrical power dissipation provides heat sources, while the resulting temperature distribution changes material properties and consequently affects electrical performance.
-This research direction builds upon the foundational work of Dr. Yang Shao at The Ohio State University on the electrothermal analysis of multiscale chip-package-PCB systems and related domain decomposition applications. 
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid
             path="assets/img/projects/thermal/thermal_steady.png"
             class="img-fluid rounded z-depth-0"
@@ -32,24 +31,28 @@ This research direction builds upon the foundational work of Dr. Yang Shao at Th
     Steady-state electrothermal analysis of multiscale electronic systems, coupling electrical power distribution, temperature-dependent material properties, and thermal responses.
 </div>
 
+This research direction builds upon the foundational work of Dr. Yang Shao at The Ohio State University on the electrothermal analysis of multiscale chip-package-PCB systems and related domain decomposition applications. 
+
 ### Foundational Work
 
-- **Y. Shao, Z. Peng, and J.-F. Lee**, “Thermal-aware DC IR-drop co-analysis using non-conformal domain decomposition methods,” *Proceedings of the Royal Society A*, Feb 2012.
-- **Y. Shao, Z. Peng, and J.-F. Lee**, “Thermal Analysis of High-Power Integrated Circuits and Packages Using Nonconformal Domain Decomposition Method,” *IEEE Transactions on Components, Packaging and Manufacturing Technology*, Aug 2013.
+- Y. Shao, Z. Peng, and J.-F. Lee, “Thermal-aware DC IR-drop co-analysis using non-conformal domain decomposition methods,” *Proceedings of the Royal Society A*, Feb 2012.
+- Y. Shao, Z. Peng, and J.-F. Lee, “Thermal Analysis of High-Power Integrated Circuits and Packages Using Nonconformal Domain Decomposition Method,” *IEEE Transactions on Components, Packaging and Manufacturing Technology*, Aug 2013.
 
 
 Building on these foundations, we have been exploring thermal DDM implementations and their integration with our computational frameworks. Current work also includes extending embedded domain decomposition to thermal modeling, together with scalable iterative and direct solution techniques for geometrically intricate systems.
+
+<br>
 
 ## Transient EM–Thermal Analysis
 
 Transient multiphysics problems introduce an additional challenge because the characteristic scales may differ substantially **in both space and time**. Fast EM transient bahavior can coexist with much slower thermal evolution, while localized electronic structures may require spatial resolutions very different from those of the surrounding system.
 
-Our work on [discontinuous Galerkin methods](/projects/dg/) provides a natural numerical foundation for such problems. The local character of DG allows different regions to retain independent spatial discretizations. Together with nonoverlapping and/or embedded DDM, they may constitute a framework for coupling EM and thermal models with different spatial and temporal scales.
+Our work on [discontinuous Galerkin methods](/projects/dg/) provides a natural numerical foundation for such problems. The local character of DG allows different regions to retain independent spatial discretizations. Together with [nonoverlapping and/or embedded DDM](/projects/ddm/), they may constitute a framework for coupling EM and thermal models with different spatial and temporal scales.
 
 The objective is to capture transient multiphysics interactions **without forcing all physical subsystems to adopt the same spatial and temporal resolution**, enabling computational effort to be adapted to the characteristic scales of the underlying physics.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid
             path="assets/img/projects/thermal/thermal_transient.png"
             class="img-fluid rounded z-depth-0"
