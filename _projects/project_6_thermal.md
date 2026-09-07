@@ -10,74 +10,82 @@ permalink: /projects/thermal/
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Thermal effects are intertwined with electrical and electromagnetic (EM) behavior in high-power and highly integrated electronic systems. Joule heating, temperature-dependent material properties, power delivery, EM losses, and environmental conditions can form strongly coupled multiphysics processes across very different spatial and temporal scales.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Our research explores **thermal and multiphysics applications of the computational methods developed throughout our research**, including [domain decomposition methods](/projects/ddm/), [DG methods](/projects/dg/), [scalable iterative solvers](/projects/precond/), and [hierarchical direct solvers](/projects/direct_solver/). These methods provide a flexible numerical foundation for extending large-scale electromagnetic simulation toward coupled electrical, thermal, and other physical effects.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Steady-State Electrothermal Analysis
 
-<div class="row">
+Electronic systems naturally involve thermal structures spanning very different scales, from ICs and packages to PCBs, thermal interface materials, heat spreaders, and heat sinks. Their electrical and thermal behaviors are also mutually dependent: electrical power dissipation provides heat sources, while the resulting temperature distribution changes material properties and consequently affects electrical performance.
+This research direction builds upon the foundational work of Dr. Yang Shao at The Ohio State University on the electrothermal analysis of multiscale chip-package-PCB systems and related domain decomposition applications. 
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid
+            path="assets/img/projects/thermal/thermal_steady.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Steady-state electrothermal analysis of multiscale electronic systems, coupling electrical power distribution, temperature-dependent material properties, and thermal responses.
 </div>
-<div class="row">
+
+### Foundational Work
+
+- **Y. Shao, Z. Peng, and J.-F. Lee**, “Thermal-aware DC IR-drop co-analysis using non-conformal domain decomposition methods,” *Proceedings of the Royal Society A*, Feb 2012.
+- **Y. Shao, Z. Peng, and J.-F. Lee**, “Thermal Analysis of High-Power Integrated Circuits and Packages Using Nonconformal Domain Decomposition Method,” *IEEE Transactions on Components, Packaging and Manufacturing Technology*, Aug 2013.
+
+
+Building on these foundations, we have been exploring thermal DDM implementations and their integration with our computational frameworks. Current work also includes extending embedded domain decomposition to thermal modeling, together with scalable iterative and direct solution techniques for geometrically intricate systems.
+
+## Transient EM–Thermal Analysis
+
+Transient multiphysics problems introduce an additional challenge because the characteristic scales may differ substantially **in both space and time**. Fast EM transient bahavior can coexist with much slower thermal evolution, while localized electronic structures may require spatial resolutions very different from those of the surrounding system.
+
+Our work on [discontinuous Galerkin methods](/projects/dg/) provides a natural numerical foundation for such problems. The local character of DG allows different regions to retain independent spatial discretizations. Together with nonoverlapping and/or embedded DDM, they may constitute a framework for coupling EM and thermal models with different spatial and temporal scales.
+
+The objective is to capture transient multiphysics interactions **without forcing all physical subsystems to adopt the same spatial and temporal resolution**, enabling computational effort to be adapted to the characteristic scales of the underlying physics.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid
+            path="assets/img/projects/thermal/thermal_transient.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Transient EM–thermal modeling of electronic systems, coupling electromagnetic power deposition with thermal response across different spatial and temporal scales.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## High-Power Electromagnetic & Thermal Effects
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Beyond conventional electrothermal analysis, our research also extends toward the responses of electronic systems under **high-power electromagnetic pulses (EMP) and other extreme electromagnetic environments**. Sufficiently strong EM excitation can induce substantial currents and localized power deposition, potentially producing heating, changes in material properties, and other nonlinear physical responses.
 
-{% raw %}
+This direction extends naturally our work on [EM interference and vulnerability](/projects/emc/). Of particular interest is understanding how incident EM energy propagates through complex electronic systems, where it becomes concentrated, and how these localized interactions translate into thermal and physical effects at the device and system levels.
+At sufficiently high field strengths, the relevant physics may extend beyond conventional linear EM and thermal models, motivating further investigation of **nonlinear material responses and plasma-related phenomena**.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
 
-{% endraw %}
+<br>
+
+## Selected Projects & Collaborations
+
+- *State Key Laboratory of Radio-Frequency Heterogeneous Integration*  
+  **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2026–2028, PI.
+
+- Currently collaborate with Prof. Min Tang at Shanghai Jiao Tong University, on computational thermal and multiphysics modeling.
+
+--
+
+## Related Research
+
+- [Coupled-Physics Algorithms](/projects/mphy/)
+- [Electromagnetic Compatibility](/projects/emc/)
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Multiscale Electronics Modeling](/projects/ic/)
+
+--
