@@ -58,18 +58,19 @@ Our [hierarchical FEM direct solver](/projects/direct_solver/) eliminates interi
         %}
     </div>
 </div>
-
 <div class="caption">
     Reusable subdomain factorizations and compressed boundary representations for repetitive antenna-array simulation, with comparison against measurement and conventional sparse direct solution.
 </div>
 
 More recently, the [direct DDM solver](/projects/direct_solver/) provides an alternative route by directly factorizing the global interface system.
 
-## Efficient Open-Region Modeling
+## Efficient Material Modeling
 
-Antennas, FSSs, metasurfaces, and other radiating or scattering structures require accurate representation of the surrounding open domain. For finite-element models, the size and accuracy of this exterior region can have a substantial effect on the overall computational cost, particularly for electrically large or highly repetitive structures.
+Complex electromagnetic structures often contain materials or surfaces whose fine-scale geometrical details can dominate the computational cost of full-wave simulation. An alternative is to replace these structures by **effective surface representations** that reproduce their relevant electromagnetic responses without explicitly resolving
+the complete underlying geometry.
 
-We integrate [higher-order absorbing boundary conditions](/projects/datai/) with the domain-decomposition framework to permit tightly bounded computational domains while maintaining accurate radiation characteristics over a wide range of incidence or scanning angles. Combined with reusable subdomain solution, this provides an efficient alternative to more computationally expensive integral-equation-based truncation for large electromagnetic structures.
+Absorbing boundary conditions can be viewed as a special form of such an impedance representation for an open exterior domain. Our [higher-order boundary formulations](/projects/datai/) improve the angular response of
+conventional ABCs, allowing the truncation boundary to be placed much closer to the radiating structure. When integrated with domain decomposition, this provides radiation characteristics approaching integral-equation-based truncation while retaining the computational efficiency of the finite-element domain-decomposition formulation.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -80,20 +81,16 @@ We integrate [higher-order absorbing boundary conditions](/projects/datai/) with
         %}
     </div>
 </div>
-
 <div class="caption">
     Higher-order absorbing boundary treatment for tightly bounded simulation of a large antenna array, with radiation characteristics approaching integral-equation truncation at substantially reduced computational cost.
 </div>
 
-## Ongoing Research
+Beyond exterior truncation, the same concept extends naturally to **higher-order impedance and generalized transition conditions (IBCs/GTCs)** for representing material interfaces, frequency-selective surfaces, metasurfaces, and other
+electromagnetically complex structures. We are integrating these compact surface representations with [domain decomposition methods](/projects/ddm/), including embedded subdomain modeling, so that detailed material structures can be replaced or incorporated locally without reconstructing the surrounding computational model.
 
-Our current research extends these ideas toward **conformal and material-integrated antenna systems**. In planar repetitive arrays, identical subdomains provide a natural basis for reusing local matrices and factorizations. For curved and conformal arrays,
-however, antenna elements may experience different orientations, geometrical mappings, and electromagnetic environments, making direct reuse considerably more challenging.
+Their integration with [hierarchical direct solvers](/projects/direct_solver/) further provides opportunities to exploit the low-rank structure of DDM interface operators, combining compact material representations with compressed subdomain factorization for large-scale electromagnetic simulation.
 
-We are investigating how **hierarchical low-rank representations, reusable or parametrized subdomain operators, and effective material/interface models** can be combined within a common computational framework. The objective is to retain the computational advantages of repeated structures even when the individual subdomains are geometrically transformed or coupled to complex material environments.
-
-Together with our work on [hierarchical direct solvers](/projects/direct_solver/) and [data-driven boundary and material operators](/projects/datai/), these developments target scalable full-wave simulation of large conformal arrays, engineered surfaces, and other complex antenna platforms.
-
+Together, these techniques provide a flexible and scalable framework for full-wave modeling of large antenna systems, periodic structures, and engineered electromagnetic materials, connecting independent geometry construction, repetitive subdomain reuse, and efficient open-region treatment within finite-element and domain-decomposition simulations.
 
 <br>
 
