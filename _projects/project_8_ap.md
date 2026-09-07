@@ -89,8 +89,8 @@ Beyond exterior truncation, the same concept extends naturally to **higher-order
 
 Together, these techniques provide a flexible and scalable framework for full-wave modeling of large antenna systems, periodic structures, and engineered electromagnetic materials, connecting independent geometry construction, repetitive subdomain reuse, and efficient open-region treatment within finite-element and domain-decomposition simulations.
 
-<br>
 
+<br>
 
 ## Selected Projects & Collaborations
 
