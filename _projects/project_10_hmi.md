@@ -10,7 +10,7 @@ permalink: /projects/hmi/
 related_publications: false
 ---
 
-Our computational methods have also been integrated into an in-house **finite-element and domain-decomposition electromagnetic simulation platform**. The software provides a unified environment for model configuration, domain-based meshing, numerical solution, and electromagnetic post-processing.
+Our computational methods have also been integrated into an in-house simulation platform. The software provides a unified environment for model configuration, domain-based meshing, numerical solution, and electromagnetic post-processing.
 
 ## Integrated Simulation Environment
 
