@@ -45,7 +45,7 @@ Building on these foundations, we have been exploring thermal DDM implementation
 
 ## Transient EM–Thermal Analysis
 
-Transient multiphysics problems introduce an additional challenge because the characteristic scales may differ substantially **in both space and time**. Fast EM transient bahavior can coexist with much slower thermal evolution, while localized electronic structures may require spatial resolutions very different from those of the surrounding system.
+Transient multiphysics problems introduce an additional challenge because the characteristic scales may differ substantially **in both space and time**. Fast EM transient behavior can coexist with much slower thermal evolution, while localized electronic structures may require spatial resolutions very different from those of the surrounding system.
 
 Our work on [discontinuous Galerkin methods](/projects/dg/) provides a natural numerical foundation for such problems. The local character of DG allows different regions to retain independent spatial discretizations. Together with [nonoverlapping and/or embedded DDM](/projects/ddm/), they may constitute a framework for coupling EM and thermal models with different spatial and temporal scales.
 
@@ -69,7 +69,7 @@ The objective is to capture transient multiphysics interactions **without forcin
 
 Beyond conventional electrothermal analysis, our research also extends toward the responses of electronic systems under **high-power electromagnetic pulses (EMP) and other extreme electromagnetic environments**. Sufficiently strong EM excitation can induce substantial currents and localized power deposition, potentially producing heating, changes in material properties, and other nonlinear physical responses.
 
-This direction extends naturally our work on [EM interference and vulnerability](/projects/emc/). Of particular interest is understanding how incident EM energy propagates through complex electronic systems, where it becomes concentrated, and how these localized interactions translate into thermal and physical effects at the device and system levels.
+This direction naturally extends our work on [EM interference and vulnerability](/projects/emc/). Of particular interest is understanding how incident EM energy propagates through complex electronic systems, where it becomes concentrated, and how these localized interactions translate into thermal and physical effects at the device and system levels.
 At sufficiently high field strengths, the relevant physics may extend beyond conventional linear EM and thermal models, motivating further investigation of **nonlinear material responses and plasma-related phenomena**.
 
 
@@ -80,7 +80,7 @@ At sufficiently high field strengths, the relevant physics may extend beyond con
 - *State Key Laboratory of Radio-Frequency Heterogeneous Integration*  
   **Efficient Solvers for Large-Scale Multiphysics Domain Decomposition Systems**, 2026–2028, PI.
 
-- Currently collaborate with Prof. Min Tang at Shanghai Jiao Tong University, on computational thermal and multiphysics modeling.
+- Currently collaborate with Prof. Min Tang at Shanghai Jiao Tong University on computational thermal and multiphysics modeling.
 
 --
 
@@ -89,6 +89,7 @@ At sufficiently high field strengths, the relevant physics may extend beyond con
 - [Coupled-Physics Algorithms](/projects/mphy/)
 - [Electromagnetic Compatibility](/projects/emc/)
 - [Domain Decomposition Methods](/projects/ddm/)
+- [Discontinuous Galerkin Methods](/projects/dg/)
 - [Multiscale Electronics Modeling](/projects/ic/)
 
 --
