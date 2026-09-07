@@ -14,8 +14,8 @@ Modern electronic systems contain densely integrated PCBs, ICs, packages, interc
 
 Our research develops **full-wave computational and experimental approaches for electromagnetic compatibility (EMC), interference (EMI), and side-channel analysis (SCA)**. The numerical framework draws upon our work on [domain decomposition methods](/projects/ddm/), [hierarchical direct solvers](/projects/direct_solver/), and [EM-circuit co-simulation](/projects/mphy/), while laboratory measurements provide direct validation and characterization of practical electronic systems.
 
-<div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_cyan.png"
             class="img-fluid rounded z-depth-0"
@@ -25,7 +25,7 @@ Our research develops **full-wave computational and experimental approaches for 
 </div>
 
 <div class="caption">
-    Overview of computational and experimental EMC research, spanning electromagnetic emissions, vulnerability, RF/microwave measurements, and side-channel applications.
+    Overview of computational and experimental EMC research: EM emissions, vulnerability, RF/microwave measurements, and side-channel applications.
 </div>
 
 
@@ -33,10 +33,10 @@ Our research develops **full-wave computational and experimental approaches for 
 
 EM emissions from electronic circuits are traditionally treated as an EMC concern because unintended radiation can interfere with nearby components and systems. At the same time, these emissions contain information about the electrical activity and physical characteristics of the underlying hardware.
 
-Our research investigates this dual role of EM radiation. Full-wave models of PCBs and ICs are used to relate internal circuit behavior to externally observable EM responses. The resulting emission signatures can support not only EMC assessment, but also **side-channel analysis, device characterization, and hardware authentication**.
+Our research investigates this dual role of EM radiation. Full-wave modeling and measurements are used to characterize externally observable EM responses of electronic systems. The resulting emission signatures can support not only EMC assessment, but also **side-channel analysis, device characterization, and hardware authentication**.
 
-<div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_emission.png"
             class="img-fluid rounded z-depth-0"
@@ -52,8 +52,8 @@ Accurate utilization of these emissions requires their spatial and frequency-dep
 
 The PCB-emission work explicitly models the probe together with the device under test rather than treating the probe as an ideal observer, so that probe–PCB interactions are incorporated directly into the comparison between simulation and measurement. 
 
-<div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_emission_res.png"
             class="img-fluid rounded z-depth-0"
@@ -73,8 +73,8 @@ The complementary EMC problem concerns how electronic systems respond to **exter
 
 Our work evaluates this behavior using combined full-wave and circuit-level analysis. Both **near-field sources and far-field illumination** are considered so that localized coupling mechanisms and system-level exposure can be studied within the same framework. The vulnerability study uses frequency-domain EM analysis, adaptive broadband reduction, and time-domain circuit simulation to connect external EM disturbances to responses at individual IC ports. 
 
-<div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_vul.png"
             class="img-fluid rounded z-depth-0"
@@ -83,14 +83,14 @@ Our work evaluates this behavior using combined full-wave and circuit-level anal
     </div>
 </div>
 <div class="caption">
-    Computational and experimental framework for evaluating PCB and IC vulnerability under near-field and far-field electromagnetic interference.
+    Computational and experimental framework for EM vulnerability analysis of PCB and IC systems.
 </div>
 
-Measurements and simulations are then compared across frequency, incident direction, source configuration, and circuit ports. These results help identify **susceptible frequencies, vulnerable directions, dominant coupling paths, and sensitive circuit locations**, providing a more direct link between the external electromagnetic environment and circuit-level response.
+Measurements and simulations are then compared across frequency, incident direction, source configuration, and circuit ports. These results help identify **susceptible frequencies, vulnerable directions, dominant coupling paths, and sensitive circuit locations**, providing a more direct link between the external EMs environment and circuit-level response.
 The measured and simulated near- and far-field results show that the framework can reproduce the main vulnerability trends of a practical PCB and IC system, while also revealing the importance of accurately modeling external structures such as connectors. 
 
-<div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_vul_res.png"
             class="img-fluid rounded z-depth-0"
