@@ -45,7 +45,8 @@ Our research investigates this dual role of EM radiation. Full-wave modeling and
     </div>
 </div>
 <div class="caption">
-    Overview of near-field emission measurement and full-wave modeling of practical PCB and IC systems.
+    <!-- Overview of near-field emission measurement and full-wave modeling of practical PCB and IC systems. -->
+    EM emissions as signatures for circuit characterization, side-channel analysis, and hardware authentication.
 </div>
 
 Accurate utilization of these emissions requires their spatial and frequency-dependent characteristics to be understood. We therefore combine full-wave simulations with controlled near-field measurements to compare field distributions, identify **emission hot spots and dominant radiation regions**, and quantify the influence of practical measurement probes.
@@ -128,7 +129,7 @@ Our current research extends the modeling and solver techniques developed for PC
 
 ### Selected Projects & Collaborations
 
-- CERN BCM & Calypso — electromagnetic modeling, simulation, and measurement with [CYAN Research Program, OSU](https://cyan.engineering.osu.edu/) -- conducted in collaboration with Prof. Jin-Fa Lee, Prof. Kubilay Sertel, and Dr. Shane Smith at The Ohio State University.
+- CERN BCM & Calypso — electromagnetic modeling, simulation, and measurement under the [CYAN Research Program](https://cyan.engineering.osu.edu/) -- was conducted in collaboration with Prof. Jin-Fa Lee, Prof. Kubilay Sertel, and Dr. Shane Smith at The Ohio State University.
 
 --
 
