@@ -20,8 +20,8 @@ Electronic systems naturally contain multiple conducting and dielectric layers, 
 
 We employ [nonconformal domain decomposition method](/projects/ddm/) to separate complex electronic structures into independently constructed computational regions. For multilayer circuits, individual layers can be generated directly from their design data and further partitioned into smaller building blocks. Each subdomain can then be meshed independently, while electromagnetic interactions between neighboring regions are enforced through nonconformal interfaces.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_pcb_model.png"
             class="img-fluid rounded z-depth-0"
@@ -36,7 +36,7 @@ We employ [nonconformal domain decomposition method](/projects/ddm/) to separate
 Such a decomposition scheme provides considerable efficiency for practical PCB modeling. Different layers and local regions can employ mesh resolutions appropriate to their geometrical features.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-11 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_pcb_eg.png"
             class="img-fluid rounded z-depth-0"
@@ -56,7 +56,7 @@ The modeling difficulty becomes greater when electronic systems contain strongly
 Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle such problems. Selected components can be modeled with independent geometries and meshes and subsequently embedded into larger computational domains. Components can consequently be refined, replaced, or modified without rebuilding the complete surrounding discretization.
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-11 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_embed_ddm.png"
             class="img-fluid rounded z-depth-0"
@@ -82,7 +82,7 @@ For complete electronic systems, accurate radiation and EMC analysis requires th
 
 
 <div class="row align-items-center justify-content-sm-center">
-    <div class="col-sm-11 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_cellphone.png"
             class="img-fluid rounded z-depth-0"
