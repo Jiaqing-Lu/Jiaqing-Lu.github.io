@@ -10,87 +10,81 @@ permalink: /projects/hmi/
 related_publications: false
 ---
 
-Electronic systems provide an important example of strongly coupled
-multiphysics computation. Full-wave electromagnetic models are needed to
-capture wave propagation, radiation, coupling, and crosstalk, while
-integrated circuits may contain nonlinear and mixed-signal components that
-are more naturally treated by dedicated circuit simulators.1
+Our computational methods have also been integrated into an in-house **finite-element and domain-decomposition electromagnetic simulation platform**. The software provides a unified environment for model configuration, domain-based meshing, numerical solution, and electromagnetic post-processing.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Integrated Simulation Environment
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The graphical interface organizes the complete simulation workflow, including material and excitation definitions, domain configuration, mesh generation, solver settings, and numerical simulation. Domain-based model organization allows individual regions to be configured and inspected independently while remaining part of the complete electromagnetic system.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row align-items-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_main.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_ddm_config.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Integrated electromagnetic simulation environment and domain-based mesh configuration.
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+
+## Domain-Decomposition Modeling
+
+Domain decomposition is directly incorporated into the modeling workflow. Interfaces between neighboring domains can be configured explicitly, while embedded domains allow localized structures to be introduced and modified independently within a larger computational model.
+
+<div class="row align-items-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_nonovlap_ddm.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_embed_ddm.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Configuration of domain interfaces for nonconformal and embedded domain decomposition modeling.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Simulation & Post-Processing
+
+The simulation environment connects numerical solution with electromagnetic post-processing, including multiport S-parameters, field distributions, and radiation characteristics. Results from different excitations and frequencies can be inspected within the same workflow.
+
+<div class="row align-items-center">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_param_post.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/hmi/hmi_gui_field_visual.jpg"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Electromagnetic post-processing for multiport responses, field distributions, and radiation characteristics.
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
-
---
-### Selected Projects & Collaborations
-
-- CERN BCM Calypso — electromagnetic modeling and simulation with [CYAN Research Program, OSU](https://cyan.engineering.osu.edu/)
-
---
