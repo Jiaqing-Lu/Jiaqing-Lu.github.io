@@ -35,8 +35,8 @@ We employ [nonconformal domain decomposition method](/projects/ddm/) to separate
 
 Such a decomposition scheme provides considerable efficiency for practical PCB modeling. Different layers and local regions can employ mesh resolutions appropriate to their geometrical features.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_pcb_eg.png"
             class="img-fluid rounded z-depth-0"
@@ -55,8 +55,8 @@ The modeling difficulty becomes greater when electronic systems contain strongly
 
 Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle such problems. Selected components can be modeled with independent geometries and meshes and subsequently embedded into larger computational domains. Components can consequently be refined, replaced, or modified without rebuilding the complete surrounding discretization.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_embed_ddm.png"
             class="img-fluid rounded z-depth-0"
@@ -81,8 +81,8 @@ Our [iterative solvers and preconditioning](/projects/precond/) and [hierarchica
 For complete electronic systems, accurate radiation and EMC analysis requires the modeling framework and numerical solver to work together. We integrate [higher-order boundary treatments](/projects/datai/), subdomain skeletonization, and [hierarchical direct solution](/projects/direct_solver/) within the DDM framework. This allows the computational domain to be more tightly bounded while maintaining accurate exterior-field truncation, and provides robust and efficient solutions for large multiscale systems with many excitations. In practical electronic-device simulations, the resulting framework achieves radiation predictions approaching those obtained with integral-equation-based truncation, but with substantially reduced computational cost.
 
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/ic/ic_cellphone.png"
             class="img-fluid rounded z-depth-0"

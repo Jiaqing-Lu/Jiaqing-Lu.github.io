@@ -25,8 +25,8 @@ Our [nonconformal and embedded domain decomposition methods](/projects/ddm/) all
 
 This capability is particularly useful for antenna-array design, where a relatively small number of functional or tuning blocks may be embedded within a much larger repetitive structure. Independent subdomain models can also incorporate circuit ports and other local representations while retaining full-wave coupling with the surrounding array.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid
             path="assets/img/projects/ap/ap_array_embed_ddm.png"
             class="img-fluid rounded z-depth-0"
@@ -46,8 +46,8 @@ Related developments in [iterative solvers and preconditioning](/projects/precon
 
 Our [hierarchical FEM direct solver](/projects/direct_solver/) eliminates interior degrees of freedom and retains the electromagnetic response on subdomain boundaries. For identical or repeated array elements, the resulting local factorizations and boundary operators can be reused across multiple subdomains and excitations, substantially reducing the cost of large multi-element simulations.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid
             path="assets/img/projects/ap/ap_array_feti.png"
             class="img-fluid rounded z-depth-0"
@@ -69,8 +69,8 @@ the complete underlying geometry.
 Absorbing boundary conditions can be viewed as a special form of such an impedance representation for an open exterior domain. Our [higher-order boundary formulations](/projects/datai/) improve the angular response of
 conventional ABCs, allowing the truncation boundary to be placed much closer to the radiating structure. When integrated with domain decomposition, this provides radiation characteristics approaching integral-equation-based truncation while retaining the computational efficiency of the finite-element domain-decomposition formulation.
 
-<div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row align-items-center justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid
             path="assets/img/projects/ap/ap_array_abc.png"
             class="img-fluid rounded z-depth-0"
