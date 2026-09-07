@@ -66,7 +66,7 @@ Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle
 </div>
 
 <div class="caption">
-    PCB + Packaging + Interconnects modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
+    Multiscale PCB, package, and interconnect modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
 </div>
 
 This modular treatment is particularly useful for **design iterations**, where local components may undergo repeated changes while most of the surrounding computational models and matrices remain unchanged. It also provides a natural framework for combining different levels of geometrical detail within a system-level simulation.
@@ -78,7 +78,7 @@ Flexible multiscale modeling does not by itself remove the computational difficu
 
 Our [iterative solvers and preconditioning](/projects/precond/) and [hierarchical direct solvers](/projects/direct_solver/) provide robust solution strategies for these large systems. In particular, hierarchical skeletonization and low-rank compression reduce the computational and memory requirements of direct factorization, while reusable subdomain factorizations are well suited to repeated and multiport simulations.
 
-At the system boundary, effective truncation is also important for radiation and EMC analysis. Our [higher-order absorbing boundary and generalized transition conditions](/projects/datai/) provide efficient representations of exterior radiation and complex material/interface responses, allowing them to be incorporated into the same direct DDM solver framework.
+For complete electronic systems, accurate radiation and EMC analysis requires the modeling framework and numerical solver to work together. We integrate [higher-order boundary treatments](/projects/datai/), subdomain skeletonization, and [hierarchical direct solution](/projects/direct_solver/) within the DDM framework. This allows the computational domain to be more tightly bounded while maintaining accurate exterior-field truncation, and provides robust and efficient solutions for large multiscale systems with many excitations. In practical electronic-device simulations, the resulting framework achieves radiation predictions approaching those obtained with integral-equation-based truncation, but with substantially reduced computational cost.
 
 
 <div class="row align-items-center">
@@ -103,9 +103,10 @@ Together, these techniques connect **flexible geometry construction, multiscale 
 
 ## Selected Projects & Collaborations
 
-- **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
+- *National Natural Science Foundation of China*  
+  **Embedded Domain Decomposition Method for Multiscale Electromagnetic Systems**, 2027–2030, PI.
 
-- Advanced direct solvers and domain decomposition methods for large-scale electromagnetic simulation — collaborative research with *Ansys, Inc.*.
+- **Brave Heart** project — electromagnetic-circuit co-simulation package for circuit boards — with *DSO National Laboratories, Singapore*.
 
 --
 

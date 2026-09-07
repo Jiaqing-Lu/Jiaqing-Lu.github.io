@@ -11,81 +11,104 @@ related_publications: true
 # giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Large antenna systems, periodic structures, and engineered electromagnetic surfaces present several common computational challenges. Complex or multiscale components must be incorporated into large platforms, repeated structures should be exploited rather than independently recomputed, and radiation problems require accurate treatment of electrically open domains.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Our research addresses these challenges by combining
+[domain decomposition methods](/projects/ddm/),
+[iterative and direct solution strategies](/projects/precond/), and
+[advanced boundary and material treatments](/projects/datai/).
+The objective is to retain the flexibility of full-wave finite-element modeling while exploiting the geometrical and algebraic structures characteristic of practical (semi-)periodic systems.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
-<div class="row">
+## Flexible Modeling and Design with DDMs
+
+Antenna design frequently involves localized structures whose geometrical scales and design parameters differ substantially from those of the surrounding array or platform. Requiring all components to share a single conforming discretization can make geometry construction and repeated design modification unnecessarily restrictive.
+
+Our [embedded domain decomposition method](/projects/ddm/) allows antenna elements, feeding structures, and other local components to be modeled and meshed independently from their surrounding domains. Local structures can therefore be modified, replaced, or refined without reconstructing the complete computational model.
+
+This capability is particularly useful for antenna-array design, where a relatively small number of functional or tuning regions may be embedded within a much larger repetitive structure. Independent subdomain models can also incorporate circuit ports and other local representations while retaining full-wave coupling with the surrounding array.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid
+            path="assets/img/projects/ap/ap_array_embed_ddm.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Embedded domain decomposition for flexible modeling, tuning, and experimental validation of large antenna arrays.
 </div>
-<div class="row">
+
+Related developments in [iterative solvers and preconditioning](/projects/precond/) exploit similar subdomain and interface structures to improve convergence for large antenna systems. 
+
+## Exploiting Repetitive Structures
+
+(Semi-)Periodic electromagnetic structures contain substantial geometrical repetition, providing opportunities for computational reuse beyond conventional parallel domain decomposition. Instead of independently factorizing every repeated antenna subdomain, we construct reusable finite-element boundary representations through a **FETI-like compression procedure**.
+
+Our [hierarchical FEM direct solver](/projects/direct_solver/) eliminates interior degrees of freedom and retains the electromagnetic response on subdomain boundaries. For identical or repeated array elements, the resulting local factorizations and boundary operators can be reused across multiple subdomains and excitations, substantially reducing the cost of large multi-element simulations.
+
+<div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid
+            path="assets/img/projects/ap/ap_array_feti.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Reusable subdomain factorizations and compressed boundary representations for repetitive antenna-array simulation, with comparison against measurement and conventional sparse direct solution.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+More recently, the [direct DDM solver](/projects/direct_solver/) provides an alternative route by directly factorizing the global interface system.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## Efficient Open-Region Modeling
+
+Antennas, FSSs, metasurfaces, and other radiating or scattering structures require accurate representation of the surrounding open domain. For finite-element models, the size and accuracy of this exterior region can have a substantial effect on the overall computational cost, particularly for electrically large or highly repetitive structures.
+
+We integrate [higher-order absorbing boundary conditions](/projects/datai/) with the domain-decomposition framework to permit tightly bounded computational domains while maintaining accurate radiation characteristics over a wide range of incidence or scanning angles. Combined with reusable subdomain solution, this provides an efficient alternative to more computationally expensive integral-equation-based truncation for large electromagnetic structures.
+
+<div class="row align-items-center">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid
+            path="assets/img/projects/ap/ap_array_abc.png"
+            class="img-fluid rounded z-depth-0"
+            zoomable=true
+        %}
     </div>
 </div>
+
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Higher-order absorbing boundary treatment for tightly bounded simulation of a large antenna array, with radiation characteristics approaching integral-equation truncation at substantially reduced computational cost.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Ongoing Research
 
-{% raw %}
+Our current research extends these ideas toward **conformal and material-integrated antenna systems**. In planar repetitive arrays, identical subdomains provide a natural basis for reusing local matrices and factorizations. For curved and conformal arrays,
+however, antenna elements may experience different orientations, geometrical mappings, and electromagnetic environments, making direct reuse considerably more challenging.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+We are investigating how **hierarchical low-rank representations, reusable or parametrized subdomain operators, and effective material/interface models** can be combined within a common computational framework. The objective is to retain the computational advantages of repeated structures even when the individual subdomains are geometrically transformed or coupled to complex material environments.
 
-{% endraw %}
+Together with our work on [hierarchical direct solvers](/projects/direct_solver/) and [data-driven boundary and material operators](/projects/datai/), these developments target scalable full-wave simulation of large conformal arrays, engineered surfaces, and other complex antenna platforms.
 
---
-### Selected Projects & Collaborations
+
+<br>
+
+
+## Selected Projects & Collaborations
 
 - **Strange Beauty** project — Large-scale electromagnetic simulation for periodic electromagnetic structures — with *DSO National Laboratories, Singapore*
+
+--
+
+## Related Research
+
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Iterative Solvers & Preconditioning](/projects/precond/)
+- [Robust Direct Solvers](/projects/direct_solver/)
+- [Scientific Data Learning](/projects/datai/)
 
 --
