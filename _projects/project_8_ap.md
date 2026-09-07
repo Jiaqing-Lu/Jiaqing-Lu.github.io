@@ -13,10 +13,7 @@ related_publications: true
 
 Large antenna systems, periodic structures, and engineered electromagnetic surfaces present several common computational challenges. Complex or multiscale components must be incorporated into large platforms, repeated structures should be exploited rather than independently recomputed, and radiation problems require accurate treatment of electrically open domains.
 
-Our research addresses these challenges by combining
-[domain decomposition methods](/projects/ddm/),
-[iterative and direct solution strategies](/projects/precond/), and
-[advanced boundary and material treatments](/projects/datai/).
+Our research addresses these challenges by combining [domain decomposition methods](/projects/ddm/), [iterative](/projects/precond/) and [direct solution strategies](/projects/direct_solver/), and [advanced boundary and material treatments](/projects/datai/).
 The objective is to retain the flexibility of full-wave finite-element modeling while exploiting the geometrical and algebraic structures characteristic of practical (semi-)periodic systems.
 
 
