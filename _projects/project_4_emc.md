@@ -15,7 +15,7 @@ Modern electronic systems contain densely integrated PCBs, ICs, packages, interc
 Our research develops **full-wave computational and experimental approaches for electromagnetic compatibility (EMC), interference (EMI), and side-channel analysis (SCA)**. The numerical framework draws upon our work on [domain decomposition methods](/projects/ddm/), [hierarchical direct solvers](/projects/direct_solver/), and [EM-circuit co-simulation](/projects/mphy/), while laboratory measurements provide direct validation and characterization of practical electronic systems.
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_cyan.png"
             class="img-fluid rounded z-depth-0"
@@ -36,7 +36,7 @@ EM emissions from electronic circuits are traditionally treated as an EMC concer
 Our research investigates this dual role of EM radiation. Full-wave models of PCBs and ICs are used to relate internal circuit behavior to externally observable EM responses. The resulting emission signatures can support not only EMC assessment, but also **side-channel analysis, device characterization, and hardware authentication**.
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_emission.png"
             class="img-fluid rounded z-depth-0"
@@ -53,7 +53,7 @@ Accurate utilization of these emissions requires their spatial and frequency-dep
 The PCB-emission work explicitly models the probe together with the device under test rather than treating the probe as an ideal observer, so that probe–PCB interactions are incorporated directly into the comparison between simulation and measurement. 
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_emission_res.png"
             class="img-fluid rounded z-depth-0"
@@ -74,7 +74,7 @@ The complementary EMC problem concerns how electronic systems respond to **exter
 Our work evaluates this behavior using combined full-wave and circuit-level analysis. Both **near-field sources and far-field illumination** are considered so that localized coupling mechanisms and system-level exposure can be studied within the same framework. The vulnerability study uses frequency-domain EM analysis, adaptive broadband reduction, and time-domain circuit simulation to connect external EM disturbances to responses at individual IC ports. 
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_vul.png"
             class="img-fluid rounded z-depth-0"
@@ -90,7 +90,7 @@ Measurements and simulations are then compared across frequency, incident direct
 The measured and simulated near- and far-field results show that the framework can reproduce the main vulnerability trends of a practical PCB and IC system, while also revealing the importance of accurately modeling external structures such as connectors. 
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_ic_vul_res.png"
             class="img-fluid rounded z-depth-0"
@@ -110,7 +110,7 @@ As electronic platforms become increasingly integrated, EMC problems extend beyo
 Our current research extends the modeling and solver techniques developed for PCB- and IC-level EMC toward **large, complex electronic platforms**, including unmanned aerial vehicles and automotive systems. The objective is to combine detailed local models with scalable domain decomposition and fast solution techniques so that emissions, interference paths, antenna coupling, and system-level electromagnetic interactions can be analyzed within a unified computational framework.
 
 <div class="row align-items-center">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid 
             path="assets/img/projects/emc/emc_car.png"
             class="img-fluid rounded z-depth-0"
