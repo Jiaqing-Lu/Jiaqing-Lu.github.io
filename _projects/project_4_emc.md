@@ -10,11 +10,9 @@ permalink: /projects/emc/
 related_publications: true
 ---
 
-Electromagnetic compatibility (EMC) becomes increasingly difficult to assess as electronic systems integrate dense PCBs, packages, ICs, antennas, interconnects, and nonlinear circuit components within a common electromagnetic environment. Unintended electromagnetic coupling can occur across multiple physical scales and through both conducted and radiated paths, making system-level prediction considerably more challenging than the characterization of individual components.
+Modern electronic systems contain densely integrated PCBs, ICs, packages, interconnects, antennas, and nonlinear circuit components operating within a shared electromagnetic (EM) environment. Unintended EM interactions can lead to interference, degraded system performance, and device vulnerability, while the same EM emissions may also carry useful information about internal circuit activity.
 
-Our research develops **full-wave computational and experimental approaches for analyzing electromagnetic emissions, interference, and vulnerability of complex electronic systems**. We combine electromagnetic modeling, circuit analysis, and measurements to characterize how electromagnetic energy is generated, coupled, radiated, and received throughout an electronic system.
-
-The underlying numerical framework draws upon our work on [domain decomposition methods](/projects/ddm/), [multiscale electronics modeling](/projects/ic/), [hierarchical direct solvers](/projects/direct_solver/), and [EM-circuit co-simulation](/projects/mphy/), allowing detailed device structures and their surrounding electromagnetic environment to be considered within a common analysis.
+Our research develops **full-wave computational and experimental approaches for electromagnetic compatibility (EMC), interference (EMI), and side-channel analysis (SCA)**. The numerical framework draws upon our work on [domain decomposition methods](/projects/ddm/), [hierarchical direct solvers](/projects/direct_solver/), and [EM-circuit co-simulation](/projects/mphy/), while laboratory measurements provide direct validation and characterization of practical electronic systems.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -27,15 +25,15 @@ The underlying numerical framework draws upon our work on [domain decomposition 
 </div>
 
 <div class="caption">
-    Computational and experimental characterization of electromagnetic interactions in PCB and IC systems, combining full-wave simulation, circuit modeling, and RF/microwave measurements.
+    Overview of computational and experimental EMC research, spanning electromagnetic emissions, vulnerability, RF/microwave measurements, and side-channel applications.
 </div>
 
 
-## Electromagnetic Emissions
+## Electromagnetic Emissions & Side Channels
 
-Unintended electromagnetic emissions from electronic circuits provide an important measure of EMC performance. Modern PCBs and ICs contain complicated multilayer geometries, discontinuous ground structures, dense interconnects, and numerous excitation sources. Their near-field radiation can therefore be difficult to characterize accurately using simplified equivalent-source models alone.
+EM emissions from electronic circuits are traditionally treated as an EMC concern because unintended radiation can interfere with nearby components and systems. At the same time, these emissions contain information about the electrical activity and physical characteristics of the underlying hardware.
 
-We employ full-wave simulations together with near-field measurements to directly characterize these emissions. Detailed PCB geometries are represented using [domain decomposition methods](/projects/ddm/), while measurement configurations—including the field probe and its interaction with the device under test—can be incorporated into the computational model. This provides a common basis for comparing simulated and measured field distributions and for identifying electromagnetic hot spots and dominant radiation regions.
+Our research investigates this dual role of EM radiation. Full-wave models of PCBs and ICs are used to relate internal circuit behavior to externally observable EM responses. The resulting emission signatures can support not only EMC assessment, but also **side-channel analysis, device characterization, and hardware authentication**.
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -46,14 +44,13 @@ We employ full-wave simulations together with near-field measurements to directl
         %}
     </div>
 </div>
-
 <div class="caption">
-    Near-field electromagnetic-emission measurement and full-wave modeling of practical PCB and IC systems.
+    Overview of near-field emission measurement and full-wave modeling of practical PCB and IC systems.
 </div>
 
-For systems containing active and nonlinear devices, electromagnetic radiation cannot be determined from the passive PCB structure alone. We further integrate full-wave electromagnetic analysis with circuit models through [EM-circuit co-simulation](/projects/mphy/), allowing circuit responses to provide realistic excitations for subsequent field reconstruction and emission analysis.
+Accurate utilization of these emissions requires their spatial and frequency-dependent characteristics to be understood. We therefore combine full-wave simulations with controlled near-field measurements to compare field distributions, identify **emission hot spots and dominant radiation regions**, and quantify the influence of practical measurement probes.
 
-Combined with [hierarchical direct solution](/projects/direct_solver/), model reduction, and efficient treatment of multiple excitations, this framework enables electromagnetic emissions from increasingly complex RF and mixed-signal electronic systems to be evaluated over broad frequency ranges.
+The PCB-emission work explicitly models the probe together with the device under test rather than treating the probe as an ideal observer, so that probe–PCB interactions are incorporated directly into the comparison between simulation and measurement. 
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -66,15 +63,15 @@ Combined with [hierarchical direct solution](/projects/direct_solver/), model re
 </div>
 
 <div class="caption">
-    Simulation and measurement of near-field emissions, including field distributions, emission hot spots, and the influence of practical measurement probes.
+    Near-field emission characterization through simulation and measurement, including field distributions, emission hot-spot tracing, and the effects of practical probe geometries.
 </div>
 
 
 ## Electromagnetic Interference & Vulnerability
 
-The complementary EMC problem concerns how electronic systems respond to **external electromagnetic interference (EMI)**. Incident fields may couple through PCB traces, interconnects, connectors, packages, and other structures before reaching sensitive circuit components. Accurate vulnerability assessment therefore requires both the propagation of electromagnetic fields through the physical system and the resulting electrical responses of the circuits to be considered.
+The complementary EMC problem concerns how electronic systems respond to **external electromagnetic interference (EMI)**. Incident fields may couple through PCB traces, interconnects, connectors, packages, and other structures before reaching sensitive circuit components. Accurate vulnerability assessment therefore requires both the propagation of EM fields through the physical system and the resulting electrical responses of the circuits to be considered.
 
-Our [EM-circuit co-simulation framework](/projects/mphy/) separates the problem into a full-wave electromagnetic subsystem and a circuit subsystem. Broadband electromagnetic responses are obtained from frequency-domain simulations and efficiently represented through adaptive model reduction, while established circuit solvers handle nonlinear and mixed-signal device behavior. This enables detailed IC models to be retained without sacrificing the flexibility of full-wave electromagnetic modeling.
+Our work evaluates this behavior using combined full-wave and circuit-level analysis. Both **near-field sources and far-field illumination** are considered so that localized coupling mechanisms and system-level exposure can be studied within the same framework. The vulnerability study uses frequency-domain EM analysis, adaptive broadband reduction, and time-domain circuit simulation to connect external EM disturbances to responses at individual IC ports. 
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -85,12 +82,12 @@ Our [EM-circuit co-simulation framework](/projects/mphy/) separates the problem 
         %}
     </div>
 </div>
-
 <div class="caption">
-    EM-circuit co-simulation and experimental characterization for assessing the response of PCB and IC systems to external electromagnetic interference.
+    Computational and experimental framework for evaluating PCB and IC vulnerability under near-field and far-field electromagnetic interference.
 </div>
 
-Both **near-field and far-field interference** are considered. Near-field sources allow localized coupling paths and sensitive regions to be investigated, while controlled far-field illumination provides a system-level assessment under incident electromagnetic waves. Comparisons between simulations and measurements are used to identify vulnerable frequencies, directions, coupling paths, and circuit responses.
+Measurements and simulations are then compared across frequency, incident direction, source configuration, and circuit ports. These results help identify **susceptible frequencies, vulnerable directions, dominant coupling paths, and sensitive circuit locations**, providing a more direct link between the external electromagnetic environment and circuit-level response.
+The measured and simulated near- and far-field results show that the framework can reproduce the main vulnerability trends of a practical PCB and IC system, while also revealing the importance of accurately modeling external structures such as connectors. 
 
 <div class="row align-items-center">
     <div class="col-sm mt-3 mt-md-0">
@@ -101,7 +98,6 @@ Both **near-field and far-field interference** are considered. Near-field source
         %}
     </div>
 </div>
-
 <div class="caption">
     Near- and far-field vulnerability analysis of PCB and IC systems, with simulation and measurement used to characterize frequency-dependent and spatial electromagnetic coupling.
 </div>
@@ -124,7 +120,7 @@ Our current research extends the modeling and solver techniques developed for PC
 </div>
 
 <div class="caption">
-    Extension of multiscale electromagnetic modeling toward system-level EMC analysis of complex electronic platforms.
+    Multiscale modeling toward system-level EMC analysis of complex electronic platforms.
 </div>
 
 
@@ -133,5 +129,14 @@ Our current research extends the modeling and solver techniques developed for PC
 ### Selected Projects & Collaborations
 
 - CERN BCM & Calypso — electromagnetic modeling, simulation, and measurement with [CYAN Research Program, OSU](https://cyan.engineering.osu.edu/) -- conducted in collaboration with Prof. Jin-Fa Lee, Prof. Kubilay Sertel, and Dr. Shane Smith at The Ohio State University.
+
+--
+
+## Related Research
+
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Robust Direct Solvers](/projects/direct_solver/)
+- [Coupled-Physics Algorithms](/projects/mphy/)
+- [Multiscale Electronics Modeling](/projects/ic/)
 
 --
