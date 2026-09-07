@@ -87,7 +87,7 @@ Our work evaluates this behavior using combined full-wave and circuit-level anal
     Computational and experimental framework for EM vulnerability analysis of PCB and IC systems.
 </div>
 
-Measurements and simulations are then compared across frequency, incident direction, source configuration, and circuit ports. These results help identify **susceptible frequencies, vulnerable directions, dominant coupling paths, and sensitive circuit locations**, providing a more direct link between the external EMs environment and circuit-level response.
+Measurements and simulations are then compared across frequency, incident direction, source configuration, and circuit ports. These results help identify **susceptible frequencies, vulnerable directions, dominant coupling paths, and sensitive circuit locations**, providing a more direct link between the external EM environment and circuit-level response.
 The measured and simulated near- and far-field results show that the framework can reproduce the main vulnerability trends of a practical PCB and IC system, while also revealing the importance of accurately modeling external structures such as connectors. 
 
 <div class="row align-items-center">

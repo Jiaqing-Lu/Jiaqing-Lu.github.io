@@ -76,7 +76,7 @@ Nonconformal DDMs remove the requirement that neighboring subdomains share match
 
 ## Overlapping and Embedded DDMs
 
-Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain interfaces remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas Embedded DDM relaxes both geometric and mesh complexities.
+Nonconformal DDM allows neighboring regions to use independent meshes, but the subdomain interfaces remain geometrically conformal, i.e., forming a nonoverlapping partition of the original geometry. Embedded DDM further relaxes this restriction by allowing independently constructed subdomains to overlap in geometries and meshes. Nonconformal DDM relaxes mesh conformity, whereas embedded DDM relaxes both geometric and mesh complexities.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
