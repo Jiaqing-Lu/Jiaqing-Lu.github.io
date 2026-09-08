@@ -168,7 +168,7 @@ cv:
         end_date: 2024
         highlights:
           - "Funder: Air Force Research Laboratory"
-          - Developed simulation and measurement platforms for electromagnetic vulnerability analysis of microelectronics
+          - Developed electromagnetic simulation and measurement platforms for microelectronic systems
 
       - name: Advanced Computational HF Techniques
         start_date: 2010

@@ -64,7 +64,6 @@ Our [embedded domain decomposition method](/projects/ddm/) is suitable to handle
         %}
     </div>
 </div>
-
 <div class="caption">
     Multiscale PCB, package, and interconnect modeling using embedded domain decomposition, allowing independently constructed component and system models to be integrated within the same simulation.
 </div>
@@ -90,10 +89,8 @@ For complete electronic systems, accurate radiation and EMC analysis requires th
         %}
     </div>
 </div>
-
 <div class="caption">
     System-level electromagnetic simulation of a mobile device integrating multiscale domain decomposition, hierarchical direct solution, and improved electromagnetic truncation.
-<
 </div>
 
 Together, these techniques connect **flexible geometry construction, multiscale decomposition, and scalable numerical solution** within a unified framework for electromagnetic modeling of complex electronic systems.
