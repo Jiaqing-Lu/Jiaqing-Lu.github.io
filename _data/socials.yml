@@ -9,13 +9,13 @@ scholar_userid: 6UvoK6wAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 custom_social:
-  - logo: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/researchgate.svg
-    title: ResearchGate
-    url: https://www.researchgate.net/profile/Jiaqing-Lu-2
+  logo: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/brands/researchgate.svg
+  title: ResearchGate
+  url: https://www.researchgate.net/profile/Jiaqing-Lu-2
 
-  - logo: https://icons.iconarchive.com/icons/academicons-team/academicons/512/ieee-square-icon.png
-    title: IEEE Xplore
-    url: https://ieeexplore.ieee.org/author/37086434039
+  # logo: https://icons.iconarchive.com/icons/academicons-team/academicons/512/ieee-square-icon.png
+  # title: IEEE Xplore
+  # url: https://ieeexplore.ieee.org/author/37086434039
 
 # custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
 #   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
