@@ -3,8 +3,8 @@ layout: page
 title: Jiuchun Meng
 name_cn: 孟久淳
 role: Ph.D. Student
-photo: assets/people/jc_meng.jpg
-research_interests: Domain decomposition methods & scientific data learning
+photo: assets/people/jc_meng/jc_meng.jpg
+research_interests: Domain Decomposition Methods & Scientific Data Learning
 permalink: /people/jc_meng/
 order: 1
 ---
@@ -17,5 +17,5 @@ Research interests include domain decomposition methods and scientific data lear
 
 ### Research Interests
 
-- Domain decomposition methods
-- Scientific data learning
+- [Domain Decomposition Methods](/projects/ddm/)
+- [Scientific Data Learning](/projects/datai/)

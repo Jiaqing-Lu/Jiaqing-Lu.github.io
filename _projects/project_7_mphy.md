@@ -117,5 +117,6 @@ strategies for large coupled systems. These developments aim toward a unified co
 - [Robust Direct Solvers](/projects/direct_solver/)
 - [Discontinuous Galerkin Methods](/projects/dg/)
 - [Multiscale Electronics Modeling](/projects/ic/)
+- [Thermal & Multiphysics](/projects/thermal/)
 
 --
