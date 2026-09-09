@@ -9,7 +9,7 @@ nav_order: 5
 _styles: >
     .people-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1.5rem;
         margin-top: 1rem;
         margin-bottom: 2rem;
