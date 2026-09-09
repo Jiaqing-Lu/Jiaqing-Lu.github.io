@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Jiuchun Meng
-name_cn: 孟久淳
+title: Yanpei Li
+name_cn: 李炎培
 role: Ph.D. Student
-photo: _people/jc_meng/jc_meng.jpg
-research_interests: Domain decomposition methods & scientific data learning
-permalink: /people/jc_meng/
+photo: _people/yp_li/yp_li.jpg
+research_interests: Discontinuous Galerkin methods 
+permalink: /people/yp_li/
 order: 1
 ---
 

@@ -81,7 +81,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
       <div class="person-name">Jiaqing Lu (卢佳青)</div>
       <div class="person-role">Principal Investigator</div>
       <div class="person-desc">
-        Computational mathematics, electromagnetics, and multiphysics.
+        Computational mathematics & electromagnetics & multiphysics.
       </div>
     </div>
   </div>
