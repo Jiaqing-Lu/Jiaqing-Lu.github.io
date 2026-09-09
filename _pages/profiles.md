@@ -81,8 +81,8 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
       <div class="person-name">Jiaqing Lu (卢佳青)</div>
       <div class="person-role">Principal Investigator</div>
       <div class="person-desc">
-        Computational electromagnetics, domain decomposition methods,
-        fast solvers, and multiphysics modeling.
+        Computational electromagnetics, computational mathematics,
+        computational multiphysics.
       </div>
     </div>
   </div>
@@ -92,6 +92,19 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 <!-- ## Students -->
 
 <div class="people-grid">
+
+  <div class="person-card">
+    <img src="{{ '_people/jc_meng/jc_meng.jpg' | relative_url }}" class="person-photo">
+    <div class="person-info">
+      <div class="person-name">
+        <a href="/_people/jc_meng/introduction.md">Jiuchun Meng (孟久淳)</a>
+      </div>
+      <div class="person-role">Ph.D. Student</div>
+      <div class="person-desc">
+        Research interests: domain decomposition methods and scientific data learning.
+      </div>
+    </div>
+  </div>
 
   <!-- Example student card -->
   <!--
