@@ -11,9 +11,9 @@ order: 1
 
 ## Personal Introduction
 
-Jiuchun Meng is a Ph.D. student in the Computational Science & Electromagnetic Engineering Group at Shanghai Jiao Tong University.
+Ph.D. student in the Computational Science & Electromagnetic Engineering Group at Shanghai Jiao Tong University.
 
-His research interests include domain decomposition methods and scientific data learning.
+Research interests include domain decomposition methods and scientific data learning.
 
 ### Research Interests
 
