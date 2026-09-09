@@ -36,7 +36,7 @@ Our current research interests include:
 - `Multiscale & Multiphysics Modeling`: electromagnetic and coupled-physics modeling of integrated electronic systems (PCBs & packages & ICs), signal/power integrity problems.
 
 
-## About me
+## About Me
 
 I received my B.S. and M.S. degrees from **Shanghai Jiao Tong University (SJTU)**, and my Ph.D. degree from **The Ohio State University (OSU)**. During my Ph.D., I conducted my research at the [`ElectroScience Laboratory`](https://electroscience.osu.edu/) (ESL), OSU, and worked with `Prof. Jin-Fa Lee`, one of the most influential authorities in computational electromagnetics and the key contributor to Ansys HFSS. 
 
