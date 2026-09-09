@@ -81,8 +81,7 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
       <div class="person-name">Jiaqing Lu (卢佳青)</div>
       <div class="person-role">Principal Investigator</div>
       <div class="person-desc">
-        Computational electromagnetics, computational mathematics,
-        computational multiphysics.
+        Computational mathematics, electromagnetics, and multiphysics.
       </div>
     </div>
   </div>
@@ -90,21 +89,46 @@ If you are interested, please send a brief introduction, CV, transcript, and a s
 </div>
 
 <!-- ## Students -->
-
 <div class="people-grid">
 
+  {% assign people_sorted = site.people | sort: "order" %}
+
+  {% for person in people_sorted %}
   <div class="person-card">
-    <img src="{{ '_people/jc_meng/jc_meng.jpg' | relative_url }}" class="person-photo">
+    <a href="{{ person.url | relative_url }}">
+      <img
+        src="{{ person.photo | relative_url }}"
+        class="person-photo"
+        alt="{{ person.title }}"
+      >
+    </a>
     <div class="person-info">
       <div class="person-name">
-        <a href="/_people/jc_meng/introduction.md">Jiuchun Meng (孟久淳)</a>
+        <a href="{{ person.url | relative_url }}">
+          {{ person.title }}
+          {% if person.name_cn %}
+            ({{ person.name_cn }})
+          {% endif %}
+        </a>
       </div>
-      <div class="person-role">Ph.D. Student</div>
+      {% if person.role %}
+      <div class="person-role">
+        {{ person.role }}
+      </div>
+      {% endif %}
+      {% if person.research_interests %}
       <div class="person-desc">
-        Research interests: domain decomposition methods and scientific data learning.
+        <strong>Research interests:</strong>
+        {{ person.research_interests }}.
       </div>
+      {% endif %}
     </div>
   </div>
+{% endfor %}
+
+</div>
+
+<div class="people-grid">
 
   <!-- Example student card -->
   <!--

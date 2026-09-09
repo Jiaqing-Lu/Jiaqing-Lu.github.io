@@ -212,6 +212,8 @@ collections:
     output: true
   teachings:
     output: true
+  people:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
