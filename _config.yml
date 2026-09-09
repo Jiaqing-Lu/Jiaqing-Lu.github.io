@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Computational Science Group
+title: Computational Science & Electromagnetic Engineering Group
 first_name: Jiaqing
 middle_name: 
 last_name: Lu
 contact_note: # > 
   #Feel free to contact me regarding research and collaboration opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computational Science Group at Shanghai Jiao Tong University, led by Jiaqing Lu. Research in computational electromagnetics, scientific computing, domain decomposition, fast solvers, multiphysics, and electromagnetic engineering.
+  Computational Science & Electromagnetic Engineering Group at Shanghai Jiao Tong University, led by Jiaqing Lu. Research in computational electromagnetics, scientific computing, domain decomposition, fast solvers, multiphysics, and electromagnetic engineering.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
