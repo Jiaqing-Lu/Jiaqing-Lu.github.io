@@ -3,7 +3,7 @@ layout: page
 title: Yanpei Li
 name_cn: 李炎培
 role: Ph.D. Student
-photo: _people/yp_li/yp_li.jpg
+photo: assets/people/person.jpg
 research_interests: Discontinuous Galerkin methods 
 permalink: /people/yp_li/
 order: 1

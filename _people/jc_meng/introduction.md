@@ -3,7 +3,7 @@ layout: page
 title: Jiuchun Meng
 name_cn: 孟久淳
 role: Ph.D. Student
-photo: _people/jc_meng/jc_meng.jpg
+photo: assets/people/jc_meng.jpg
 research_interests: Domain decomposition methods & scientific data learning
 permalink: /people/jc_meng/
 order: 1
